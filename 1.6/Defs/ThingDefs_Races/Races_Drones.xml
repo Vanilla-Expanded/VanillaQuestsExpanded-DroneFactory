@@ -42,7 +42,8 @@
 			</li>
 		</tools>
 		<butcherProducts>
-			<Steel>15</Steel>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</butcherProducts>
 		<comps Inherit="False">
 			<li>
