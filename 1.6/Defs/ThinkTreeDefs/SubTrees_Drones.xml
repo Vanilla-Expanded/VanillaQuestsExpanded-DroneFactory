@@ -12,7 +12,7 @@
 						<li Class="ThinkNode_ConditionalSentryDroneMode">
 							<mode>Patrol</mode>
 							<subNodes>
-								<li Class="JobGiver_SentryPatrol"/>
+								<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_SentryPatrol"/>
 							</subNodes>
 						</li>
 						<li Class="ThinkNode_ConditionalSentryDroneMode">
