@@ -180,7 +180,7 @@
           <coverage>0.2</coverage>
           <depth>Outside</depth>
           <groups>
-            <li>SpikedShellAttackTool</li>
+            <li>VQE_SpikedShellAttackTool</li>
           </groups>
         </li>
         <li>
@@ -230,7 +230,7 @@
           <coverage>0.2</coverage>
           <depth>Outside</depth>
           <groups>
-            <li>SpikedShellAttackTool</li>
+            <li>VQE_SpikedShellAttackTool</li>
           </groups>
         </li>
         <li>
@@ -322,7 +322,7 @@
           <coverage>0.2</coverage>
           <depth>Outside</depth>
           <groups>
-            <li>SpikedShellAttackTool</li>
+            <li>VQE_SpikedShellAttackTool</li>
           </groups>
         </li>
       </parts>
@@ -366,7 +366,7 @@
           <coverage>0.2</coverage>
           <depth>Outside</depth>
           <groups>
-            <li>SpikedShellAttackTool</li>
+            <li>VQE_SpikedShellAttackTool</li>
           </groups>
         </li>
         <li>

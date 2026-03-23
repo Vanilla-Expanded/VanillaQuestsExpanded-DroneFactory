@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BasePawn" Name="VQE_BaseDrone" Abstract="True">
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<MoveSpeed>4.2</MoveSpeed>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.50</ArmorRating_Heat>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+			<WorkSpeedGlobal MayRequire="Ludeon.RimWorld.Biotech">0.5</WorkSpeedGlobal>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+		</statBases>
+		<receivesSignals>true</receivesSignals>
+		<tradeability>None</tradeability>
+		<race>
+			<alwaysAwake>true</alwaysAwake>
+			<fleshType>VQE_Drone</fleshType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<hasCorpse>false</hasCorpse>
+			<foodType>None</foodType>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<bloodDef>Filth_MachineBits</bloodDef>
+			<disableIgniteVerb>true</disableIgniteVerb>
+			<trainability>None</trainability>
+			<nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+			<hideTrainingTab>true</hideTrainingTab>
+			<intelligence>ToolUser</intelligence>
+			<canFlyInVacuum>true</canFlyInVacuum>
+		</race>
+		<killedLeavings>
+			<Filth_MachineBits>4</Filth_MachineBits>
+		</killedLeavings>
+	</ThingDef>
+	<PawnKindDef Abstract="True" Name="VQE_BaseDroneKind">
+		<defaultFactionDef>AncientsHostile</defaultFactionDef>
+		<aiAvoidCover>true</aiAvoidCover>
+		<destroyGearOnDrop>true</destroyGearOnDrop>
+		<canStrip>false</canStrip>
+		<minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<allowInMechClusters>false</allowInMechClusters>
+		<forceNoDeathNotification>true</forceNoDeathNotification>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags/>
+		<preventIdeo>true</preventIdeo>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+		<combatPower>10</combatPower>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+		<forceDeathOnDowned>true</forceDeathOnDowned>
+		<canOpenDoors>false</canOpenDoors>
+	</PawnKindDef>
+</Defs>

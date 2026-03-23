@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FleshTypeDef[defName="VQE_Drone"]/corpseCategory</xpath>
+					<value>
+						<corpseCategory>CorpsesDrone</corpseCategory>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

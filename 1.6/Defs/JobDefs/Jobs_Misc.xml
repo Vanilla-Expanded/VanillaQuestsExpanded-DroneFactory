@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <JobDef>
+    <defName>VQE_GotoPatrolDest</defName>
+    <driverClass>JobDriver_GotoPatrolDest</driverClass>
+    <reportString>patrolling.</reportString>
+  </JobDef>
+
+ 
+</Defs>
