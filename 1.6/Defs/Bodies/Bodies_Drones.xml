@@ -379,4 +379,48 @@
     </corePart>
   </BodyDef>
 
+  <BodyDef>
+    <defName>VQE_DroneLegless</defName>
+    <label>crippled drone</label>
+    <corePart>
+      <def>VQE_DroneChassis</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>VQE_DroneCore</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>VQE_DroneEye</def>
+          <coverage>0.05</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>VQE_DroneAntenna</def>
+          <coverage>0.05</coverage>
+          <depth>Outside</depth>
+          <height>Top</height>
+        </li>
+        <li>
+          <def>VQE_DroneShellSection</def>
+          <coverage>0.2</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>VQE_DroneShellSectionWithSpike</def>
+          <coverage>0.2</coverage>
+          <depth>Outside</depth>
+          <groups>
+            <li>SpikedShellAttackTool</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
   </Defs>
