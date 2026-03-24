@@ -86,7 +86,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<VQE_BattleDrone>1</VQE_BattleDrone>
+			<VQE_UnfinishedDroneSpawner_BattleDrone>1</VQE_UnfinishedDroneSpawner_BattleDrone>
 		</products>
 		<skillRequirements>
 			<Crafting>3</Crafting>
