@@ -1,21 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>VQE_UnfinishedDrone</defName>
+		<label>unfinished drone</label>
+		<description>An unfinished drone.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedDrone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	<ThingDef Abstract="true" Name="VQE_UnfinishedDroneSpawnerBase" ParentName="ResourceBase">
+		<label>unfinished drone</label>
+		<description>An unfinished drone. This will deploy into a drone.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Unfinished/UnfinishedDrone</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>45</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+		<thingCategories>
+			<li>Unfinished</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
+		<tradeTags>
+			<li>NonContractable</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_BattleDrone</defName>
+		<comps>
 
-
-  <ThingDef ParentName="UnfinishedBase">
-    <defName>VQE_UnfinishedDrone</defName>
-    <label>unfinished drone</label>
-    <description>An unfinished drone.</description>
-    <statBases>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Item/Unfinished/UnfinishedDrone</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <stuffCategories Inherit="false" />
-  </ThingDef>
-  
-  
-
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_BattleDrone</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
