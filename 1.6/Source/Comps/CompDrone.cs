@@ -41,6 +41,63 @@ namespace VanillaQuestsExpandedDroneFactory
                         action = () => pawn.SetFaction(Faction.OfPlayer)
                     };
                 }
+                var lifespan = pawn.needs.TryGetNeed<Need_Lifespan>();
+                if (lifespan != null)
+                {
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Set lifespan: Max",
+                        action = () => lifespan.CurLevel = lifespan.MaxLevel
+                    };
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Set lifespan: Minor threshold",
+                        action = () => lifespan.CurLevelPercentage = 0.35f
+                    };
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Set lifespan: Major threshold",
+                        action = () => lifespan.CurLevelPercentage = 0.20f
+                    };
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Set lifespan: Extreme threshold",
+                        action = () => lifespan.CurLevelPercentage = 0.05f
+                    };
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Set lifespan: 0%",
+                        action = () => lifespan.CurLevel = 0f
+                    };
+                }
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Trigger malfunction",
+                    action = () =>
+                    {
+                        var options = new List<FloatMenuOption>();
+                        foreach (var def in DefDatabase<MentalStateDef>.AllDefs)
+                        {
+                            if (def.HasModExtension<DroneMentalStateExtension>())
+                            {
+                                options.Add(new FloatMenuOption(def.LabelCap, () =>
+                                {
+                                    pawn.mindState.mentalStateHandler.CurState?.RecoverFromState();
+                                    pawn.mindState.mentalStateHandler.TryStartMentalState(def);
+                                }));
+                            }
+                        }
+                        Find.WindowStack.Add(new FloatMenu(options));
+                    }
+                };
+                if (pawn.InMentalState && pawn.MentalStateDef.HasModExtension<DroneMentalStateExtension>())
+                {
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: End malfunction",
+                        action = () => pawn.mindState.mentalStateHandler.CurState?.RecoverFromState()
+                    };
+                }
             }
             if (pawn.Faction != Faction.OfPlayer) yield break;
 

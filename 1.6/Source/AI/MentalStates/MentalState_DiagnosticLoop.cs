@@ -11,6 +11,12 @@ namespace VanillaQuestsExpandedDroneFactory
             pawn.stances.stunner.StunFor(int.MaxValue, null, showMote: true);
         }
 
+        public override void PostEnd()
+        {
+            base.PostEnd();
+            pawn.stances.stunner.StopStun();
+        }
+
         public override void MentalStateTick(int delta)
         {
             base.MentalStateTick(delta);
