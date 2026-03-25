@@ -17,6 +17,7 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static JobDef VQE_ShutdownDrone;
 		public static JobDef VQE_ReactivateDrone;
 		public static JobDef VQE_EnterStandby;
+		public static JobDef VQE_StandOutOfTransmitterRange;
 
 		[DefAlias("VQE_ShutdownDrone")]
 		public static DesignationDef VQE_ShutdownDrone_Designation;

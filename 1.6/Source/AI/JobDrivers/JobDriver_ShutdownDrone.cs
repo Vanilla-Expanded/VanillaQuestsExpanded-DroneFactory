@@ -17,8 +17,12 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 var drone = (Pawn)TargetA.Thing;
                 var core = drone.health.hediffSet.GetNotMissingParts().FirstOrDefault(p => p.def == InternalDefOf.VQE_DroneCore);
-                if (core != null) drone.TakeDamage(new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core));
-                else drone.Kill(null);
+                if (core is null) return;
+                var damage = new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core);
+                damage.SetAllowDamagePropagation(false);
+                drone.TakeDamage(damage);
+                if (drone.Dead is false)
+                    drone.Kill(null);
             });
         }
     }

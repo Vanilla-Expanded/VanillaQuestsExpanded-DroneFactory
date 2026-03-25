@@ -9,7 +9,7 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public CompProperties_Drone() => compClass = typeof(CompDrone);
     }
-
+    [HotSwappable]
     public class CompDrone : ThingComp
     {
         public bool autoRepair = true;
@@ -30,9 +30,18 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            foreach (var g in base.CompGetGizmosExtra()) yield return g;
-
             var pawn = (Pawn)parent;
+            if (DebugSettings.ShowDevGizmos)
+            {
+                if (pawn.Faction != Faction.OfPlayer)
+                {
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Become player drone",
+                        action = () => pawn.SetFaction(Faction.OfPlayer)
+                    };
+                }
+            }
             if (pawn.Faction != Faction.OfPlayer) yield break;
 
             yield return new Command_Action
@@ -45,8 +54,8 @@ namespace VanillaQuestsExpandedDroneFactory
 
             var cmd = new Command_Action
             {
-                defaultLabel = "VQE_Standby".Translate(),
-                defaultDesc = "VQE_StandbyDesc".Translate(),
+                defaultLabel = "VQE_EnterStandby".Translate(),
+                defaultDesc = "VQE_EnterStandbyDesc".Translate(),
                 icon = ContentFinder<Texture2D>.Get("UI/Gizmos/StandBy_Gizmo"),
                 action = () => pawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_EnterStandby, pawn))
             };

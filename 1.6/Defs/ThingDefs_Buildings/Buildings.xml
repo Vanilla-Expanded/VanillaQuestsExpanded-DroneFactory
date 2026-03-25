@@ -7,7 +7,10 @@
         <graphicData>
             <texPath>Things/Structure/Misc/DroneBandwidthNode</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3, 3)</drawSize>
         </graphicData>
+        <uiIconScale>0.5</uiIconScale>
+        <uiIconOffset>(0, 0.2)</uiIconOffset>
         <minifiedDef>MinifiedThing</minifiedDef>
         <thingCategories>
             <li>BuildingsMisc</li>
@@ -39,6 +42,7 @@
             <li>PlaceWorker_NotUnderRoof</li>
             <li>VanillaQuestsExpandedDroneFactory.PlaceWorker_DroneTransmitter</li>
         </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <researchPrerequisites>
             <li>Dronetech</li>

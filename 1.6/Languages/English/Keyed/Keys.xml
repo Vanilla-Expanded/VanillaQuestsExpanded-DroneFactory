@@ -4,8 +4,9 @@
     <VQE_ShutdownDesc>Shut down this drone permanently. This will destroy the drone's core.</VQE_ShutdownDesc>
     <VQE_Reactivate>Reactivate</VQE_Reactivate>
     <VQE_ReactivateDesc>Reactivate this drone from standby.</VQE_ReactivateDesc>
-    <VQE_Standby>Enter standby</VQE_Standby>
-    <VQE_StandbyDesc>Put the drone in standby mode. This slows lifespan drain but prevents all activity.</VQE_StandbyDesc>
+    <VQE_Standby>Standby</VQE_Standby>
+    <VQE_EnterStandby>Enter standby</VQE_EnterStandby>
+    <VQE_EnterStandbyDesc>Put the drone in standby mode. This slows lifespan drain but prevents all activity.</VQE_EnterStandbyDesc>
     <VQE_CannotUseConnectionTimedOut>Cannot use while connection timed out</VQE_CannotUseConnectionTimedOut>
     <VQE_CannotUseOverclocked>Cannot use while overclocked</VQE_CannotUseOverclocked>
     <VQE_CannotUseDesynchronised>Cannot use while desynchronised</VQE_CannotUseDesynchronised>

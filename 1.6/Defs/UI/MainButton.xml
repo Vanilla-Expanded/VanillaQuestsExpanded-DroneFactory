@@ -6,6 +6,7 @@
         <description>Manage your colony's drones.</description>
         <workerClass>VanillaQuestsExpandedDroneFactory.MainButtonWorker_Drones</workerClass>
         <tabWindowClass>VanillaQuestsExpandedDroneFactory.MainTabWindow_Drones</tabWindowClass>
+        <minimized>True</minimized>
         <iconPath>UI/MenuIcon/IconDrones</iconPath>
         <order>35</order>
     </MainButtonDef>
@@ -26,28 +27,31 @@
     <PawnColumnDef>
         <defName>VQE_Lifespan</defName>
         <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Lifespan</workerClass>
+        <label>Lifespan</label>
         <sortable>true</sortable>
-        <headerIcon>UI/MenuIcon/IconDrones</headerIcon>
     </PawnColumnDef>
 
     <PawnColumnDef>
         <defName>VQE_Draft</defName>
         <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Draft</workerClass>
+        <label>Draft</label>
         <sortable>true</sortable>
         <paintable>true</paintable>
     </PawnColumnDef>
 
     <PawnColumnDef>
         <defName>VQE_AutoRepair</defName>
-        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_AutoRepairDrone</workerClass>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_AutoRepair</workerClass>
+        <label>Auto repair</label>
         <sortable>true</sortable>
-        <headerIcon>UI/Gizmos/AutoRepair</headerIcon>
+        <paintable>true</paintable>
     </PawnColumnDef>
 
     <PawnColumnDef>
         <defName>VQE_Standby</defName>
         <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Standby</workerClass>
+        <label>Standby</label>
         <sortable>true</sortable>
-        <headerIcon>UI/Gizmos/StandBy_Gizmo</headerIcon>
+        <paintable>true</paintable>
     </PawnColumnDef>
 </Defs>

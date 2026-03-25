@@ -24,6 +24,15 @@
         <reportString>entering stand-by.</reportString>
     </JobDef>
 
+    <JobDef>
+        <defName>VQE_StandOutOfTransmitterRange</defName>
+        <driverClass>JobDriver_Wait</driverClass>
+        <reportString>waiting for transmitter signal.</reportString>
+        <carryThingAfterJob>true</carryThingAfterJob>
+        <dropThingBeforeJob>false</dropThingBeforeJob>
+        <ifFlyingKeepFlying>true</ifFlyingKeepFlying>
+    </JobDef>
+
     <DesignationDef>
         <defName>VQE_ShutdownDrone</defName>
         <label>shutdown drone</label>

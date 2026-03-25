@@ -1,5 +1,6 @@
 using Verse;
 using RimWorld;
+using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -40,8 +41,10 @@ namespace VanillaQuestsExpandedDroneFactory
             if (CurLevel <= 0f && !pawn.Dead)
             {
                 var core = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(p => p.def == InternalDefOf.VQE_DroneCore);
-                if (core != null) pawn.TakeDamage(new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core));
-                else pawn.Kill(null);
+                if (core != null)
+                    pawn.TakeDamage(new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core));
+                if (pawn.Dead is false)
+                    pawn.Kill(null);
             }
             else
             {
@@ -78,6 +81,41 @@ namespace VanillaQuestsExpandedDroneFactory
 
             var selected = candidates.RandomElement();
             pawn.mindState.mentalStateHandler.TryStartMentalState(selected, null, true);
+        }
+
+        public void DrawBarOnGUI(Rect rect)
+        {
+            if (rect.height > 70f)
+            {
+                float num = (rect.height - 70f) / 2f;
+                rect.height = 70f;
+                rect.y += num;
+            }
+            if (Mouse.IsOver(rect))
+            {
+                TooltipHandler.TipRegion(rect, new TipSignal(() => GetTipString(), rect.GetHashCode()));
+            }
+            var rect3 = rect;
+            float scale = 1f;
+            if (def.scaleBar && MaxLevel < 1f)
+            {
+                scale = MaxLevel;
+            }
+            rect3.width *= scale;
+            var barRect = Widgets.FillableBar(rect3, CurLevelPercentage);
+            Widgets.FillableBarChangeArrows(rect3, GUIChangeArrow);
+            if (threshPercents != null)
+            {
+                for (int i = 0; i < threshPercents.Count; i++)
+                {
+                    DrawBarThreshold(barRect, threshPercents[i] * scale);
+                }
+            }
+            float curInstantLevelPercentage = CurInstantLevelPercentage;
+            if (curInstantLevelPercentage >= 0f)
+            {
+                DrawBarInstantMarkerAt(rect3, curInstantLevelPercentage * scale);
+            }
         }
     }
 }

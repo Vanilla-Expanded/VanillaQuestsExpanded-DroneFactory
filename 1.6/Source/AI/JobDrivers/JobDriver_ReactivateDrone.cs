@@ -1,6 +1,7 @@
 using Verse;
 using Verse.AI;
 using System.Collections.Generic;
+using RimWorld;
 
 namespace VanillaQuestsExpandedDroneFactory
 {
@@ -19,6 +20,7 @@ namespace VanillaQuestsExpandedDroneFactory
                     GenSpawn.Spawn(building.drone, building.Position, building.Map);
                     Find.Selector.Select(building.drone);
                     building.Destroy();
+                    MainTabWindowUtility.NotifyAllPawnTables_PawnsChanged();
                 }
             });
         }

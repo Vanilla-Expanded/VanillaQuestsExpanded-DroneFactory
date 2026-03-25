@@ -9,7 +9,7 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void DoCell(Rect rect, Pawn pawn, PawnTable table)
         {
             if (!pawn.IsDrone()) return;
-            
+
             rect.xMin += (rect.width - 24f) / 2f;
             rect.yMin += (rect.height - 24f) / 2f;
 
@@ -35,6 +35,11 @@ namespace VanillaQuestsExpandedDroneFactory
                     pawn.drafter.Drafted = drafted;
                 }
             }
+        }
+
+        public override int GetOptimalWidth(PawnTable table)
+        {
+            return base.GetOptimalWidth(table) + 10;
         }
 
         public override int GetMinWidth(PawnTable table)

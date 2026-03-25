@@ -8,10 +8,7 @@ namespace VanillaQuestsExpandedDroneFactory
     public class Building_DroneStandby : Building
     {
         public Pawn drone;
-        public bool inStandby = true;
-
         public override string Label => drone.Label + " (" + "VQE_Standby".Translate().ToLower() + ")";
-
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             drone.DynamicDrawPhaseAt(DrawPhase.Draw, DrawPos);
@@ -58,7 +55,6 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             base.ExposeData();
             Scribe_Deep.Look(ref drone, "drone");
-            Scribe_Values.Look(ref inStandby, "inStandby", true);
         }
     }
 }
