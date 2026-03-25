@@ -85,4 +85,7 @@
 		<forceDeathOnDowned>true</forceDeathOnDowned>
 		<canOpenDoors>false</canOpenDoors>
 	</PawnKindDef>
+	<PawnKindDef Abstract="True" Name="VQE_BaseDroneKindNonCombat" ParentName="VQE_BaseDroneKind">
+		<isFighter>false</isFighter>
+	</PawnKindDef>
 </Defs>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_BaseDrone">
+		<defName>VQE_CleanerDrone</defName>
+		<label>cleaner drone</label>
+		<description>An automated utility drone. It continuously patrols an area, looking for dirty surfaces. Once filth is found, it will relentlessly clean the area with its internal scrubbing apparatus.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.</description>
+		
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Heat>1</ArmorRating_Heat>
+			<CleaningSpeed>0.25</CleaningSpeed>
+		</statBases>
+		<race>
+			
+			<thinkTreeMain>VQE_Drone</thinkTreeMain>
+			<thinkTreeConstant>VQE_CleanerDroneConstant</thinkTreeConstant>
+			<baseHealthScale>1</baseHealthScale>
+			<baseBodySize>0.3</baseBodySize>
+			<body>VQE_DroneWithWheels</body>
+			<hasCorpse>true</hasCorpse>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Sentry_Wounded</soundWounded>
+					<soundDeath>Pawn_Sentry_Death</soundDeath>
+					<soundCall>Pawn_Sentry_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<li>
+				<label>shell spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>VQE_SpikedShellAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Steel>65</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</butcherProducts>
+		
+	</ThingDef>
+	<PawnKindDef ParentName="VQE_BaseDroneKindNonCombat">
+		<defName>VQE_CleanerDrone</defName>
+		<label>cleaner drone</label>
+		<labelPlural>cleaner drones</labelPlural>
+		<race>VQE_CleanerDrone</race>
+		<combatPower>10</combatPower>
+		<canOpenAnyDoor>true</canOpenAnyDoor>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Drones/CleanerDrone/CleanerDrone</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<canOpenDoors>true</canOpenDoors>
+		
+	</PawnKindDef>
+</Defs>
