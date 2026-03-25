@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>VQE_DroneTransmitter</defName>
+        <label>drone transmitter</label>
+        <description>A small antenna mast that establishes a local drone network, enabling nearby drones to operate within its transmission radius. Must be placed outdoors.</description>
+        <graphicData>
+            <texPath>Things/Structure/Misc/DroneBandwidthNode</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.75</fillPercent>
+        <pathCost>42</pathCost>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToBuild>8040</WorkToBuild>
+            <Flammability>0.5</Flammability>
+            <Beauty>0</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <costList>
+            <Steel>80</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>100</basePowerConsumption>
+            </li>
+        </comps>
+        <designationCategory>Misc</designationCategory>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>VanillaQuestsExpandedDroneFactory.PlaceWorker_DroneTransmitter</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>Dronetech</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>VQE_DroneStandby</defName>
+        <label>drone (standby)</label>
+        <thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneStandby</thingClass>
+        <drawerType>RealtimeOnly</drawerType>
+        <tickerType>Rare</tickerType>
+        <inspectorTabs>
+            <li>ITab_Pawn_Character</li>
+        </inspectorTabs>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <claimable>false</claimable>
+            <isEdifice>false</isEdifice>
+        </building>
+    </ThingDef>
+</Defs>

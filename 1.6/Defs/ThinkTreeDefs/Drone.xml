@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThinkTreeDef>
 		<defName>VQE_Drone</defName>
@@ -9,6 +9,36 @@
 				</li>
 				<li Class="ThinkNode_Subtree">
 					<treeDef>LordDuty</treeDef>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VQE_HoardingLoop</state>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_HoardingLoop" />
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VQE_Hardcrash</state>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_Hardcrash" />
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VQE_Desync</state>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_WanderDesync" />
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VQE_Reboot</state>
+					<subNodes>
+						<li Class="JobGiver_WanderAnywhere" />
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VQE_HardwareFailure</state>
+					<subNodes>
+						<li Class="JobGiver_Idle" />
+					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<invert>true</invert>
@@ -39,7 +69,7 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="JobGiver_IdleError"/>
+				<li Class="JobGiver_IdleError" />
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>VQE_RepairDrone</defName>
+        <driverClass>VanillaQuestsExpandedDroneFactory.JobDriver_RepairDrone</driverClass>
+        <reportString>repairing TargetA.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>VQE_ShutdownDrone</defName>
+        <driverClass>VanillaQuestsExpandedDroneFactory.JobDriver_ShutdownDrone</driverClass>
+        <reportString>shutting down TargetA.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>VQE_ReactivateDrone</defName>
+        <driverClass>VanillaQuestsExpandedDroneFactory.JobDriver_ReactivateDrone</driverClass>
+        <reportString>reactivating TargetA.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>VQE_EnterStandby</defName>
+        <driverClass>VanillaQuestsExpandedDroneFactory.JobDriver_EnterStandby</driverClass>
+        <reportString>entering stand-by.</reportString>
+    </JobDef>
+
+    <DesignationDef>
+        <defName>VQE_ShutdownDrone</defName>
+        <label>shutdown drone</label>
+        <description>Shut down this drone permanently.</description>
+        <texturePath>UI/Gizmos/ShutDown_Designator</texturePath>
+        <targetType>Thing</targetType>
+    </DesignationDef>
+
+    <DesignationDef>
+        <defName>VQE_ReactivateDrone</defName>
+        <label>reactivate drone</label>
+        <description>Reactivate this drone from standby.</description>
+        <texturePath>UI/Designators/Flick</texturePath>
+        <targetType>Thing</targetType>
+    </DesignationDef>
+
+    <WorkGiverDef>
+        <defName>VQE_RepairDrone</defName>
+        <label>repair drones</label>
+        <giverClass>VanillaQuestsExpandedDroneFactory.WorkGiver_RepairDrone</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>60</priorityInType>
+        <verb>repair</verb>
+        <gerund>repairing</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>VQE_ShutdownDrone</defName>
+        <label>shutdown drones</label>
+        <giverClass>VanillaQuestsExpandedDroneFactory.WorkGiver_ShutdownDrone</giverClass>
+        <workType>BasicWorker</workType>
+        <priorityInType>100</priorityInType>
+        <verb>shutdown</verb>
+        <gerund>shutting down</gerund>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>VQE_ReactivateDrone</defName>
+        <label>reactivate drones</label>
+        <giverClass>VanillaQuestsExpandedDroneFactory.WorkGiver_ReactivateDrone</giverClass>
+        <workType>BasicWorker</workType>
+        <priorityInType>100</priorityInType>
+        <verb>reactivate</verb>
+        <gerund>reactivating</gerund>
+    </WorkGiverDef>
+</Defs>

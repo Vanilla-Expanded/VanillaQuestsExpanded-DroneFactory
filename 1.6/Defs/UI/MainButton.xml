@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <MainButtonDef>
+        <defName>VQE_Drones</defName>
+        <label>Drones</label>
+        <description>Manage your colony's drones.</description>
+        <workerClass>VanillaQuestsExpandedDroneFactory.MainButtonWorker_Drones</workerClass>
+        <tabWindowClass>VanillaQuestsExpandedDroneFactory.MainTabWindow_Drones</tabWindowClass>
+        <iconPath>UI/MenuIcon/IconDrones</iconPath>
+        <order>35</order>
+    </MainButtonDef>
+
+    <PawnTableDef>
+        <defName>VQE_Drones</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnTable_Drones</workerClass>
+        <columns>
+            <li>LabelWithIcon</li>
+            <li>VQE_Lifespan</li>
+            <li>VQE_Draft</li>
+            <li>VQE_AutoRepair</li>
+            <li>VQE_Standby</li>
+            <li>AllowedArea</li>
+        </columns>
+    </PawnTableDef>
+
+    <PawnColumnDef>
+        <defName>VQE_Lifespan</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Lifespan</workerClass>
+        <sortable>true</sortable>
+        <headerIcon>UI/MenuIcon/IconDrones</headerIcon>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_Draft</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Draft</workerClass>
+        <sortable>true</sortable>
+        <paintable>true</paintable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_AutoRepair</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_AutoRepairDrone</workerClass>
+        <sortable>true</sortable>
+        <headerIcon>UI/Gizmos/AutoRepair</headerIcon>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_Standby</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Standby</workerClass>
+        <sortable>true</sortable>
+        <headerIcon>UI/Gizmos/StandBy_Gizmo</headerIcon>
+    </PawnColumnDef>
+</Defs>

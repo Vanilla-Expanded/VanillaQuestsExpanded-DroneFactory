@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <VQE_Shutdown>Shut down</VQE_Shutdown>
+    <VQE_ShutdownDesc>Shut down this drone permanently. This will destroy the drone's core.</VQE_ShutdownDesc>
+    <VQE_Reactivate>Reactivate</VQE_Reactivate>
+    <VQE_ReactivateDesc>Reactivate this drone from standby.</VQE_ReactivateDesc>
+    <VQE_Standby>Enter standby</VQE_Standby>
+    <VQE_StandbyDesc>Put the drone in standby mode. This slows lifespan drain but prevents all activity.</VQE_StandbyDesc>
+    <VQE_CannotUseConnectionTimedOut>Cannot use while connection timed out</VQE_CannotUseConnectionTimedOut>
+    <VQE_CannotUseOverclocked>Cannot use while overclocked</VQE_CannotUseOverclocked>
+    <VQE_CannotUseDesynchronised>Cannot use while desynchronised</VQE_CannotUseDesynchronised>
+    <VQE_CannotUseRebooting>Cannot use while rebooting</VQE_CannotUseRebooting>
+    <VQE_CannotUseHardwareFailure>Cannot use during hardware failure</VQE_CannotUseHardwareFailure>
+    <VQE_CannotUseInStandby>Cannot use while in standby</VQE_CannotUseInStandby>
+    <VQE_OutsideTransmitterRange>Outside transmitter range</VQE_OutsideTransmitterRange>
+    <VQE_DroneMalfunction>{DRONE} has malfunctioned: {MALFUNCTION}</VQE_DroneMalfunction>
+    <VQE_HardcrashLetter>Hardcrash: {DRONE}</VQE_HardcrashLetter>
+    <VQE_HardcrashLetterDesc>{DRONE} has suffered a critical hardcrash and is attacking nearby structures.</VQE_HardcrashLetterDesc>
+    <VQE_KillswitchLetter>Killswitch: {DRONE}</VQE_KillswitchLetter>
+    <VQE_KillswitchLetterDesc>{DRONE}'s killswitch has been activated. It is attacking all nearby targets.</VQE_KillswitchLetterDesc>
+    <VQE_SelfDecommissionLetter>Self-decommission: {DRONE}</VQE_SelfDecommissionLetter>
+    <VQE_SelfDecommissionLetterDesc>{DRONE} has initiated self-decommission and is leaving the map.</VQE_SelfDecommissionLetterDesc>
+    <VQE_DroneHardwareFailure>{DRONE} has suffered a hardware failure and will be destroyed.</VQE_DroneHardwareFailure>
+    <VQE_ExtremeMalfunctionRisk>Extreme malfunction risk</VQE_ExtremeMalfunctionRisk>
+    <VQE_ExtremeMalfunctionRiskDesc>Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
+</LanguageData>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_DiagnosticLoop</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DiagnosticLoop</stateClass>
+        <label>diagnostic loop</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.083</recoveryMtbDays>
+        <minTicksBeforeRecovery>10000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>20000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Diagnostic loop</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Minor</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_ConnectionTimedOut</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
+        <label>connection timed out</label>
+        <category>Misc</category>
+        <recoveryMtbDays>1</recoveryMtbDays>
+        <minTicksBeforeRecovery>45000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>120000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Connection timed out</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Minor</malfunctionTier>
+                <disableDraftGizmos>true</disableDraftGizmos>
+                <draftDisableMessage>VQE_CannotUseConnectionTimedOut</draftDisableMessage>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_SensorLag</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_SensorLag</stateClass>
+        <label>sensor lag</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.125</recoveryMtbDays>
+        <minTicksBeforeRecovery>15000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>30000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Sensor lag</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Minor</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_HoardingLoop</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
+        <label>hoarding loop</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.33</recoveryMtbDays>
+        <minTicksBeforeRecovery>10000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>45000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Hoarding loop</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Major</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_Overclock</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_Overclock</stateClass>
+        <label>overclock</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.5</recoveryMtbDays>
+        <minTicksBeforeRecovery>15000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Overclock</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <lifespanDrainMultiplier>10</lifespanDrainMultiplier>
+                <malfunctionTier>Major</malfunctionTier>
+                <disableDraftGizmos>true</disableDraftGizmos>
+                <draftDisableMessage>VQE_CannotUseOverclocked</draftDisableMessage>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_Desync</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
+        <label>desynchronised</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.5</recoveryMtbDays>
+        <minTicksBeforeRecovery>20000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Desynchronised</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Major</malfunctionTier>
+                <reverseNetworkRestriction>true</reverseNetworkRestriction>
+                <disableDraftGizmos>true</disableDraftGizmos>
+                <draftDisableMessage>VQE_CannotUseDesynchronised</draftDisableMessage>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_FluidLeak</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_FluidLeak</stateClass>
+        <label>fluid leak</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.083</recoveryMtbDays>
+        <minTicksBeforeRecovery>2500</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>10000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Fluid leak</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Major</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_Reboot</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
+        <label>rebooting</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.166</recoveryMtbDays>
+        <minTicksBeforeRecovery>70000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>90000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Rebooting</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Major</malfunctionTier>
+                <disableDraftGizmos>true</disableDraftGizmos>
+                <draftDisableMessage>VQE_CannotUseRebooting</draftDisableMessage>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_Hardcrash</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_Hardcrash</stateClass>
+        <label>hardcrash</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.166</recoveryMtbDays>
+        <minTicksBeforeRecovery>8000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>12000</maxTicksBeforeRecovery>
+        <baseInspectLine>Malfunctioning: Hardcrash</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Extreme</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_Killswitch</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_Killswitch</stateClass>
+        <label>killswitch</label>
+        <category>Aggro</category>
+        <recoveryMtbDays>0.166</recoveryMtbDays>
+        <minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+        <nameColor>(1, 0, 0)</nameColor>
+        <baseInspectLine>Malfunctioning: Killswitch</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Extreme</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_SelfDecommission</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_SelfDecommission</stateClass>
+        <label>self-decommission</label>
+        <category>Misc</category>
+        <recoveryMtbDays>999</recoveryMtbDays>
+        <minTicksBeforeRecovery>999999</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>999999</maxTicksBeforeRecovery>
+        <baseInspectLine>Malfunctioning: Self-decommission</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Extreme</malfunctionTier>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>VQE_HardwareFailure</defName>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_HardwareFailure</stateClass>
+        <label>hardware failure</label>
+        <category>Misc</category>
+        <recoveryMtbDays>0.1</recoveryMtbDays>
+        <minTicksBeforeRecovery>2000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>6000</maxTicksBeforeRecovery>
+        <nameColor>(0.5, 0.8, 1)</nameColor>
+        <baseInspectLine>Malfunctioning: Hardware failure</baseInspectLine>
+        <modExtensions>
+            <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
+                <malfunctionTier>Extreme</malfunctionTier>
+                <disableDraftGizmos>true</disableDraftGizmos>
+                <draftDisableMessage>VQE_CannotUseHardwareFailure</draftDisableMessage>
+            </li>
+        </modExtensions>
+    </MentalStateDef>
+</Defs>
