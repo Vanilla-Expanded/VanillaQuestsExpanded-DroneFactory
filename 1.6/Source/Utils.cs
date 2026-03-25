@@ -1,5 +1,6 @@
 using Verse;
 using RimWorld;
+using System.Linq;
 namespace VanillaQuestsExpandedDroneFactory
 {
     public static class Utils
@@ -33,6 +34,20 @@ namespace VanillaQuestsExpandedDroneFactory
         public static bool IsDrone(this Pawn pawn)
         {
             return pawn.GetComp<CompDrone>() != null;
+        }
+
+        public static void DestroyCore(this Pawn pawn)
+        {
+            var core = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(p => p.def == InternalDefOf.VQE_DroneCore);
+            if (core != null)
+            {
+                var damage = new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core);
+                damage.SetAllowDamagePropagation(false);
+                pawn.TakeDamage(damage);
+            }
+            if (pawn.Dead is false)
+                pawn.Kill(null);
+            MainTabWindowUtility.NotifyAllPawnTables_PawnsChanged();
         }
     }
 }

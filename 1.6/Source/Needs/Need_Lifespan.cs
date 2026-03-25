@@ -40,11 +40,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
             if (CurLevel <= 0f && !pawn.Dead)
             {
-                var core = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(p => p.def == InternalDefOf.VQE_DroneCore);
-                if (core != null)
-                    pawn.TakeDamage(new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core));
-                if (pawn.Dead is false)
-                    pawn.Kill(null);
+                pawn.DestroyCore();
             }
             else
             {

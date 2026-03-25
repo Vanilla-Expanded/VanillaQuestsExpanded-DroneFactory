@@ -5,6 +5,7 @@ using Verse;
 
 namespace VanillaQuestsExpandedDroneFactory
 {
+    [HotSwappable]
     public class Building_DroneStandby : Building
     {
         public Pawn drone;
@@ -27,13 +28,17 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void TickRare()
         {
             base.TickRare();
-            if (drone != null && drone.needs != null)
+            var lifespan = drone.needs.TryGetNeed<Need_Lifespan>();
+            lifespan.CurLevel -= (Need_Lifespan.BaseDrainPerDay / 60000f) * 250f * 0.1f;
+            if (lifespan.CurLevel <= 0f)
             {
-                var lifespan = drone.needs.TryGetNeed<Need_Lifespan>();
-                if (lifespan != null)
+                if (Spawned)
                 {
-                    lifespan.CurLevel -= (Need_Lifespan.BaseDrainPerDay / 60000f) * 250f * 0.1f;
+                    GenSpawn.Spawn(drone, Position, Map);
                 }
+                Destroy();
+                drone.DestroyCore();
+                drone = null;
             }
         }
 
