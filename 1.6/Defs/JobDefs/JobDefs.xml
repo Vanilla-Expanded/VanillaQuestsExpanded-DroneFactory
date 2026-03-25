@@ -36,7 +36,7 @@
         <defName>VQE_ReactivateDrone</defName>
         <label>reactivate drone</label>
         <description>Reactivate this drone from standby.</description>
-        <texturePath>UI/Designators/Flick</texturePath>
+        <texturePath>Designations/Flick</texturePath>
         <targetType>Thing</targetType>
     </DesignationDef>
 
