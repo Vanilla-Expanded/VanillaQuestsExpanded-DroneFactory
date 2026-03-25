@@ -45,6 +45,24 @@
 		<killedLeavings>
 			<Filth_MachineBits>4</Filth_MachineBits>
 		</killedLeavings>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.DroneCapacityLabelsExtension">
+				<capacityLabels>
+					<li>
+						<key>Consciousness</key>
+						<value>performance</value>
+					</li>
+					<li>
+						<key>BloodFiltration</key>
+						<value>pneumatics</value>
+					</li>
+					<li>
+						<key>BloodPumping</key>
+						<value>battery integrity</value>
+					</li>
+				</capacityLabels>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef Abstract="True" Name="VQE_BaseDroneKind">
 		<defaultFactionDef>AncientsHostile</defaultFactionDef>

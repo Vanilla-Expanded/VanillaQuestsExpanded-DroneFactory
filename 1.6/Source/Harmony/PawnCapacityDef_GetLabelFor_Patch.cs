@@ -9,9 +9,9 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public static void Postfix(Pawn pawn, ref string __result, PawnCapacityDef __instance)
         {
-            if (pawn.IsDrone() && !__instance.labelDrones.NullOrEmpty())
+            if (StaticCollections.pawnCapacityLabels.ContainsKey(pawn.def) && StaticCollections.pawnCapacityLabels[pawn.def].ContainsKey(__instance))
             {
-                __result = __instance.labelDrones;
+                __result = StaticCollections.pawnCapacityLabels[pawn.def][__instance];
             }
         }
     }

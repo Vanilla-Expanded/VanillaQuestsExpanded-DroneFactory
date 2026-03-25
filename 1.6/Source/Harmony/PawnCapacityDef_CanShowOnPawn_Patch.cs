@@ -8,7 +8,7 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public static void Postfix(Pawn p, ref bool __result, PawnCapacityDef __instance)
         {
-            if (p.IsDrone())
+            if (StaticCollections.pawnCapacityLabels.ContainsKey(p.def))
             {
                 __result = __instance.showOnDrones;
             }
