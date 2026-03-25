@@ -12,6 +12,12 @@
 				<li Class="ThinkNode_QueuedJob" />
 
 				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VQE_DiagnosticLoop</state>
+					<subNodes>
+						<li Class="JobGiver_Idle" />
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_HoardingLoop</state>
 					<subNodes>
 						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_HoardingLoop" />
