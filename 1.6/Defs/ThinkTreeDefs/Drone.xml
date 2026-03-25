@@ -8,6 +8,9 @@
 					<treeDef>Despawned</treeDef>
 				</li>
 
+				<!-- Do a queued job -->
+				<li Class="ThinkNode_QueuedJob" />
+
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_HoardingLoop</state>
 					<subNodes>
@@ -44,10 +47,6 @@
 				<li Class="ThinkNode_Subtree">
 					<treeDef>LordDuty</treeDef>
 				</li>
-
-				<!-- Do a queued job -->
-				<li Class="ThinkNode_QueuedJob" />
-
 				<!-- Wait if drafted -->
 				<li Class="ThinkNode_ConditionalOfPlayerFaction">
 					<subNodes>

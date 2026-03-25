@@ -19,7 +19,6 @@
 
     <MentalStateDef ParentName="BaseMentalState">
         <defName>VQE_ConnectionTimedOut</defName>
-        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
         <label>connection timed out</label>
         <category>Misc</category>
         <recoveryMtbDays>1</recoveryMtbDays>

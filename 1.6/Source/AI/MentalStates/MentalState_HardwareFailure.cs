@@ -10,7 +10,7 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void PostStart(string reason)
         {
             base.PostStart(reason);
-            Messages.Message("VQE_DroneHardwareFailure".Translate(pawn.Named("DRONE")), pawn, MessageTypeDefOf.NegativeEvent);
+            Messages.Message("VQE_DroneMalfunction_Death".Translate(pawn.Named("DRONE"), pawn.def.label), pawn, MessageTypeDefOf.NegativeEvent);
         }
         public override void PostEnd()
         {

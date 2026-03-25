@@ -21,7 +21,8 @@
     <VQE_KillswitchLetterDesc>{DRONE}'s killswitch has been activated. It is attacking all nearby targets.</VQE_KillswitchLetterDesc>
     <VQE_SelfDecommissionLetter>Self-decommission: {DRONE}</VQE_SelfDecommissionLetter>
     <VQE_SelfDecommissionLetterDesc>{DRONE} has initiated self-decommission and is leaving the map.</VQE_SelfDecommissionLetterDesc>
-    <VQE_DroneHardwareFailure>{DRONE} has suffered a hardware failure and will be destroyed.</VQE_DroneHardwareFailure>
+    <VQE_DroneMalfunction>{DRONE} has malfunctioned: {MALFUNCTION}</VQE_DroneMalfunction>
+    <VQE_DroneMalfunction_Death>{DRONE} has malfunctioned: {MALFUNCTION}, after which it will cease to work.</VQE_DroneMalfunction_Death>
     <VQE_ExtremeMalfunctionRisk>Extreme malfunction risk</VQE_ExtremeMalfunctionRisk>
     <VQE_ExtremeMalfunctionRiskDesc>Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
 </LanguageData>
