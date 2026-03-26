@@ -17,7 +17,6 @@
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<WorkSpeedGlobal MayRequire="Ludeon.RimWorld.Biotech">0.5</WorkSpeedGlobal>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
-			<VQE_LifespanYears>1</VQE_LifespanYears>
 		</statBases>
 		<comps>
 			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_Drone" />
