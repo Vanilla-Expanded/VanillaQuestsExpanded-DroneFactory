@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>VQE_Broadcaster_Relax_Buff</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VQE_Broadcaster_Relax_Buff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		
+		<stages>
+			<li>
+				<label>relaxing music</label>
+				<description>Autobroadcaster plays my favourite jam!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

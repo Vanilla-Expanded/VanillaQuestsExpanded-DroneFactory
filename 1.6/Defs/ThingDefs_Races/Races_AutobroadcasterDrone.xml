@@ -23,9 +23,9 @@
 				<li>
 					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
-					<soundWounded>Pawn_Sentry_Wounded</soundWounded>
-					<soundDeath>Pawn_Sentry_Death</soundDeath>
-					<soundCall>Pawn_Sentry_Call</soundCall>
+					<soundWounded>VQE_Drone_Light_Wounded</soundWounded>
+					<soundDeath>VQE_Drone_Death</soundDeath>
+					<soundCall>VQE_Drone_Light_Call</soundCall>
 				</li>
 			</lifeStageAges>
 		</race>
