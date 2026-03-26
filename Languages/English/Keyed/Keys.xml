@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<VQE_BroadcasterMode>{0} mode</VQE_BroadcasterMode>
+	<VQE_BroadcasterModeDesc_Work>Autobroadcaster plays energetic music that makes everyone work a little bit harder.</VQE_BroadcasterModeDesc_Work>
+	<VQE_BroadcasterModeDesc_Relax>Autobroadcaster plays soothing music that makes everyone a little bit more relaxed.</VQE_BroadcasterModeDesc_Relax>
+	<VQE_BroadcasterModeDesc_Recruitment>Autobroadcaster plays propaganda messages aimed at prisoners with the purpose of lowering their resistance.</VQE_BroadcasterModeDesc_Recruitment>
+	<VQE_Shutdown>Shut down</VQE_Shutdown>
+	<VQE_ShutdownDesc>Shut down the drone permanently.</VQE_ShutdownDesc>
+	<VQE_Reactivate>Reactivate</VQE_Reactivate>
+	<VQE_ReactivateDesc>Reactivate the drone. A colonist will need to approach the drone and flick it back on.</VQE_ReactivateDesc>
+	<VQE_Standby>Standby</VQE_Standby>
+	<VQE_EnterStandby>Stand-by</VQE_EnterStandby>
+	<VQE_EnterStandbyDesc>Initiate the stand-by mode. The drone will turn off, reducing the lifespan loss by 90%. It will not respond to any tasks or damage, and will need to be reactivated before it can engage again.</VQE_EnterStandbyDesc>
+	<VQE_CannotUseConnectionTimedOut>Cannot use while connection timed out</VQE_CannotUseConnectionTimedOut>
+	<VQE_CannotUseOverclocked>Cannot use while overclocked</VQE_CannotUseOverclocked>
+	<VQE_CannotUseDesynchronised>Cannot use while desynchronised</VQE_CannotUseDesynchronised>
+	<VQE_CannotUseRebooting>Cannot use while rebooting</VQE_CannotUseRebooting>
+	<VQE_CannotUseHardwareFailure>Cannot use during hardware failure</VQE_CannotUseHardwareFailure>
+	<VQE_CannotUseInStandby>Cannot use while in standby</VQE_CannotUseInStandby>
+	<VQE_OutsideTransmitterRange>Outside transmitter range</VQE_OutsideTransmitterRange>
+	<VQE_DroneMalfunction>{DRONE} is undergoing {1} malfunction</VQE_DroneMalfunction>
+	<VQE_HardcrashLetter>Hardcrash: {DRONE}</VQE_HardcrashLetter>
+	<VQE_HardcrashLetterDesc>{DRONE} is undergoing the hardcrash malfunction.\n\nIt will try to clear sensor obstruction by repeatedly crashing into buildings and furniture, potentially destroying them in the process.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.</VQE_HardcrashLetterDesc>
+	<VQE_KillswitchLetter>Killswitch: {DRONE}</VQE_KillswitchLetter>
+	<VQE_KillswitchLetterDesc>{DRONE} is undergoing the killswitch malfunction.\n\nIt will attack anyone that gets close to it.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.</VQE_KillswitchLetterDesc>
+	<VQE_SelfDecommissionLetter>Self-decommission: {DRONE}</VQE_SelfDecommissionLetter>
+	<VQE_SelfDecommissionLetterDesc>{DRONE} is undergoing the self-decommission malfunction.\n\nIt has determined that its service life has ended and will ignore all commands as it leaves the local area to shut down somewhere in the wild.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.</VQE_SelfDecommissionLetterDesc>
+	<VQE_DroneMalfunction_Death>, after which it will cease to work.</VQE_DroneMalfunction_Death>
+	<VQE_ExtremeMalfunctionRisk>Extreme malfunction risk</VQE_ExtremeMalfunctionRisk>
+	<VQE_ExtremeMalfunctionRiskDesc>Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
+	<VQE_Malfunction>Malfunction</VQE_Malfunction>
+</LanguageData>

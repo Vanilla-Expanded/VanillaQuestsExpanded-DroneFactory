@@ -10,7 +10,7 @@
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
-			
+			<VQE_LifespanYears>4</VQE_LifespanYears>
 		</statBases>
 		<race>
 		

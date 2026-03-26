@@ -11,6 +11,7 @@
 			<MoveSpeed>2.9</MoveSpeed>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<VQE_LifespanYears>5</VQE_LifespanYears>
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
