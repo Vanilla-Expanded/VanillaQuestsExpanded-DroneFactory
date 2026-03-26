@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <StatDef Name="VQE_BaseDroneStat" Abstract="True">
+        <category>BasicsPawn</category>
+        <showOnAnimals>true</showOnAnimals>
+        <showOnMechanoids>true</showOnMechanoids>
+        <minValue>0</minValue>
+        <workerClass>VanillaQuestsExpandedDroneFactory.StatWorker_DroneStat</workerClass>
+    </StatDef>
+
+    <StatDef ParentName="VQE_BaseDroneStat">
+        <defName>VQE_LifespanYears</defName>
+        <label>lifespan (years)</label>
+        <description>The operational lifespan of the drone in years.</description>
+        <defaultBaseValue>1</defaultBaseValue>
+    </StatDef>
+
+    <StatDef ParentName="VQE_BaseDroneStat">
+        <defName>VQE_LifespanDrainSpeed</defName>
+        <label>lifespan drain speed</label>
+        <description>Multiplies how quickly the drone's lifespan drains. Higher values mean faster drain.</description>
+        <defaultBaseValue>1</defaultBaseValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <workerClass>VanillaQuestsExpandedDroneFactory.StatWorker_LifespanDrainSpeed</workerClass>
+    </StatDef>
+</Defs>

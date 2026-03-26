@@ -45,7 +45,7 @@
 			<Steel>100</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</butcherProducts>
-		<comps Inherit="False">
+		<comps>
 			<li>
 				<compClass>CompSentryDrone</compClass>
 			</li>

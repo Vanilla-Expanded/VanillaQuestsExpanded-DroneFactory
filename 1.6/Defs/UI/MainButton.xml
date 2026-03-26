@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <MainButtonDef>
+        <defName>VQE_Drones</defName>
+        <label>Drones</label>
+        <description>Manage your colony's drones.</description>
+        <workerClass>VanillaQuestsExpandedDroneFactory.MainButtonWorker_Drones</workerClass>
+        <tabWindowClass>VanillaQuestsExpandedDroneFactory.MainTabWindow_Drones</tabWindowClass>
+        <minimized>True</minimized>
+        <iconPath>UI/MenuIcon/IconDrones</iconPath>
+        <order>35</order>
+    </MainButtonDef>
+
+    <PawnTableDef>
+        <defName>VQE_Drones</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnTable_Drones</workerClass>
+        <columns>
+            <li>LabelWithIcon</li>
+            <li>VQE_Lifespan</li>
+            <li>VQE_LifespanDrainSpeed</li>
+            <li>VQE_Draft</li>
+            <li>VQE_AutoRepair</li>
+            <li>VQE_Standby</li>
+            <li>AllowedArea</li>
+        </columns>
+    </PawnTableDef>
+
+    <PawnColumnDef>
+        <defName>VQE_Lifespan</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Lifespan</workerClass>
+        <label>Lifespan</label>
+        <sortable>true</sortable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_LifespanDrainSpeed</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_LifespanDrainSpeed</workerClass>
+        <label>Drain speed</label>
+        <sortable>true</sortable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_Draft</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Draft</workerClass>
+        <label>Draft</label>
+        <sortable>true</sortable>
+        <paintable>true</paintable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_AutoRepair</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_AutoRepair</workerClass>
+        <label>Auto repair</label>
+        <sortable>true</sortable>
+        <paintable>true</paintable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_Standby</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Standby</workerClass>
+        <label>Standby</label>
+        <sortable>true</sortable>
+        <paintable>true</paintable>
+    </PawnColumnDef>
+</Defs>
