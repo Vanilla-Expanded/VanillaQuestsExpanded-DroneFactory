@@ -35,14 +35,12 @@ namespace VanillaQuestsExpandedDroneFactory
             if (giver.ShouldSkip(pawn))
             {
                 return false;
-            }
-          
+            }     
 
             if (giver.MissingRequiredCapacity(pawn) != null)
             {
                 return false;
-            }
-          
+            }         
 
             return true;
         }

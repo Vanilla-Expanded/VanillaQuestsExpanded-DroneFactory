@@ -32,24 +32,5 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
-	<ThinkTreeDef>
-		<defName>VQE_CleanerDroneConstant</defName>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
-				<li Class="ThinkNode_Subtree">
-					<treeDef>Despawned</treeDef>
-				</li>
-				<!-- Do a queued job -->
-				<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_DoWork">
-					<workTypes>
-						<li>Cleaning</li>
-					</workTypes>
-					<workgivers>
-						<li>CleanFilth</li>
-						
-					</workgivers>
-				</li>
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
+	
 </Defs>
