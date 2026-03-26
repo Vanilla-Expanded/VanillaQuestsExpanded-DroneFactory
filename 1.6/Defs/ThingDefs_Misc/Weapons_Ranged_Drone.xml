@@ -26,15 +26,7 @@
         <power>9</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
-	  <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
+	 
     </tools>
     <statBases>
       <MarketValue>1000</MarketValue>
@@ -70,6 +62,80 @@
   <ThingDef ParentName="BaseBullet">
     <defName>VQE_Bullet_Stubgun</defName>
     <label>stubgun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_MiniShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>VQE_Gun_DroneTurret</defName>
+    <label>drone turret</label>
+    <description>A refined turret with military-grade stabilization, targeting routines, and hardened casing designed to be mounted on a battle drone.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DroneTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+	 
+    </tools>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>1.25</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>3.35</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>VQE_Gun_DroneTurret</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VQE_Bullet_DroneTurret</defaultProjectile>
+        <warmupTime>1.43</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>VQE_Bullet_DroneTurret</defName>
+    <label>drone turret bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_MiniShotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
