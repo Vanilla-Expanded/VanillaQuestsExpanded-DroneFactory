@@ -92,13 +92,13 @@
     <MentalStateDef ParentName="BaseMentalState">
         <defName>VQE_Desync</defName>
         <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
-        <label>desynchronised</label>
+        <label>desync</label>
         <category>Misc</category>
         <recoveryMtbDays>0.5</recoveryMtbDays>
         <minTicksBeforeRecovery>20000</minTicksBeforeRecovery>
         <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
         <nameColor>(0.5, 0.8, 1)</nameColor>
-        <baseInspectLine>Malfunctioning: Desynchronised</baseInspectLine>
+        <baseInspectLine>Malfunctioning: Desync</baseInspectLine>
         <modExtensions>
             <li Class="VanillaQuestsExpandedDroneFactory.DroneMentalStateExtension">
                 <malfunctionTier>Major</malfunctionTier>
