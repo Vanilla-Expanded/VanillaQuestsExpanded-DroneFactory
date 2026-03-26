@@ -45,12 +45,29 @@
 				</li>
 				<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange" />
 
+				<!-- React to close melee threat -->
+				<li Class="JobGiver_ReactToCloseMeleeThreat" />
+
 				<!-- Do a queued job -->
 				<li Class="ThinkNode_QueuedJob" />
+
+				<!-- Wait if drafted -->
+				<li Class="ThinkNode_ConditionalOfPlayerFaction">
+					<subNodes>
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>DraftedOrder</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_MoveToStandable" />
+								<li Class="JobGiver_Orders" />
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
 
 				<li Class="ThinkNode_Subtree">
 					<treeDef>LordDuty</treeDef>
 				</li>
+
 				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalMechWorkEnabled">
 					<workTypes>
 						<li>Cleaning</li>
@@ -66,18 +83,7 @@
 						</li>
 					</subNodes>
 				</li>
-				<!-- Wait if drafted -->
-				<li Class="ThinkNode_ConditionalOfPlayerFaction">
-					<subNodes>
-						<li Class="ThinkNode_Tagger">
-							<tagToGive>DraftedOrder</tagToGive>
-							<subNodes>
-								<li Class="JobGiver_MoveToStandable" />
-								<li Class="JobGiver_Orders" />
-							</subNodes>
-						</li>
-					</subNodes>
-				</li>
+
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<invert>true</invert>
 					<subNodes>
