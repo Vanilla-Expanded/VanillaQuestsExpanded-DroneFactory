@@ -109,6 +109,21 @@
 						</li>
 					</subNodes>
 				</li>
+				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
+					<pawnKinds>
+						<li>VQE_MinerDrone</li>
+					</pawnKinds>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_DoWork">
+							<workTypes>
+								<li>Mining</li>
+							</workTypes>
+							<workgivers>
+								<li>Mine</li>
+							</workgivers>
+						</li>
+					</subNodes>
+				</li>
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<invert>true</invert>
 					<subNodes>
