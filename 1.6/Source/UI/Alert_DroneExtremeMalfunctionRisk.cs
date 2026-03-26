@@ -4,14 +4,12 @@ using Verse;
 
 namespace VanillaQuestsExpandedDroneFactory
 {
-    public class Alert_DroneExtremeMalfunctionRisk : Alert
+    public class Alert_DroneExtremeMalfunctionRisk : Alert_Critical
     {
         public Alert_DroneExtremeMalfunctionRisk()
         {
             defaultLabel = "VQE_ExtremeMalfunctionRisk".Translate();
         }
-
-        public override AlertPriority Priority => AlertPriority.Critical;
 
         public override AlertReport GetReport()
         {

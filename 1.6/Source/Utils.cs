@@ -3,6 +3,7 @@ using RimWorld;
 using System.Linq;
 namespace VanillaQuestsExpandedDroneFactory
 {
+    [HotSwappable]
     public static class Utils
     {
         public static bool IsWithinTransmitter(IntVec3 c, Map map)
@@ -65,6 +66,7 @@ namespace VanillaQuestsExpandedDroneFactory
             if (shouldCheck || pawn == null || pawn.Map == null) return;
             if (pawn.IsDrone())
             {
+                if (pawn.MentalState is MentalState_SelfDecommission) return;
                 bool reverse = false;
                 if (pawn.MentalStateDef != null)
                 {

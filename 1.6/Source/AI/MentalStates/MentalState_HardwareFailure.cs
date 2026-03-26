@@ -15,10 +15,8 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void PostEnd()
         {
             base.PostEnd();
-            if (!pawn.Dead)
-            {
-                pawn.DestroyCore();
-            }
+            var comp = pawn.GetComp<CompDrone>();
+            comp.shouldKill = true;
         }
     }
 }

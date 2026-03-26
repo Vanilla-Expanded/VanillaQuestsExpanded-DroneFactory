@@ -13,6 +13,7 @@ namespace VanillaQuestsExpandedDroneFactory
     public class CompDrone : ThingComp
     {
         public bool autoRepair = true;
+        public bool shouldKill;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -20,6 +21,17 @@ namespace VanillaQuestsExpandedDroneFactory
             var p = (Pawn)parent;
             if (p.playerSettings == null) p.playerSettings = new Pawn_PlayerSettings(p);
             if (p.drafter == null) p.drafter = new Pawn_DraftController(p);
+        }
+
+        public override void CompTick()
+        {
+            base.CompTick();
+            if (shouldKill)
+            {
+                var pawn = parent as Pawn;
+                pawn.Kill(null);
+                shouldKill = false;
+            }
         }
 
         public override void PostExposeData()
