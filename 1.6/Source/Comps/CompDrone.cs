@@ -40,6 +40,11 @@ namespace VanillaQuestsExpandedDroneFactory
             Scribe_Values.Look(ref autoRepair, "autoRepair", true);
         }
 
+        public override bool WantHoldWeapon(Pawn pawn)
+        {
+            return pawn.kindDef == InternalDefOf.VQE_TurretDrone;
+        }
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             var pawn = (Pawn)parent;

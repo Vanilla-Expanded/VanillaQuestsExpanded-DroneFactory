@@ -32,19 +32,6 @@ namespace VanillaQuestsExpandedDroneFactory
 		[DefAlias("VQE_ReactivateDrone")]
 		public static DesignationDef VQE_ReactivateDrone_Designation;
 
-		public static MentalStateDef VQE_DiagnosticLoop;
-		public static MentalStateDef VQE_ConnectionTimedOut;
-		public static MentalStateDef VQE_SensorLag;
-		public static MentalStateDef VQE_HoardingLoop;
-		public static MentalStateDef VQE_Overclock;
-		public static MentalStateDef VQE_Desync;
-		public static MentalStateDef VQE_FluidLeak;
-		public static MentalStateDef VQE_Reboot;
-		public static MentalStateDef VQE_Hardcrash;
-		public static MentalStateDef VQE_Killswitch;
-		public static MentalStateDef VQE_SelfDecommission;
-		public static MentalStateDef VQE_HardwareFailure;
-
 		[DefAlias("VQE_SensorLag")]
 		public static HediffDef VQE_SensorLag_Hediff;
 		[DefAlias("VQE_Overclock")]
@@ -55,6 +42,7 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static PawnTableDef VQE_Drones;
 		public static StatDef VQE_LifespanYears;
 		public static StatDef VQE_LifespanDrainSpeed;
+		public static PawnKindDef VQE_TurretDrone;
 
 	}
 }
