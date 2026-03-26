@@ -10,68 +10,63 @@
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_DiagnosticLoop</state>
 					<subNodes>
-						<li Class="JobGiver_Idle" />
+						<li Class="JobGiver_Idle"/>
 					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_HoardingLoop</state>
 					<subNodes>
-						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_HoardingLoop" />
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_HoardingLoop"/>
 					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_Hardcrash</state>
 					<subNodes>
-						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_Hardcrash" />
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_Hardcrash"/>
 					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_Desync</state>
 					<subNodes>
-						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_WanderDesync" />
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_WanderDesync"/>
 					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_Reboot</state>
 					<subNodes>
-						<li Class="JobGiver_WanderAnywhere" />
+						<li Class="JobGiver_WanderAnywhere"/>
 					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>VQE_HardwareFailure</state>
 					<subNodes>
-						<li Class="JobGiver_Idle" />
+						<li Class="JobGiver_Idle"/>
 					</subNodes>
 				</li>
-				<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange" />
-
+				<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange"/>
 				<!-- React to close melee threat -->
-				<li Class="JobGiver_ReactToCloseMeleeThreat" />
-
+				<li Class="JobGiver_ReactToCloseMeleeThreat"/>
 				<!-- Do a queued job -->
-				<li Class="ThinkNode_QueuedJob" />
-
+				<li Class="ThinkNode_QueuedJob"/>
 				<!-- Wait if drafted -->
 				<li Class="ThinkNode_ConditionalOfPlayerFaction">
 					<subNodes>
 						<li Class="ThinkNode_Tagger">
 							<tagToGive>DraftedOrder</tagToGive>
 							<subNodes>
-								<li Class="JobGiver_MoveToStandable" />
-								<li Class="JobGiver_Orders" />
+								<li Class="JobGiver_MoveToStandable"/>
+								<li Class="JobGiver_Orders"/>
 							</subNodes>
 						</li>
 					</subNodes>
 				</li>
-
 				<li Class="ThinkNode_Subtree">
 					<treeDef>LordDuty</treeDef>
 				</li>
-
-				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalMechWorkEnabled">
-					<workTypes>
-						<li>Cleaning</li>
-					</workTypes>
+				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
+					<pawnKinds>
+						<li>VQE_CleanerDrone</li>
+					</pawnKinds>
 					<subNodes>
 						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_DoWork">
 							<workTypes>
@@ -83,7 +78,37 @@
 						</li>
 					</subNodes>
 				</li>
-
+				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
+					<pawnKinds>
+						<li>VQE_HaulerDrone</li>
+					</pawnKinds>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_DoWork">
+							<workTypes>
+								<li>Hauling</li>
+							</workTypes>
+							<workgivers>
+								<li>RearmTurrets</li>
+								<li>Refuel</li>
+								<li>UnloadCarriers</li>
+								<li>HelpGatheringItemsForCaravan</li>
+								<li>LoadTransporters</li>
+								<li>HaulToPortal</li>
+								<li>Strip</li>
+								<li>HaulCorpses</li>
+								<li>DoBillsCremate</li>
+								<li>DoBillsHaulCampfire</li>
+								<li>TakeBeerOutOfFermentingBarrel</li>
+								<li>FillFermentingBarrel</li>
+								<li>HaulGeneral</li>
+								<li>DeliverResourcesToFrames</li>
+								<li>DeliverResourcesToBlueprints</li>
+								<li>HaulMerge</li>
+								<li>EmptyEggBox</li>
+							</workgivers>
+						</li>
+					</subNodes>
+				</li>
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<invert>true</invert>
 					<subNodes>
@@ -113,7 +138,7 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="JobGiver_IdleError" />
+				<li Class="JobGiver_IdleError"/>
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>

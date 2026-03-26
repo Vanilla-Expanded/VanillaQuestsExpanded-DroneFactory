@@ -13,9 +13,7 @@
 			<CleaningSpeed>0.25</CleaningSpeed>
 		</statBases>
 		<race>
-			<mechEnabledWorkTypes>
-				<li>Cleaning</li>
-			</mechEnabledWorkTypes>
+			
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
 			<baseHealthScale>1</baseHealthScale>
 			<baseBodySize>0.3</baseBodySize>

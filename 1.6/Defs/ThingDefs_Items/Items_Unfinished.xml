@@ -60,4 +60,14 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_HaulerDrone</defName>
+		<comps>
+
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_HaulerDrone</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
