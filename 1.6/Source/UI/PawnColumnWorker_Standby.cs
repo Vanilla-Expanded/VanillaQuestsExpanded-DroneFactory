@@ -1,11 +1,33 @@
 using System.Linq;
 using RimWorld;
 using Verse;
+using UnityEngine;
 
 namespace VanillaQuestsExpandedDroneFactory
 {
     public class PawnColumnWorker_Standby : PawnColumnWorker_Checkbox
     {
+        public override void DoCell(Rect rect, Pawn pawn, PawnTable table)
+        {
+            if (!pawn.IsDrone()) return;
+
+            var gizmoDisableReport = Utils.ShouldDisableDroneGizmos(pawn);
+            if (!gizmoDisableReport.Accepted)
+            {
+                rect.xMin += (rect.width - 24f) / 2f;
+                rect.yMin += (rect.height - 24f) / 2f;
+                bool dummyValue = GetValue(pawn);
+                Widgets.Checkbox(rect.position, ref dummyValue, 24f, disabled: true);
+                if (!gizmoDisableReport.Reason.NullOrEmpty())
+                {
+                    TooltipHandler.TipRegion(rect, gizmoDisableReport.Reason.CapitalizeFirst());
+                }
+                return;
+            }
+
+            base.DoCell(rect, pawn, table);
+        }
+
         protected override bool GetValue(Pawn pawn)
         {
             var comp = pawn.GetComp<CompDrone>();

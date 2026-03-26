@@ -54,7 +54,7 @@
 
     <MentalStateDef ParentName="BaseMentalState">
         <defName>VQE_HoardingLoop</defName>
-        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_DroneMalfunctionMessage</stateClass>
+        <stateClass>VanillaQuestsExpandedDroneFactory.MentalState_HoardingLoop</stateClass>
         <label>hoarding loop</label>
         <category>Misc</category>
         <recoveryMtbDays>0.33</recoveryMtbDays>

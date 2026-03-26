@@ -10,9 +10,22 @@ namespace VanillaQuestsExpandedDroneFactory
             var transmitters = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
             foreach (var t in transmitters)
             {
-                if (t.TryGetComp<CompPowerTrader>().PowerOn && c.DistanceTo(t.Position) <= 14.9f) return true;
+                if (c.DistanceTo(t.Position) <= 14.9f && t.TryGetComp<CompPowerTrader>().PowerOn) return true;
             }
             return false;
+        }
+
+        public static AcceptanceReport ShouldDisableDroneGizmos(Pawn pawn)
+        {
+            if (pawn.MentalStateDef != null)
+            {
+                var ext = pawn.MentalStateDef.GetModExtension<DroneMentalStateExtension>();
+                if (ext?.disableDraftGizmos ?? false)
+                {
+                    return new AcceptanceReport(ext.draftDisableMessage.Translate());
+                }
+            }
+            return AcceptanceReport.WasAccepted;
         }
 
         public static AcceptanceReport CanDraftDrone(Pawn pawn)
@@ -21,13 +34,10 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 return new AcceptanceReport("VQE_OutsideTransmitterRange".Translate());
             }
-            if (pawn.MentalStateDef != null)
+            var gizmoDisableReport = ShouldDisableDroneGizmos(pawn);
+            if (!gizmoDisableReport.Accepted)
             {
-                var ext = pawn.MentalStateDef.GetModExtension<DroneMentalStateExtension>();
-                if (ext?.disableDraftGizmos ?? false)
-                {
-                    return new AcceptanceReport(ext.draftDisableMessage.Translate());
-                }
+                return gizmoDisableReport;
             }
             return AcceptanceReport.WasAccepted;
         }
@@ -48,6 +58,26 @@ namespace VanillaQuestsExpandedDroneFactory
             if (pawn.Dead is false)
                 pawn.Kill(null);
             MainTabWindowUtility.NotifyAllPawnTables_PawnsChanged();
+        }
+        public static void ApplyDroneNetworkRestriction(ref bool __result, Pawn pawn, IntVec3 pos, bool forbidMode)
+        {
+            bool shouldCheck = forbidMode ? __result : !__result;
+            if (shouldCheck || pawn == null || pawn.Map == null) return;
+            if (pawn.IsDrone())
+            {
+                bool reverse = false;
+                if (pawn.MentalStateDef != null)
+                {
+                    var ext = pawn.MentalStateDef.GetModExtension<DroneMentalStateExtension>();
+                    reverse = ext?.reverseNetworkRestriction ?? false;
+                }
+                bool withinRange = IsWithinTransmitter(pos, pawn.Map);
+                bool restricted = reverse ? withinRange : !withinRange;
+                if (restricted)
+                {
+                    __result = forbidMode;
+                }
+            }
         }
     }
 }
