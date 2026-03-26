@@ -45,7 +45,8 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static ThingDef VQE_DroneTransmitter;
 		public static ThingDef VQE_DroneStandby;
 		public static PawnTableDef VQE_Drones;
-		public static StatDef VQE_LifespanMultiplier;
+		public static StatDef VQE_LifespanYears;
+		public static StatDef VQE_LifespanDrainSpeed;
 
 	}
 }

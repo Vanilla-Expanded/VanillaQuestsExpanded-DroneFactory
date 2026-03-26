@@ -17,6 +17,7 @@
         <columns>
             <li>LabelWithIcon</li>
             <li>VQE_Lifespan</li>
+            <li>VQE_LifespanDrainSpeed</li>
             <li>VQE_Draft</li>
             <li>VQE_AutoRepair</li>
             <li>VQE_Standby</li>
@@ -28,6 +29,13 @@
         <defName>VQE_Lifespan</defName>
         <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_Lifespan</workerClass>
         <label>Lifespan</label>
+        <sortable>true</sortable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>VQE_LifespanDrainSpeed</defName>
+        <workerClass>VanillaQuestsExpandedDroneFactory.PawnColumnWorker_LifespanDrainSpeed</workerClass>
+        <label>Drain speed</label>
         <sortable>true</sortable>
     </PawnColumnDef>
 

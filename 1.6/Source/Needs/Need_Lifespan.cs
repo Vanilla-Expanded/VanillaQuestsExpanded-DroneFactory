@@ -13,8 +13,8 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             get
             {
-                var multiplier = pawn.GetStatValue(InternalDefOf.VQE_LifespanMultiplier);
-                return 1f * multiplier;
+                var years = pawn.GetStatValue(InternalDefOf.VQE_LifespanYears);
+                return years;
             }
         }
 
@@ -29,12 +29,7 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             if (IsFrozen) return;
 
-            float drainMultiplier = 1f;
-            if (pawn.MentalStateDef != null)
-            {
-                var ext = pawn.MentalStateDef.GetModExtension<DroneMentalStateExtension>();
-                if (ext != null) drainMultiplier = ext.lifespanDrainMultiplier;
-            }
+            float drainMultiplier = pawn.GetStatValue(InternalDefOf.VQE_LifespanDrainSpeed);
 
             CurLevel -= (BaseDrainPerDay / 60000f) * drainMultiplier * 150f;
 

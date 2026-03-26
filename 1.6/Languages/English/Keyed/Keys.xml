@@ -24,4 +24,5 @@
     <VQE_DroneMalfunction_Death>{DRONE} has malfunctioned: {MALFUNCTION}, after which it will cease to work.</VQE_DroneMalfunction_Death>
     <VQE_ExtremeMalfunctionRisk>Extreme malfunction risk</VQE_ExtremeMalfunctionRisk>
     <VQE_ExtremeMalfunctionRiskDesc>Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
+    <VQE_Malfunction>Malfunction</VQE_Malfunction>
 </LanguageData>
