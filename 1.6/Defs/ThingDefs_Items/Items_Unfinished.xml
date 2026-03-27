@@ -100,4 +100,54 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_RaiderDrone</defName>
+		<comps>
+
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_RaiderDrone</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_Protolancer</defName>
+		<comps>
+
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_Protolancer</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_FarmingDrone</defName>
+		<comps>
+
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_FarmingDrone</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_FirefighterDrone</defName>
+		<comps>
+
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_FirefighterDrone</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
+		<defName>VQE_UnfinishedDroneSpawner_HornetDrone</defName>
+		<comps>
+
+			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+				<hatcherKindDef>VQE_HornetDrone</hatcherKindDef>
+				
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

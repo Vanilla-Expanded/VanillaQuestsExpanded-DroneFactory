@@ -16,4 +16,33 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
+	<!-- ============= Farming Drones ============= -->
+	<WorkGiverDef>
+		<defName>VQE_DroneGrowerHarvest</defName>
+		<label>harvest crops</label>
+		<giverClass>VanillaQuestsExpandedDroneFactory.WorkGiver_DroneGrowerHarvest</giverClass>
+		<workType>Growing</workType>
+		<priorityInType>100</priorityInType>
+		<verb>harvest</verb>
+		<gerund>harvesting</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	<WorkGiverDef>
+		<defName>VQE_DroneGrowerSow</defName>
+		<label>sow crops</label>
+		<giverClass>VanillaQuestsExpandedDroneFactory.WorkGiver_DroneGrowerSow</giverClass>
+		<workType>Growing</workType>
+		<priorityInType>50</priorityInType>
+		<verb>sow</verb>
+		<gerund>sowing</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 </Defs>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_BaseDrone">
+		<defName>VQE_FirefighterDrone</defName>
+		<label>firefighter drone</label>
+		<description>An automated utility drone equipped with fire suppression systems. It continuously patrols the area, automatically extinguishing small fires it encounters. If a fire escalates beyond its capability, the drone initiates a self-destruct sequence, detonating in a powerful burst of firefoam.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.</description>
+		<statBases>
+			<MoveSpeed>5.5</MoveSpeed>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<VQE_LifespanYears>4</VQE_LifespanYears>
+		</statBases>
+		<race>
+			<thinkTreeMain>VQE_Drone</thinkTreeMain>
+			<baseHealthScale>0.4</baseHealthScale>
+			<baseBodySize>0.45</baseBodySize>
+			<body>VQE_DroneFlying</body>
+			<hasCorpse>true</hasCorpse>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>VQE_Drone_Light_Wounded</soundWounded>
+					<soundDeath>VQE_Drone_Death</soundDeath>
+					<soundCall>VQE_Drone_Light_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<li>
+				<label>shell spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>VQE_SpikedShellAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Steel>65</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</butcherProducts>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<startWickHitPointsPercent>-1</startWickHitPointsPercent>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explosionEffect>ExtinguisherExplosion</explosionEffect>
+				<explosionSound>Explosion_FirefoamPopper</explosionSound>
+			</li>
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_ProximityFuseWithCount">
+				<target>Fire</target>
+				<radius>4</radius>
+				<amount>6</amount>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="VQE_BaseDroneKindNonCombat">
+		<defName>VQE_FirefighterDrone</defName>
+		<label>firefighter drone</label>
+		<labelPlural>firefighter drones</labelPlural>
+		<race>VQE_FirefighterDrone</race>
+		<combatPower>10</combatPower>
+		<canOpenAnyDoor>true</canOpenAnyDoor>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Drones/FirefighterDrone/FirefighterDrone</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<canOpenDoors>true</canOpenDoors>
+	</PawnKindDef>
+</Defs>

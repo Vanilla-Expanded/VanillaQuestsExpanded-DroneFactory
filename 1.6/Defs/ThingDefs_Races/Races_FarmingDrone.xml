@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_BaseDrone">
+		<defName>VQE_FarmingDrone</defName>
+		<label>farming drone</label>
+		<description>An automated utility drone designed for agriculture. It patrols growing zones, capable of both harvesting mature crops and sowing new ones, provided the plants do not require a specific growing skill to plant.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.</description>
+		
+		<statBases>
+			<MoveSpeed>1.5</MoveSpeed>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Heat>1</ArmorRating_Heat>
+			<VQE_LifespanYears>4</VQE_LifespanYears>
+			<PlantWorkSpeed>0.6</PlantWorkSpeed>
+			<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		</statBases>
+		<race>
+			
+			<thinkTreeMain>VQE_Drone</thinkTreeMain>
+			<baseHealthScale>1</baseHealthScale>
+			<baseBodySize>0.6</baseBodySize>
+			<body>VQE_DroneWithWheels</body>
+			<hasCorpse>true</hasCorpse>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>VQE_Drone_Light_Wounded</soundWounded>
+					<soundDeath>VQE_Drone_Death</soundDeath>
+					<soundCall>VQE_Drone_Light_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<li>
+				<label>shell spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>VQE_SpikedShellAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Steel>55</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</butcherProducts>
+		
+	</ThingDef>
+	<PawnKindDef ParentName="VQE_BaseDroneKindNonCombat">
+		<defName>VQE_FarmingDrone</defName>
+		<label>farming drone</label>
+		<labelPlural>farming drones</labelPlural>
+		<race>VQE_FarmingDrone</race>
+		<combatPower>10</combatPower>
+		<canOpenAnyDoor>true</canOpenAnyDoor>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Drones/FarmingDrone/FarmingDrone</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<canOpenDoors>true</canOpenDoors>
+		
+	</PawnKindDef>
+</Defs>

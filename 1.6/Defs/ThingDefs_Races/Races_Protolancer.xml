@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_BaseDrone">
+		<defName>VQE_Protolancer</defName>
+		<label>protolancer</label>
+		<description>An automated sniper drone purpose-built for medium and long-range engagement. It utilizes a powerful, single-shot lance sniper weapon to dispose of enemies from afar. Its lightweight construction allows for quick repositioning but makes it highly vulnerable to close-range attacks and melee combat.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, protolancers don’t require connection to drone transmitters.</description>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_Gun_Lance</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<VQE_LifespanYears>2</VQE_LifespanYears>
+		</statBases>
+		<race>
+			<thinkTreeMain>VQE_Drone</thinkTreeMain>
+			<thinkTreeConstant>VQE_BattleDroneConstant</thinkTreeConstant>
+			<baseHealthScale>0.7</baseHealthScale>
+			<baseBodySize>1</baseBodySize>
+			<body>VQE_DroneWithTreads</body>
+			<hasCorpse>true</hasCorpse>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>VQE_Drone_Medium_Wounded</soundWounded>
+					<soundDeath>VQE_Drone_Death</soundDeath>
+					<soundCall>VQE_Drone_Medium_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<li>
+				<label>shell spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>VQE_SpikedShellAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Steel>115</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</butcherProducts>
+		<comps>
+			<li>
+				<compClass>CompSentryDrone</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="VQE_BaseDroneKind">
+		<defName>VQE_Protolancer</defName>
+		<label>protolancer</label>
+		<labelPlural>protolancers</labelPlural>
+		<race>VQE_Protolancer</race>
+		<combatPower>100</combatPower>
+		<canOpenAnyDoor>true</canOpenAnyDoor>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Drones/Protolancer/Protolancer</texPath>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<canOpenDoors>true</canOpenDoors>
+		<weaponTags>
+			<li>VQE_Gun_Lance</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>
