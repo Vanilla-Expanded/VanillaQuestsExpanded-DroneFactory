@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_BaseDrone">
+		<defName>VQE_StingrayDrone</defName>
+		<label>stingray drone</label>
+		<description>An automated heavy assault drone built on a large, armored aerial platform. It is equipped with a powerful, short-range incendiary cannon that fires a blast of superheated gel, causing area-of-effect flame damage. \n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, raider drones don’t require connection to drone transmitters.</description>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_Gun_StingrayCannon</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<VQE_LifespanYears>2</VQE_LifespanYears>
+			<MaxFlightTime>30</MaxFlightTime>
+		</statBases>
+		<race>
+			<thinkTreeMain>VQE_Drone</thinkTreeMain>
+			<thinkTreeConstant>VQE_BattleDroneConstant</thinkTreeConstant>
+			<baseHealthScale>1.5</baseHealthScale>
+			<baseBodySize>2</baseBodySize>
+			<body>VQE_DroneFlying</body>
+			<hasCorpse>true</hasCorpse>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>VQE_Drone_Heavy_Wounded</soundWounded>
+					<soundDeath>VQE_Drone_Death</soundDeath>
+					<soundCall>VQE_Drone_Heavy_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<li>
+				<label>shell spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+				<linkedBodyPartsGroup>VQE_SpikedShellAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Steel>320</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</butcherProducts>
+		<comps>
+			<li>
+				<compClass>CompSentryDrone</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="VQE_BaseDroneKind">
+		<defName>VQE_StingrayDrone</defName>
+		<label>stingray drone</label>
+		<labelPlural>stingray drones</labelPlural>
+		<race>VQE_StingrayDrone</race>
+		<combatPower>300</combatPower>
+		<canOpenAnyDoor>true</canOpenAnyDoor>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Drones/Hornet/Hornet</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<canOpenDoors>true</canOpenDoors>
+		<weaponTags>
+			<li>VQE_Gun_StingrayCannon</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>

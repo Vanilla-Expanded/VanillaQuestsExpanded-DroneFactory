@@ -177,7 +177,7 @@
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>VQE_Gun_Stubgun</li>
+			<li>VQE_Gun_Rattlegun</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -247,7 +247,7 @@
 			<li>Ranged</li>
 		</weaponClasses>
 		<weaponTags>
-			<li>VQE_Gun_Stubgun</li>
+			<li>VQE_Gun_Lance</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -276,6 +276,75 @@
 			<stoppingPower>1.5</stoppingPower>
 			<armorPenetrationBase>0.38</armorPenetrationBase>
 			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseGun">
+		<defName>VQE_Gun_StingrayCannon</defName>
+		<label>stingray cannon</label>
+		<description>A single-shot sniper weapon based on an ancient precision rifle design, featuring exceptional range and accuracy at the cost of poor close-range performance.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>16</Mass>
+			<RangedWeapon_Cooldown>8.4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>VQE_Gun_StingrayCannon</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>VQE_Bullet_StingrayCannon</defaultProjectile>
+				<forcedMissRadius>3.5</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.25</warmupTime>
+				<range>27</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>VQE_Bullet_StingrayCannon</defName>
+		<label>stingray cannon projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(254,189,58)</color>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>45</speed>
+			<explosionRadius>2.4</explosionRadius>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.27</preExplosionSpawnChance>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
 	</ThingDef>
 </Defs>
