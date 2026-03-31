@@ -62,7 +62,9 @@
 						<li>VQE_FarmingDrone</li>
 						<li>VQE_FirefighterDrone</li>
 						<li>VQE_AutobroadcasterDrone</li>
-						
+						<li>VQE_BattleDrone</li>
+						<li>VQE_HornetDrone</li>
+						<li>VQE_TurretDrone</li>
 					</pawnKinds>
 					<subNodes>
 						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange" />
