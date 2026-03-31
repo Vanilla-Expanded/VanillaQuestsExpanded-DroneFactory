@@ -54,7 +54,21 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange" />
+				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
+					<pawnKinds>
+						<li>VQE_CleanerDrone</li>
+						<li>VQE_HaulerDrone</li>
+						<li>VQE_MinerDrone</li>
+						<li>VQE_FarmingDrone</li>
+						<li>VQE_FirefighterDrone</li>
+						<li>VQE_AutobroadcasterDrone</li>
+						
+					</pawnKinds>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange" />
+					</subNodes>
+				</li>
+				
 				<!-- React to close melee threat -->
 				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
 					<pawnKinds>

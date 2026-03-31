@@ -61,7 +61,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Drones/BattleDrone/BattleDrone</texPath>
+					<texPath>Things/Drones/Shuffler/DroneShuffler</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -128,7 +128,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Drones/BattleDrone/BattleDrone</texPath>
+					<texPath>Things/Drones/Driver/DroneDriver</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -194,7 +194,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Drones/BattleDrone/BattleDrone</texPath>
+					<texPath>Things/Drones/Crawler/DroneCrawler</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 			</li>

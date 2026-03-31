@@ -63,8 +63,8 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Drones/Hornet/Hornet</texPath>
-					<drawSize>1.45</drawSize>
+					<texPath>Things/Drones/Stingray/Stingray</texPath>
+					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
