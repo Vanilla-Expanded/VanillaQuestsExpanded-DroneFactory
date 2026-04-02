@@ -10,15 +10,26 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         private int useDuration = 6000;
 
+        protected const TargetIndex ResearchBenchInd = TargetIndex.B;
+
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed);
+            return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed) && pawn.Reserve(job.targetB, job, 1, -1, null, errorOnFailed) &&
+                pawn.Reserve(job.targetC, job, 1, -1, null, errorOnFailed);
         }
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
             job.count = 1;
+            this.FailOnDespawnedNullOrForbidden(TargetIndex.B);
+            this.FailOnBurningImmobile(TargetIndex.B);
             this.FailOnIncapable(PawnCapacityDefOf.Manipulation);
+
+            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.A).FailOnSomeonePhysicallyInteracting(TargetIndex.A);
+
+            yield return Toils_Haul.StartCarryThing(TargetIndex.A, putRemainderInQueue: false, subtractNumTakenFromJobCount: true).FailOnDestroyedNullOrForbidden(TargetIndex.A);
+            yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.InteractionCell);
+            yield return Toils_Haul.PlaceHauledThingInCell(TargetIndex.C, null, storageMode: false);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.A);
 
 
@@ -46,10 +57,10 @@ namespace VanillaQuestsExpandedDroneFactory
 
                     Find.LetterStack.ReceiveLetter("VQE_CoreDecryptedLetter".Translate(
                         recipe.products[0].thingDef.GetCompProperties<CompProperties_DroneHatcher>().hatcherKindDef.label), "VQE_CoreDecryptedDesc".Translate(
-                            recipe.products[0].thingDef.GetCompProperties<CompProperties_DroneHatcher>().hatcherKindDef.label, 
+                            recipe.products[0].thingDef.GetCompProperties<CompProperties_DroneHatcher>().hatcherKindDef.label,
                             recipe.products[0].thingDef.GetCompProperties<CompProperties_DroneHatcher>().hatcherKindDef.race.description), LetterDefOf.PositiveEvent, pawn);
                     DecreaseOrDestroy(TargetA.Thing);
-                  
+
                 }
                 else
                 {
