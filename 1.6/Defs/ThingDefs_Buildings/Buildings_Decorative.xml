@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DroneShell</defName>
+		<label>Drone shell</label>
+		<description>A shell from a smashed drone. It has been deteriorating for quite a while and the useful components have disintegrated.</description>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DroneChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DroneChunk</defName>
+		<label>Drone chunk</label>
+		<description>A large, heavily damaged section of a colossal drone's frame. It appears to have been violently torn from the main unit, perhaps by a powerful explosion or extreme internal malfunction. Though the plating is warped, it still contains useful resources which you can acquire by deconstructing it.</description>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</killedLeavings>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/LargeDroneChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<deconstructible>true</deconstructible>
+		</building>
+	</ThingDef>
+</Defs>
