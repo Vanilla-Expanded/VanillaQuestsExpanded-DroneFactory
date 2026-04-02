@@ -58,5 +58,7 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static RecipeDef VQE_AssembleHornetDrone;
 		public static RecipeDef VQE_AssembleStingrayDrone;
 
+		public static ThingDef VQE_CompactedDroneScrap;
+
     }
 }

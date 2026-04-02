@@ -50,4 +50,37 @@
 			<deconstructible>true</deconstructible>
 		</building>
 	</ThingDef>
+	
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQE_CompactedDroneScrap</defName>
+		<label>compacted drone scrap</label>
+		<passability>Impassable</passability>
+		<thingClass>Mineable</thingClass>
+		<fillPercent>1</fillPercent>
+		<generateCommonality>0</generateCommonality>
+		<description>A dense cube of heavily pressed and salvaged drone components and scrap metal. The compaction process has fused the materials into a block that is difficult to break down, but still holds valuable metal.</description>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/CompactedDroneChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<building>
+			<mineableThing>Steel</mineableThing>
+			<mineableYield>35</mineableYield>
+			<mineableDropChance>1</mineableDropChance>
+			<mineableYieldWasteable>false</mineableYieldWasteable>
+			<isInert>true</isInert>
+		</building>
+		<category>Building</category>
+		<mineable>true</mineable>
+		<selectable>true</selectable>
+		<drawerType>MapMeshOnly</drawerType>
+		<filthLeaving>Filth_MachineBits</filthLeaving>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+	</ThingDef>
+	
 </Defs>
