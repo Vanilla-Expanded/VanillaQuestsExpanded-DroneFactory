@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>VQE_DroneCore</defName>
+		<label>drone core</label>
+		<description>A dense, self-contained fusion of computation and power storage, designed to serve as the central processing unit for a drone. It houses the drone's core logic, operational parameters, and a hidden library of factory-loaded schematics.\n\nDecrypting the core's data logs at a research bench can unlock schematics for a new type of drone, allowing its construction.</description>
+		<graphicData>
+			<texPath>Things/Item/Resources/DroneCore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>0.25</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>NonContractable</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
+		<comps>
+			<li>
+				<compClass>VanillaQuestsExpandedDroneFactory.CompDecryptCore</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

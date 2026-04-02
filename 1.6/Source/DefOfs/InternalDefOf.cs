@@ -26,8 +26,9 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static JobDef VQE_ReactivateDrone;
 		public static JobDef VQE_EnterStandby;
 		public static JobDef VQE_StandOutOfTransmitterRange;
+		public static JobDef VQE_DecryptCore;
 
-		[DefAlias("VQE_ShutdownDrone")]
+        [DefAlias("VQE_ShutdownDrone")]
 		public static DesignationDef VQE_ShutdownDrone_Designation;
 		[DefAlias("VQE_ReactivateDrone")]
 		public static DesignationDef VQE_ReactivateDrone_Designation;
@@ -44,5 +45,18 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static StatDef VQE_LifespanDrainSpeed;
 		public static PawnKindDef VQE_TurretDrone;
 
-	}
+		public static RecipeDef VQE_AssembleBattleDrone;
+		public static RecipeDef VQE_AssembleCleanerDrone;
+		public static RecipeDef VQE_AssembleHaulerDrone;
+		public static RecipeDef VQE_AssembleMinerDrone;
+		public static RecipeDef VQE_AssembleAutobroadcasterDrone;
+		public static RecipeDef VQE_AssembleTurretDrone;
+		public static RecipeDef VQE_AssembleRaiderDrone;
+		public static RecipeDef VQE_AssembleProtolancer;
+		public static RecipeDef VQE_AssembleFarmingDrone;
+		public static RecipeDef VQE_AssembleFirefighterDrone;
+		public static RecipeDef VQE_AssembleHornetDrone;
+		public static RecipeDef VQE_AssembleStingrayDrone;
+
+    }
 }

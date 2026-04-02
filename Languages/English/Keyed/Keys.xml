@@ -29,4 +29,8 @@
 	<VQE_ExtremeMalfunctionRisk>Extreme malfunction risk</VQE_ExtremeMalfunctionRisk>
 	<VQE_ExtremeMalfunctionRiskDesc>Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
 	<VQE_Malfunction>Malfunction</VQE_Malfunction>
+	<VQE_DecryptCore>Decrypt {0} to unlock a new drone recipe</VQE_DecryptCore>
+	<VQE_CoreDecryptedLetter>Drone unlocked: {0}</VQE_CoreDecryptedLetter>
+	<VQE_CoreDecryptedDesc>Decoding the drone core unlocked a new drone schematic. From now on, you can craft the following drone type: {0}.\n\n{1}.</VQE_CoreDecryptedDesc>
+	<VQE_NoUnlockableRecipes>There are no more drone recipes left to decrypt!</VQE_NoUnlockableRecipes>
 </LanguageData>
