@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="VQED_DronesBuildingBase">
 		<defName>VQED_DroneShell</defName>
-		<label>Drone shell</label>
+		<label>drone shell</label>
 		<description>A shell from a smashed drone. It has been deteriorating for quite a while and the useful components have disintegrated.</description>
 		<size>(1,1)</size>
 		<costList>
@@ -24,7 +24,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQED_DronesBuildingBase">
 		<defName>VQED_DroneChunk</defName>
-		<label>Drone chunk</label>
+		<label>drone chunk</label>
 		<description>A large, heavily damaged section of a colossal drone's frame. It appears to have been violently torn from the main unit, perhaps by a powerful explosion or extreme internal malfunction. Though the plating is warped, it still contains useful resources which you can acquire by deconstructing it.</description>
 		<size>(2,2)</size>
 		<costList>
@@ -82,5 +82,215 @@
 		<filthLeaving>Filth_MachineBits</filthLeaving>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
 	</ThingDef>
-	
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DestroyedColossusChassis</defName>
+		<label>destroyed colossus chassis</label>
+		<description>The destroyed chassis of what was once a colossal drone. Its bulk suggests immense power, though it is now little more than a hulking scrap metal. All internal components and valuable parts were scavenged long ago, leaving only the stripped, heavily armored shell.</description>
+		<size>(3,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DestroyedColossusChassis</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DestroyedColossusDifferential</defName>
+		<label>destroyed colossus differential</label>
+		<description>The massive, ruined differential gear assembly from a colossal drone. The intricate mechanical structure is twisted and rusted, with only the heavy, non-recyclable metal remaining.</description>
+		<size>(3,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DestroyedColossusDifferential</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DestroyedColossusLeg</defName>
+		<label>destroyed colossus leg</label>
+		<description>The mangled remains of one of a colossal drone's massive leg assemblies. Only the bulky, non-recyclable metal is left.</description>
+		<size>(2,1)</size>
+		<rotatable>true</rotatable>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DestroyedColossusLeg</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DefunctAerialDrone</defName>
+		<label>defunct aerial drone</label>
+		<description>The heavily damaged remains of an early aerial drone. Its casing is scarred and its small propellers are twisted, suggesting a violent crash. This model predates the advanced spacer-tech aerodrones, relying on bulkier, more primitive internal components. What little remains of its payload systems are defunct.</description>
+		<size>(5,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DefunctAerialdrone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DisabledAutotank</defName>
+		<label>disabled autotank</label>
+		<description>The hulk of a medium-sized, autonomous armored tank. Heavy service panels have been crudely removed, leaving gaping holes where complex targeting and drive systems once sat. Though completely gutted and disabled, its sheer armored bulk and combat profile still look menacingly.</description>
+		<size>(3,2)</size>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DisabledAutotank/DisabledAutotank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_JunkyardSkidloader</defName>
+		<label>junkyard skidloader</label>
+		<description>This large, rusted skidloader. Any machinery that held any value was removed long ago.</description>
+		<size>(3,2)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/RustedJunkyardSkidLoader</texPath>
+			<graphicClass>Graphic_Simgle</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_JunkyardDigger</defName>
+		<label>junkyard digger</label>
+		<description>A huge, rusted digger. Its massive arm and shovel are seized with rust, likely caused by decades of disuse after all salvageable parts were stripped.</description>
+		<size>(4,4)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-30</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/RustedJunkyardDigger</texPath>
+			<graphicClass>Graphic_Simgle</graphicClass>
+			<drawSize>(9,4)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DisabledAerialDrone</defName>
+		<label>disabled aerial drone</label>
+		<description>An immaculate, industrial-tech aerial drone, resting inertly docked to a charging bay. Undamaged but entirely non-functional due to critical components simply missing, the sensors are dark, and flight vanes are locked. It can still be deconstructed to yield whatever components are left.</description>
+		<size>(5,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DisabledDormantAerialDrone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DisabledColossusDrone</defName>
+		<label>disabled colossus drone</label>
+		<description>The immense frame of a colossal industrial drone, resting inertly. Some vital access panels are open and empty, with key internal components and drive systems skillfully removed. It can still be deconstructed to yield whatever components are left.</description>
+		<size>(4,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DisabledDormantColossus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQED_DroneResourcePallet</defName>
+		<label>drone resource pallet</label>
+		<description>Palletized drone construction resources, including steel chassis plates, wiring harnesses, electronic components, and micro-actuators, prepared for transport. Can be deconstructed to yield valuable components.</description>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</killedLeavings>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DroneResourcePallet</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<deconstructible>true</deconstructible>
+		</building>
+	</ThingDef>
 </Defs>
