@@ -17,5 +17,34 @@
 			<alwaysShowRelatedBuildCommands>false</alwaysShowRelatedBuildCommands>
 		</building>
 	</ThingDef>
+	<ThingDef Name="VQED_TrapIEDBase" ParentName="VQED_DronesBuildingBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>		
+			<drawSize>2</drawSize>
+		</graphicData>
+		<fillPercent>0.25</fillPercent>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<uiOrder>40</uiOrder>
+		<size>(1,1)</size>
+		<uiIconColor>(150,0,0)</uiIconColor>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>			
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		
+		
+	</ThingDef>
 	
 </Defs>

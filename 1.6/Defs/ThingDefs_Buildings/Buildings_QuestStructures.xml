@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQE_SalvageableDroneWreck</defName>
+		<label>salvageable drone wreck</label>
+		<description>A massive, battered section of a military drone with extreme combat damage. Though exposed wiring is visible, the valuable drone core remains sealed inside, likely intact and salvageable. If you could extract the drone core, you could decrypt it to unlock a new drone schematic. The drone's incendiary ammunition stash is intact but unstable, and will likely detonate after you do some damage.</description>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_SalvageableDroneWreck</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,3)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Exotic/SalvagableDroneWreck</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<VQE_DroneCore>1</VQE_DroneCore>
+		</killedLeavings>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4.9</glowRadius>
+				<glowColor>(239,133,50)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>589</wickTicks>
+				<!-- Enough time to get out of the way, for novice players who aren't looking when the wick starts -->
+				<explosiveRadius>5</explosiveRadius>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.166666</startWickHitPointsPercent>
+				<!-- ~500 hitpoints -->
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+				<chanceToStartFire>1</chanceToStartFire>
+				<propagationSpeed>0.6</propagationSpeed>
+				<damageFalloff>false</damageFalloff>
+				<doVisualEffects>false</doVisualEffects>
+				<wickMessages>
+					<li>
+						<wickMessagekey>MessageAboutToExplode</wickMessagekey>
+						<messageType>ThreatBig</messageType>
+						<ticksLeft>589</ticksLeft>
+					</li>
+				</wickMessages>
+			</li>
+			<li Class="CompProperties_FireBurst"/>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQE_DroneStorageTerminal</defName>
+		<label>drone storage terminal</label>
+		<description>A drone storage computer terminal. It can be hacked to disable nearby dormant drones permanently.</description>
+		<graphicData>
+			<texPath>Things/Structure/Exotic/DroneStorageTerminal/DroneStorageTerminal</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneStorageTerminal</thingClass>
+		<rotatable>true</rotatable>
+		<fillPercent>0.2</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hackable">
+				<defence>200</defence>
+				<notHackedInspectString>Hacked to disable nearby dormant drones permanently.</notHackedInspectString>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(239,133,50,0)</glowColor>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+</Defs>

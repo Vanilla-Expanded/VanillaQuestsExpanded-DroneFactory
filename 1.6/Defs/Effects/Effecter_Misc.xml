@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  
+  <EffecterDef>
+    <defName>VQE_SalvageableDroneWreckPulse</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VQE_SalvageableDroneWreckPulse</fleckDef>
+        <ticksBetweenMotes>135</ticksBetweenMotes>
+        <spawnLocType>OnSource</spawnLocType>
+        <positionOffset>(0.2, 0, -0.4)</positionOffset>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>VQE_SalvageableDroneWreckPulse</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.1</solidTime>
+    <fadeOutTime>0.9</fadeOutTime>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Motes/DroneLensFlare</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(1, 0, 0, 0.8)</color>
+        <drawSize>4</drawSize>
+      </li>
+     
+    </randomGraphics>
+  </FleckDef>
+
+</Defs>

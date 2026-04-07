@@ -39,7 +39,7 @@
         </comps>
         <designationCategory>Misc</designationCategory>
         <placeWorkers>
-            <li>PlaceWorker_NotUnderRoof</li>
+            
             <li>VanillaQuestsExpandedDroneFactory.PlaceWorker_DroneTransmitter</li>
         </placeWorkers>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>

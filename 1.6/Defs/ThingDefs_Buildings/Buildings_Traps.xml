@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQED_TrapIEDBase">
+		<defName>VQED_DormantBattleDrone_Active</defName>
+		<label>dormant battle drone</label>
+		<description>An automated battle drone. It continuously patrols an area, looking for intruders. Once an intruder is found, it will relentlessly attack with a small stubgun.\n\nThis drone seems to be in a dormant state.</description>
+		<size>(1,1)</size>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DisabledDormantDrones/DisabledDormantDrone_BattleDrone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTrap</thingClass>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.DroneTrapDetails">
+				<droneSpawn>VQE_BattleDrone</droneSpawn>
+				<deconstructSound>VQE_Drone_Medium_Call</deconstructSound>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_TrapIEDBase">
+		<defName>VQED_DormantRaiderDrone_Active</defName>
+		<label>dormant raider drone</label>
+		<description>An automated drone designed for close-quarters raiding and heavy suppression. Equipped with a high-capacity rattlegun, its slow, heavily armored frame allows it to stand its ground and saturate an area with continuous fire, suppressing enemy positions.\n\nThis drone seems to be in a dormant state.</description>
+		<size>(1,1)</size>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DisabledDormantDrones/DisabledDormantDrone_RaiderDrone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTrap</thingClass>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.DroneTrapDetails">
+				<droneSpawn>VQE_RaiderDrone</droneSpawn>
+				<deconstructSound>VQE_Drone_Medium_Call</deconstructSound>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQED_TrapIEDBase">
+		<defName>VQED_DormantHornetDrone_Active</defName>
+		<label>dormant hornet drone</label>
+		<description>An automated military drone for close-range defense and combat support. The drone is capable of piercing an enemy repeatedly with a long, hardened stinger. While it doesn’t carry the same paralytic as wasp drones, it’s capable of piercing heavy armor and dealing significant damage, while its heavy-duty armor plating allows it to withstand a lot of damage.\n\nThis drone seems to be in a dormant state.</description>
+		<size>(1,1)</size>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/Ancient/DisabledDormantDrones/DisabledDormantDrone_HornetDrone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTrap</thingClass>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.DroneTrapDetails">
+				<droneSpawn>VQE_HornetDrone</droneSpawn>
+				<deconstructSound>VQE_Drone_Medium_Call</deconstructSound>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

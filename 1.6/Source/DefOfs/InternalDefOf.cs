@@ -59,6 +59,17 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static RecipeDef VQE_AssembleStingrayDrone;
 
 		public static ThingDef VQE_CompactedDroneScrap;
+		public static ThingDef VQED_DormantBattleDrone_Active;
+		public static ThingDef VQED_DormantRaiderDrone_Active;
+		public static ThingDef VQED_DormantHornetDrone_Active;
+        public static ThingDef VQED_DormantBattleDrone;
+        public static ThingDef VQED_DormantRaiderDrone;
+        public static ThingDef VQED_DormantHornetDrone;
+
+
+        public static EffecterDef VQE_SalvageableDroneWreckPulse;
+
+
 
     }
 }
