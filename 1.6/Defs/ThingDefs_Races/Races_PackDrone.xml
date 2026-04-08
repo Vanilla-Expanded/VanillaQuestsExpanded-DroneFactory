@@ -11,9 +11,11 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 			<VQE_LifespanYears>2</VQE_LifespanYears>
+			<VEF_MassCarryCapacity>168</VEF_MassCarryCapacity>
 		</statBases>
 		<race>
 			<packAnimal>true</packAnimal>
+			<renderTree>VQE_PackDrone</renderTree>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
 			<baseHealthScale>1.2</baseHealthScale>
 			<baseBodySize>1.2</baseBodySize>
