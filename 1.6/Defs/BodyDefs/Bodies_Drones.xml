@@ -147,6 +147,20 @@
 			<li>HearingSource</li>
 		</tags>
 	</BodyPartDef>
+	<BodyPartDef>
+		<defName>VQE_DroneLeg</defName>
+		<label>leg</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+		<li>MovingLimbCore</li>
+		</tags>
+  </BodyPartDef>
 	<BodyDef>
 		<defName>VQE_DroneWithSingleWheel</defName>
 		<label>drone</label>
@@ -428,4 +442,60 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+	<BodyDef>
+    <defName>VQE_DroneWithLegs</defName>
+    <label>bipedal drone</label>
+    <corePart>
+      <def>VQE_DroneChassis</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>VQE_DroneCore</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>VQE_DroneEye</def>
+          <coverage>0.05</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>VQE_DroneAntenna</def>
+          <coverage>0.05</coverage>
+          <depth>Outside</depth>
+          <height>Top</height>
+        </li>
+        <li>
+          <def>VQE_DroneShellSection</def>
+          <coverage>0.2</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>VQE_DroneShellSectionWithSpike</def>
+          <coverage>0.2</coverage>
+          <depth>Outside</depth>
+          <groups>
+            <li>VQE_SpikedShellAttackTool</li>
+          </groups>
+        </li>
+        <li>
+          <def>VQE_DroneLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>VQE_DroneLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
 </Defs>
