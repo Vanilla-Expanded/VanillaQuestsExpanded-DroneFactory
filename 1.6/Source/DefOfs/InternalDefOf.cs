@@ -20,7 +20,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public static JobDef VQE_GotoPatrolDest;
 		public static NeedDef VQE_Lifespan;
-		public static BodyPartDef VQE_DroneCore;
+		public static BodyPartDef VQE_DroneCoreBodyPart;
 		public static JobDef VQE_RepairDrone;
 		public static JobDef VQE_ShutdownDrone;
 		public static JobDef VQE_ReactivateDrone;
@@ -59,7 +59,6 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static RecipeDef VQE_AssembleStingrayDrone;
         public static RecipeDef VQE_AssemblePackDrone;
 
-
         public static ThingDef VQE_CompactedDroneScrap;
 		public static ThingDef VQED_DormantBattleDrone_Active;
 		public static ThingDef VQED_DormantRaiderDrone_Active;
@@ -67,9 +66,11 @@ namespace VanillaQuestsExpandedDroneFactory
         public static ThingDef VQED_DormantBattleDrone;
         public static ThingDef VQED_DormantRaiderDrone;
         public static ThingDef VQED_DormantHornetDrone;
-
+        public static ThingDef VQE_DroneCore;
 
         public static EffecterDef VQE_SalvageableDroneWreckPulse;
+
+		public static MentalStateDef VQE_Reboot;
 
 
 

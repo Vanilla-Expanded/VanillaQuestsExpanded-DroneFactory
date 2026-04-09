@@ -90,11 +90,60 @@
 		<comps>
 			<li Class="CompProperties_Hackable">
 				<defence>200</defence>
-				<notHackedInspectString>Hacked to disable nearby dormant drones permanently.</notHackedInspectString>
+				<glowIfHacked>false</glowIfHacked>
+				<notHackedInspectString>Hack to disable nearby dormant drones permanently.</notHackedInspectString>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(239,133,50,0)</glowColor>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQE_LongRangeDroneTransmitter</defName>
+		<label>long range drone transmitter</label>
+		<description>A bulky, multi-band antenna array designed to broadcast a drone control signal over an exceptional range. The unit is currently operating, providing operational bandwidth to all nearby drones. It can be temporarily hacked to overload its internal safeguards, rendering it inert and allowing access to its valuable core.</description>
+		<graphicData>
+			<texPath>Things/Structure/Exotic/HighPowerDroneTransmitter/HighPowerDroneTransmitter_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,5)</drawSize>
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_LongRangeDroneTransmitter</thingClass>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</killedLeavings>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<comps>
+			<li Class="CompProperties_Hackable">
+				<defence>5000</defence>
+				<glowIfHacked>false</glowIfHacked>
+				<lockoutDurationHoursRange>2~4</lockoutDurationHoursRange>
+				<notHackedInspectString>Hack to disable the drone transmitter.</notHackedInspectString>
+				<hackedInspectString>Disabled</hackedInspectString>
+				<hackedMessage>{HACKER_labelShort} has finished hacking the long range drone transmitter.</hackedMessage>
+				<unhackedGraphicData>
+					<texPath>Things/Structure/Exotic/HighPowerDroneTransmitter/HighPowerDroneTransmitter_On</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,5)</drawSize>
+				</unhackedGraphicData>
+				<hackedGraphicData>
+					<texPath>Things/Structure/Exotic/HighPowerDroneTransmitter/HighPowerDroneTransmitter_Off</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,5)</drawSize>
+				</hackedGraphicData>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(239,133,50)</glowColor>
 			</li>
 		</comps>
 		<tickerType>Normal</tickerType>

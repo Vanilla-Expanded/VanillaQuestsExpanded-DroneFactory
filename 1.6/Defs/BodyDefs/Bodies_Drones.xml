@@ -15,7 +15,7 @@
 		</tags>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>VQE_DroneCore</defName>
+		<defName>VQE_DroneCoreBodyPart</defName>
 		<label>core</label>
 		<hitPoints>50</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -158,9 +158,9 @@
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
 		<tags>
-		<li>MovingLimbCore</li>
+			<li>MovingLimbCore</li>
 		</tags>
-  </BodyPartDef>
+	</BodyPartDef>
 	<BodyDef>
 		<defName>VQE_DroneWithSingleWheel</defName>
 		<label>drone</label>
@@ -173,7 +173,7 @@
 			</groups>
 			<parts>
 				<li>
-					<def>VQE_DroneCore</def>
+					<def>VQE_DroneCoreBodyPart</def>
 					<coverage>0.05</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -222,7 +222,7 @@
 			</groups>
 			<parts>
 				<li>
-					<def>VQE_DroneCore</def>
+					<def>VQE_DroneCoreBodyPart</def>
 					<coverage>0.05</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -289,7 +289,7 @@
 			</groups>
 			<parts>
 				<li>
-					<def>VQE_DroneCore</def>
+					<def>VQE_DroneCoreBodyPart</def>
 					<coverage>0.05</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -356,7 +356,7 @@
 			</groups>
 			<parts>
 				<li>
-					<def>VQE_DroneCore</def>
+					<def>VQE_DroneCoreBodyPart</def>
 					<coverage>0.05</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -405,7 +405,7 @@
 			</groups>
 			<parts>
 				<li>
-					<def>VQE_DroneCore</def>
+					<def>VQE_DroneCoreBodyPart</def>
 					<coverage>0.05</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -443,59 +443,58 @@
 		</corePart>
 	</BodyDef>
 	<BodyDef>
-    <defName>VQE_DroneWithLegs</defName>
-    <label>bipedal drone</label>
-    <corePart>
-      <def>VQE_DroneChassis</def>
-      <height>Middle</height>
-      <depth>Outside</depth>
-      <groups>
-        <li>Torso</li>
-      </groups>
-      <parts>
-        <li>
-          <def>VQE_DroneCore</def>
-          <coverage>0.05</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>VQE_DroneEye</def>
-          <coverage>0.05</coverage>
-          <depth>Outside</depth>
-        </li>
-        <li>
-          <def>VQE_DroneAntenna</def>
-          <coverage>0.05</coverage>
-          <depth>Outside</depth>
-          <height>Top</height>
-        </li>
-        <li>
-          <def>VQE_DroneShellSection</def>
-          <coverage>0.2</coverage>
-          <depth>Outside</depth>
-        </li>
-        <li>
-          <def>VQE_DroneShellSectionWithSpike</def>
-          <coverage>0.2</coverage>
-          <depth>Outside</depth>
-          <groups>
-            <li>VQE_SpikedShellAttackTool</li>
-          </groups>
-        </li>
-        <li>
-          <def>VQE_DroneLeg</def>
-          <customLabel>left leg</customLabel>
-          <coverage>0.1</coverage>
-          <height>Bottom</height>
-        </li>
-        <li>
-          <def>VQE_DroneLeg</def>
-          <customLabel>right leg</customLabel>
-          <coverage>0.1</coverage>
-          <height>Bottom</height>
-        </li>
-      </parts>
-    </corePart>
-  </BodyDef>
-
+		<defName>VQE_DroneWithLegs</defName>
+		<label>bipedal drone</label>
+		<corePart>
+			<def>VQE_DroneChassis</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>Torso</li>
+			</groups>
+			<parts>
+				<li>
+					<def>VQE_DroneCoreBodyPart</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>VQE_DroneEye</def>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>VQE_DroneAntenna</def>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<height>Top</height>
+				</li>
+				<li>
+					<def>VQE_DroneShellSection</def>
+					<coverage>0.2</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>VQE_DroneShellSectionWithSpike</def>
+					<coverage>0.2</coverage>
+					<depth>Outside</depth>
+					<groups>
+						<li>VQE_SpikedShellAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>VQE_DroneLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>VQE_DroneLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
 </Defs>

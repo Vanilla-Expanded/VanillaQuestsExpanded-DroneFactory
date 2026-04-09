@@ -49,7 +49,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public static void DestroyCore(this Pawn pawn)
         {
-            var core = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(p => p.def == InternalDefOf.VQE_DroneCore);
+            var core = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(p => p.def == InternalDefOf.VQE_DroneCoreBodyPart);
             if (core != null)
             {
                 var damage = new DamageInfo(DamageDefOf.Crush, 999f, 999f, -1f, null, core);
