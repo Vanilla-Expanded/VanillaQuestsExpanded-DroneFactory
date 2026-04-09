@@ -71,6 +71,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public static EffecterDef VQE_SalvageableDroneWreckPulse;
 
+		public static MentalStateDef VQE_Indexing;
 		public static MentalStateDef VQE_Reboot;
 
 

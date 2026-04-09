@@ -16,6 +16,7 @@
 	<VQE_CannotUseDesynchronised>Cannot use while desynchronised</VQE_CannotUseDesynchronised>
 	<VQE_CannotUseRebooting>Cannot use while rebooting</VQE_CannotUseRebooting>
 	<VQE_CannotUseHardwareFailure>Cannot use during hardware failure</VQE_CannotUseHardwareFailure>
+	<VQE_CannotUseIndexing>Cannot use while indexing</VQE_CannotUseIndexing>
 	<VQE_CannotUseInStandby>Cannot use while in standby</VQE_CannotUseInStandby>
 	<VQE_OutsideTransmitterRange>Outside transmitter range</VQE_OutsideTransmitterRange>
 	<VQE_DroneMalfunction>{DRONE} is undergoing {1} malfunction</VQE_DroneMalfunction>
@@ -26,6 +27,8 @@
 	<VQE_SelfDecommissionLetter>Self-decommission: {DRONE}</VQE_SelfDecommissionLetter>
 	<VQE_SelfDecommissionLetterDesc>{DRONE} is undergoing the self-decommission malfunction.\n\nIt has determined that its service life has ended and will ignore all commands as it leaves the local area to shut down somewhere in the wild.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.</VQE_SelfDecommissionLetterDesc>
 	<VQE_DroneMalfunction_Death>, after which it will cease to work.</VQE_DroneMalfunction_Death>
+	<VQE_IndexingLetter>Indexing: {DRONE}</VQE_IndexingLetter>
+	<VQE_IndexingLetterDesc>{DRONE} is undergoing the indexing malfunction.\n\nIt will study another drone, or another colonist if drones are not present, and will code a special schematic onto a drone core. After the malfunction passes, a drone core will be produced. It can be decoded to permanently unlock a new drone type.\n\nThis has occurred because {DRONE} is programmed to undergo indexing malfunctions from time to time.</VQE_IndexingLetterDesc>
 	<VQE_ExtremeMalfunctionRisk>Extreme malfunction risk</VQE_ExtremeMalfunctionRisk>
 	<VQE_ExtremeMalfunctionRiskDesc>Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
 	<VQE_Malfunction>Malfunction</VQE_Malfunction>

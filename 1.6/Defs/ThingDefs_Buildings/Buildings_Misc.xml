@@ -39,13 +39,12 @@
         </comps>
         <designationCategory>Misc</designationCategory>
         <placeWorkers>
-            
             <li>VanillaQuestsExpandedDroneFactory.PlaceWorker_DroneTransmitter</li>
         </placeWorkers>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <researchPrerequisites>
-            <li>Dronetech</li>
+            <li>VQE_Dronetech</li>
         </researchPrerequisites>
     </ThingDef>
 

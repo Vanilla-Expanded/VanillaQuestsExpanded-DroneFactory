@@ -47,6 +47,14 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             if (pawn.InMentalState || pawn.Dead || pawn.Downed) return;
 
+            if (pawn.def == InternalDefOf.VQE_CraftingDrone)
+            {
+                if (Rand.MTBEventOccurs(15f, 60000f, 150f) && pawn.mindState.mentalStateHandler.TryStartMentalState(InternalDefOf.VQE_Indexing, null, true))
+                {
+                    return;
+                }
+            }
+
             float pct = CurLevelPercentage;
             if (pct < 0.05f)
             {
