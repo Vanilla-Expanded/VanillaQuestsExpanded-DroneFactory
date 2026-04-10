@@ -29,9 +29,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
             if (unlocked_Recipes.NullOrEmpty())
             {
-                unlocked_Recipes = new Dictionary<RecipeDef, bool>() { { InternalDefOf.VQE_AssembleBattleDrone, false },
-                { InternalDefOf.VQE_AssembleCleanerDrone, false },{ InternalDefOf.VQE_AssembleHaulerDrone, false },{ InternalDefOf.VQE_AssembleMinerDrone, false }
-                ,{ InternalDefOf.VQE_AssembleAutobroadcasterDrone, false },{ InternalDefOf.VQE_AssembleTurretDrone, false },{ InternalDefOf.VQE_AssembleRaiderDrone, false }
+                unlocked_Recipes = new Dictionary<RecipeDef, bool>() { { InternalDefOf.VQE_AssembleRaiderDrone, false }
                 ,{ InternalDefOf.VQE_AssembleProtolancer, false },{ InternalDefOf.VQE_AssembleFarmingDrone, false },{ InternalDefOf.VQE_AssembleFirefighterDrone, false }
                 ,{ InternalDefOf.VQE_AssembleHornetDrone, false },{ InternalDefOf.VQE_AssembleStingrayDrone, false },{ InternalDefOf.VQE_AssemblePackDrone, false }};
 

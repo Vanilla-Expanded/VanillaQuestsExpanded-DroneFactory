@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="HunterDrones"]/prerequisites/li[text() = "MicroelectronicsBasics"]</xpath>
+					<value>
+						<li>VQE_Dronetech</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

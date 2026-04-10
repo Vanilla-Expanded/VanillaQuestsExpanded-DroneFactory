@@ -61,6 +61,9 @@
 		<recipeUsers>
 			<li>VQE_DroneTinkeringBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+            <li>VQE_Dronetech</li>
+        </researchPrerequisites>
 		<ingredients>
 			<li>
 				<filter>
@@ -107,6 +110,9 @@
 		<recipeUsers>
 			<li>VQE_DroneTinkeringBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+            <li>VQE_Dronetech</li>
+        </researchPrerequisites>
 		<ingredients>
 			<li>
 				<filter>
@@ -153,6 +159,9 @@
 		<recipeUsers>
 			<li>VQE_DroneTinkeringBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+            <li>VQE_Dronetech</li>
+        </researchPrerequisites>
 		<ingredients>
 			<li>
 				<filter>
@@ -199,6 +208,9 @@
 		<recipeUsers>
 			<li>VQE_DroneTinkeringBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+            <li>VQE_Dronetech</li>
+        </researchPrerequisites>
 		<ingredients>
 			<li>
 				<filter>
@@ -245,6 +257,9 @@
 		<recipeUsers>
 			<li>VQE_DroneTinkeringBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+            <li>VQE_Dronetech</li>
+        </researchPrerequisites>
 		<ingredients>
 			<li>
 				<filter>
@@ -291,6 +306,9 @@
 		<recipeUsers>
 			<li>VQE_DroneTinkeringBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+            <li>VQE_Dronetech</li>
+        </researchPrerequisites>
 		<ingredients>
 			<li>
 				<filter>

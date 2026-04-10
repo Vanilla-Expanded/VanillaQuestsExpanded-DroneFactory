@@ -318,7 +318,7 @@
 		<label>dormant raider drone</label>
 		<description>An automated drone designed for close-quarters raiding and heavy suppression. Equipped with a high-capacity rattlegun, its slow, heavily armored frame allows it to stand its ground and saturate an area with continuous fire, suppressing enemy positions.\n\nThis drone seems to be in a dormant state.</description>
 		<size>(1,1)</size>
-		
+		<uiIconScale>0.75</uiIconScale>
 		<killedLeavings>
 			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</killedLeavings>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>VQE_Dronetech</defName>
+		<label>dronetech</label>
+		<description>Unlocks the ability to construct specialized work drones and the necessary infrastructure to keep them operational.</description>
+		<baseCost>1800</baseCost>
+		<tab>VanillaExpanded</tab>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>5.65</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->autonomous drone networks</li>
+				<li>subject_story->pioneered the first fully synchronized drones</li>
+				<li>subject_story->transformed scattered machines into a unified automated grid</li>
+				<li>subject_story->saw beyond isolated units to the elegance of coordinated autonomy</li>
+				<li>subject_gerund->orchestrating fleets into seamless operational harmony</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

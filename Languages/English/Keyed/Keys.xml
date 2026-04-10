@@ -36,4 +36,6 @@
 	<VQE_CoreDecryptedLetter>Drone unlocked: {0}</VQE_CoreDecryptedLetter>
 	<VQE_CoreDecryptedDesc>Decoding the drone core unlocked a new drone schematic. From now on, you can craft the following drone type: {0}.\n\n{1}.</VQE_CoreDecryptedDesc>
 	<VQE_NoUnlockableRecipes>There are no more drone recipes left to decrypt!</VQE_NoUnlockableRecipes>
+	<VQE_DroneSpawningIn>{0} construction completes in {1}.</VQE_DroneSpawningIn>
+ 
 </LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<SoundDef>
+		<defName>VQE_AutomatedMachiningSustainer</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Sustainers/Factory/Factory_MachiningProcess_Sustainer_01a</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+				<pitchRange>1~1.015</pitchRange>
+				<distRange>0~30</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

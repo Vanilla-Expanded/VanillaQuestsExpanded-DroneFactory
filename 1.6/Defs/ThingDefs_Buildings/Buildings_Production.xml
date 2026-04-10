@@ -71,7 +71,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>Fabrication</li>
+			<li>VQE_Dronetech</li>
 		</researchPrerequisites>
 	</ThingDef>
 </Defs>

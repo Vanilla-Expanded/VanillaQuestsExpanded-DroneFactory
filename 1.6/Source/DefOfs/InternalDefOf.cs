@@ -43,9 +43,13 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static PawnTableDef VQE_Drones;
 		public static StatDef VQE_LifespanYears;
 		public static StatDef VQE_LifespanDrainSpeed;
-		public static PawnKindDef VQE_TurretDrone;
 
-		public static RecipeDef VQE_AssembleBattleDrone;
+		public static PawnKindDef VQE_TurretDrone;
+        public static PawnKindDef VQE_BattleDrone;
+		public static PawnKindDef VQE_RaiderDrone;
+		public static PawnKindDef VQE_HornetDrone;
+
+        public static RecipeDef VQE_AssembleBattleDrone;
 		public static RecipeDef VQE_AssembleCleanerDrone;
 		public static RecipeDef VQE_AssembleHaulerDrone;
 		public static RecipeDef VQE_AssembleMinerDrone;

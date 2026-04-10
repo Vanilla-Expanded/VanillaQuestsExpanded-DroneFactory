@@ -14,7 +14,7 @@
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
 	<ThingDef Abstract="true" Name="VQE_UnfinishedDroneSpawnerBase" ParentName="ResourceBase">
-		<label>unfinished drone</label>
+		<label>deployed drone</label>
 		<description>An unfinished drone. This will deploy into a drone.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -42,6 +42,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_BattleDrone</defName>
+		<label>deployed battle drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -52,6 +53,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_CleanerDrone</defName>
+		<label>deployed cleaner drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -62,6 +64,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_HaulerDrone</defName>
+		<label>deployed hauler drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -72,6 +75,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_MinerDrone</defName>
+		<label>deployed miner drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -82,6 +86,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_AutobroadcasterDrone</defName>
+		<label>deployed autobroadcaster drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -92,6 +97,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_TurretDrone</defName>
+		<label>deployed turret drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -102,6 +108,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_RaiderDrone</defName>
+		<label>deployed raider drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -112,6 +119,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_Protolancer</defName>
+		<label>deployed protolancer drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -122,6 +130,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_FarmingDrone</defName>
+		<label>deployed farming drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -132,6 +141,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_FirefighterDrone</defName>
+		<label>deployed firefighter drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -142,6 +152,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_HornetDrone</defName>
+		<label>deployed hornet drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -152,6 +163,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_StingrayDrone</defName>
+		<label>deployed stingray drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
@@ -162,6 +174,7 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_PackDrone</defName>
+		<label>deployed pack drone</label>
 		<comps>
 
 			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">

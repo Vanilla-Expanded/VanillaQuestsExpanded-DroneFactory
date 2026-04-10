@@ -148,4 +148,37 @@
 		</comps>
 		<tickerType>Normal</tickerType>
 	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQE_AutomatedDroneAssembler</defName>
+		<label>automated drone assembler</label>
+		<description>A massive, heavily armored production line dedicated to the relentless, automated assembly of drones. Complex mechanical arms work in a continuous cycle, feeding components, welding seams, and running diagnostic checks. It will continue to churn out hostile drone units until destroyed.</description>
+		<drawerType>RealtimeOnly</drawerType>
+		<graphicData>
+			<texPath>Things/Structure/Exotic/AutomatedDroneAssembler/AutomatedDroneAssembler</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,7)</drawSize>
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_AutomatedDroneAssembler</thingClass>
+		<rotatable>true</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</killedLeavings>
+		<size>(3,6)</size>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-30</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AmbientSound">
+				<sound>VQE_AutomatedMachiningSustainer</sound>
+				
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
 </Defs>
