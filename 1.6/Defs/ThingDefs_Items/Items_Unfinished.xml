@@ -43,143 +43,156 @@
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_BattleDrone</defName>
 		<label>deployed battle drone</label>
+		<graphicData>
+			<texPath>Things/Drones/BattleDrone/BattleDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_BattleDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_CleanerDrone</defName>
 		<label>deployed cleaner drone</label>
+		<graphicData>
+			<texPath>Things/Drones/CleanerDrone/CleanerDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_CleanerDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_HaulerDrone</defName>
 		<label>deployed hauler drone</label>
+		<graphicData>
+			<texPath>Things/Drones/HaulerDrone/HaulerDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_HaulerDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_MinerDrone</defName>
 		<label>deployed miner drone</label>
+		<graphicData>
+			<texPath>Things/Drones/MinerDrone/MinerDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_MinerDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_AutobroadcasterDrone</defName>
 		<label>deployed autobroadcaster drone</label>
+		<graphicData>
+			<texPath>Things/Drones/PropagandaDrone/PropagandaDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_AutobroadcasterDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_TurretDrone</defName>
 		<label>deployed turret drone</label>
+		<graphicData>
+			<texPath>Things/Drones/TurretDrone/TurretDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_TurretDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_RaiderDrone</defName>
 		<label>deployed raider drone</label>
+		<graphicData>
+			<texPath>Things/Drones/RaiderDrone/RaiderDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_RaiderDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_Protolancer</defName>
 		<label>deployed protolancer drone</label>
+		<graphicData>
+			<texPath>Things/Drones/Protolancer/Protolancer_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_Protolancer</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_FarmingDrone</defName>
 		<label>deployed farming drone</label>
+		<graphicData>
+			<texPath>Things/Drones/FarmingDrone/FarmingDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_FarmingDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_FirefighterDrone</defName>
 		<label>deployed firefighter drone</label>
+		<graphicData>
+			<texPath>Things/Drones/FirefighterDrone/FirefighterDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_FirefighterDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_HornetDrone</defName>
+		<graphicData>
+			<texPath>Things/Drones/Hornet/Hornet_east</texPath>
+		</graphicData>
 		<label>deployed hornet drone</label>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_HornetDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_StingrayDrone</defName>
+		<graphicData>
+			<texPath>Things/Drones/StingrayDrone/Stingray_east</texPath>
+		</graphicData>
 		<label>deployed stingray drone</label>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_StingrayDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_PackDrone</defName>
 		<label>deployed pack drone</label>
+		<graphicData>
+			<texPath>Things/Drones/PackDrone/PackDrone_east</texPath>
+		</graphicData>
 		<comps>
-
-			 <li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_PackDrone</hatcherKindDef>
-				
 			</li>
 		</comps>
 	</ThingDef>

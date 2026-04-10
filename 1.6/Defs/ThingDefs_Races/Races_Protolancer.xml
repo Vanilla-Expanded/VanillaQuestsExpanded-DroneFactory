@@ -63,7 +63,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Drones/Protolancer/Protolancer</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>

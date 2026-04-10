@@ -20,6 +20,7 @@
 				<filter>
 					<categories>
 						<li>VQE_CorpsesDrone</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">CorpsesDrone</li>
 					</categories>
 				</filter>
 				<count>1</count>
