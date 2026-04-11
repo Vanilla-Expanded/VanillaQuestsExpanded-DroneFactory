@@ -6,7 +6,7 @@ namespace VanillaQuestsExpandedDroneFactory
     [HotSwappable]
     public static class Utils
     {
-        public const float TransmitterRadius = 14.9f;
+        public static float TransmitterRadius => VanillaQuestsExpandedDroneFactory_Settings.transmitterRadius;
 
         public static bool IsWithinTransmitter(this Pawn drone)
         {
