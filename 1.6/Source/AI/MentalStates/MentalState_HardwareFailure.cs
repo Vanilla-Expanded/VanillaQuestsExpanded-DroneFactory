@@ -1,7 +1,6 @@
 using Verse;
 using RimWorld;
 using Verse.AI;
-using System.Linq;
 
 namespace VanillaQuestsExpandedDroneFactory
 {

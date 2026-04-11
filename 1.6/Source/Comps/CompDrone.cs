@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
+using Verse.AI;
 using RimWorld;
 using UnityEngine;
 
@@ -7,11 +10,14 @@ namespace VanillaQuestsExpandedDroneFactory
 {
     public class CompProperties_Drone : CompProperties
     {
+        public bool requiresTransmitter;
         public CompProperties_Drone() => compClass = typeof(CompDrone);
     }
+
     [HotSwappable]
     public class CompDrone : ThingComp
     {
+        public CompProperties_Drone Props => (CompProperties_Drone)props;
         public bool autoRepair = true;
         public bool shouldKill;
 
@@ -43,6 +49,79 @@ namespace VanillaQuestsExpandedDroneFactory
         public override bool WantHoldWeapon(Pawn pawn)
         {
             return pawn.kindDef == InternalDefOf.VQE_TurretDrone;
+        }
+
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
+        {
+            var drone = (Pawn)parent;
+            if (selPawn.IsColonist && selPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
+            {
+                if (!drone.IsWithinTransmitter())
+                {
+                    var transmitter = GenClosest.ClosestThingReachable(selPawn.Position, selPawn.Map,
+                        ThingRequest.ForDef(InternalDefOf.VQE_DroneTransmitter), PathEndMode.Touch, TraverseParms.For(selPawn),
+                        validator: t => t.TryGetComp<CompPowerTrader>().PowerOn);
+
+                    if (transmitter != null && selPawn.CanReserveAndReach(drone, PathEndMode.Touch, Danger.Deadly))
+                    {
+                        var targetCell = FindClosestTransmitterCell(transmitter, drone.Position);
+                        yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(
+                            "VQE_CarryDroneToTransmitter".Translate(drone.LabelShort), delegate
+                        {
+                            var job = JobMaker.MakeJob(InternalDefOf.VQE_CarryDroneToTransmitter, drone, transmitter, targetCell);
+                            job.count = 1;
+                            selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                        }), selPawn, drone);
+                    }
+                }
+            }
+        }
+
+        private LocalTargetInfo FindClosestTransmitterCell(Thing transmitter, IntVec3 dronePos)
+        {
+            var map = transmitter.Map;
+            var result = transmitter.Position;
+            var minDistance = float.MaxValue;
+
+            foreach (var cell in GenRadial.RadialCellsAround(transmitter.Position, Utils.TransmitterRadius, true))
+            {
+                if (cell.InBounds(map) && cell.Walkable(map))
+                {
+                    var distance = cell.DistanceTo(dronePos);
+                    if (distance < minDistance)
+                    {
+                        minDistance = distance;
+                        result = cell;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        public override void PostDrawExtraSelectionOverlays()
+        {
+            var drone = (Pawn)parent;
+            if (drone.Drafted && Utils.RequiresTransmitter(drone))
+            {
+                var transmitters = drone.Map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
+                var cells = new HashSet<IntVec3>();
+                foreach (var t in transmitters)
+                {
+                    var comp = t.TryGetComp<CompPowerTrader>();
+                    if (comp != null && comp.PowerOn)
+                    {
+                        foreach (var cell in GenRadial.RadialCellsAround(t.Position, Utils.TransmitterRadius, true))
+                        {
+                            if (cell.InBounds(drone.Map))
+                            {
+                                cells.Add(cell);
+                            }
+                        }
+                    }
+                }
+                GenDraw.DrawFieldEdges(cells.ToList());
+            }
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
@@ -134,7 +213,11 @@ namespace VanillaQuestsExpandedDroneFactory
                 action = () => pawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_EnterStandby, pawn))
             };
 
-            if (pawn.MentalStateDef != null)
+            if (!pawn.IsWithinTransmitter())
+            {
+                cmd.Disable("VQE_OutsideTransmitterRange".Translate());
+            }
+            else if (pawn.MentalStateDef != null)
             {
                 var ext = pawn.MentalStateDef.GetModExtension<DroneMentalStateExtension>();
                 if (ext?.disableDraftGizmos ?? false)

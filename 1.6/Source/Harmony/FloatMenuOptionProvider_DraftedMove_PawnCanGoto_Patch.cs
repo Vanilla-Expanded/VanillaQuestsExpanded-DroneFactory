@@ -11,7 +11,7 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             if (__result.Accepted && pawn.IsDrone())
             {
-                if (!Utils.IsWithinTransmitter(gotoLoc, pawn.Map))
+                if (pawn.RequiresTransmitter() && !Utils.IsWithinTransmitter(gotoLoc, pawn.Map))
                 {
                     __result = new AcceptanceReport("VQE_OutsideTransmitterRange".Translate());
                 }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_CraftingDrone</defName>
 		<label>crafting drone</label>
 		<description>An automated drone specialized in crafting. It periodically undergoes a special indexing operation, after which it produces a drone core that can be decoded to permanently unlock new drone schematics.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, crafting drones don’t require connection to drone transmitters.</description>

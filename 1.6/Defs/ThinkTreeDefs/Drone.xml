@@ -61,18 +61,7 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
-					<pawnKinds>
-						<li>VQE_CleanerDrone</li>
-						<li>VQE_HaulerDrone</li>
-						<li>VQE_MinerDrone</li>
-						<li>VQE_FarmingDrone</li>
-						<li>VQE_FirefighterDrone</li>
-						<li>VQE_AutobroadcasterDrone</li>
-						<li>VQE_BattleDrone</li>
-						<li>VQE_HornetDrone</li>
-						<li>VQE_TurretDrone</li>
-					</pawnKinds>
+				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalRequiresTransmitter">
 					<subNodes>
 						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_StandIfOutOfTransmitterRange" />
 					</subNodes>

@@ -33,11 +33,17 @@
         <ifFlyingKeepFlying>true</ifFlyingKeepFlying>
     </JobDef>
 
+    <JobDef>
+        <defName>VQE_CarryDroneToTransmitter</defName>
+        <driverClass>VanillaQuestsExpandedDroneFactory.JobDriver_CarryDroneToTransmitter</driverClass>
+        <reportString>carrying TargetA to transmitter.</reportString>
+    </JobDef>
+
     <DesignationDef>
         <defName>VQE_ShutdownDrone</defName>
         <label>shutdown drone</label>
         <description>Shut down this drone permanently.</description>
-        <texturePath>UI/Gizmos/ShutDown_Designator</texturePath>
+        <texturePath>UI/Overlays/ShutDown_Overlay</texturePath>
         <targetType>Thing</targetType>
     </DesignationDef>
 

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_StingrayDrone</defName>
 		<label>stingray drone</label>
 		<description>An automated heavy assault drone built on a large, armored aerial platform. It is equipped with a powerful, short-range incendiary cannon that fires a blast of superheated gel, causing area-of-effect flame damage. \n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, raider drones don’t require connection to drone transmitters.</description>

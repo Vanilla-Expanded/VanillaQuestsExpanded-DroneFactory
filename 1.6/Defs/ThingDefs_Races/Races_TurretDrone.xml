@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_RequiresTransmitter">
 		<defName>VQE_TurretDrone</defName>
 		<label>turret drone</label>
 		<description>An automated military drone designed for static defense. It is equipped with a twin-barrel turret mounted on a heavily armored, treaded platform. Though slow, it can reposition itself when needed.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.</description>

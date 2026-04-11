@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_ShufflerDrone</defName>
 		<label>shuffler drone</label>
 		<description>A broken, decommissioned sentry drone. Its fried sensors and failing components cause it to shuffle aimlessly. Despite its derelict state, it will attack any tagrets it sees. Upon taking severe damage, its chassis splits into two smaller, relentless attacking drone units.</description>
@@ -69,7 +69,7 @@
 		<canOpenDoors>true</canOpenDoors>
 	</PawnKindDef>
 	
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_DriverDrone</defName>
 		<label>driver drone</label>
 		<description>The lower chassis of a destroyed drone, reduced to its bare, treaded frame. Despite being severely damaged and dragging its core components, it remains aggressive and attempts to ram targets.</description>
@@ -135,7 +135,7 @@
 		</lifeStages>
 		<canOpenDoors>true</canOpenDoors>
 	</PawnKindDef>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_CrawlerDrone</defName>
 		<label>crawler drone</label>
 		<description>The upper chassis of a destroyed drone, reduced to its bare, treaded frame. Despite being severely damaged and dragging its core components, it remains aggressive and attempts to ram targets.</description>

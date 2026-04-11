@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_RequiresTransmitter">
 		<defName>VQE_BattleDrone</defName>
 		<label>battle drone</label>
 		<description>An automated battle drone. It continuously patrols an area, looking for intruders. Once an intruder is found, it will relentlessly attack with a small stubgun.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.</description>

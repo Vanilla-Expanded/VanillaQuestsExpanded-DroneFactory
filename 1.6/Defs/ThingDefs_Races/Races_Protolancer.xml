@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="VQE_BaseDrone">
+	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_Protolancer</defName>
 		<label>protolancer</label>
 		<description>An automated sniper drone purpose-built for medium and long-range engagement. It utilizes a powerful, single-shot lance sniper weapon to dispose of enemies from afar. Its lightweight construction allows for quick repositioning but makes it highly vulnerable to close-range attacks and melee combat.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, protolancers don’t require connection to drone transmitters.</description>

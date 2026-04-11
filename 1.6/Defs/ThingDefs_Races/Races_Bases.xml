@@ -19,7 +19,6 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 		</statBases>
 		<comps>
-			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_Drone" />
 			<li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
 				<makeNonFleeingToo>true</makeNonFleeingToo>
 			</li>
@@ -65,6 +64,20 @@
 				</capacityLabels>
 			</li>
 		</modExtensions>
+	</ThingDef>
+	<ThingDef Name="VQE_BaseDrone_RequiresTransmitter" Abstract="True" ParentName="VQE_BaseDrone">
+		<comps>
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_Drone">
+				<requiresTransmitter>true</requiresTransmitter>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef Name="VQE_BaseDrone_NoTransmitterRequirement" Abstract="True" ParentName="VQE_BaseDrone">
+		<comps>
+			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_Drone">
+				<requiresTransmitter>false</requiresTransmitter>
+			</li>
+		</comps>
 	</ThingDef>
 	<PawnKindDef Abstract="True" Name="VQE_BaseDroneKind">
 		<defaultFactionDef>AncientsHostile</defaultFactionDef>

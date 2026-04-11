@@ -10,14 +10,14 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             if (thing is null)
             {
-                GenDraw.DrawRadiusRing(center, 14.9f);
+                GenDraw.DrawRadiusRing(center, Utils.TransmitterRadius);
             }
             else
             {
                 var comp = thing.TryGetComp<CompPowerTrader>();
                 if (comp != null && comp.PowerOn)
                 {
-                    GenDraw.DrawRadiusRing(center, 14.9f);
+                    GenDraw.DrawRadiusRing(center, Utils.TransmitterRadius);
                 }
             }
         }

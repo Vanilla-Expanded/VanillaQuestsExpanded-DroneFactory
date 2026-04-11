@@ -6,12 +6,28 @@ namespace VanillaQuestsExpandedDroneFactory
     [HotSwappable]
     public static class Utils
     {
+        public const float TransmitterRadius = 14.9f;
+
+        public static bool IsWithinTransmitter(this Pawn drone)
+        {
+            if (drone.RequiresTransmitter()) return IsWithinTransmitter(drone.Position, drone.Map);
+            return true;
+        }
         public static bool IsWithinTransmitter(IntVec3 c, Map map)
         {
             var transmitters = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
             foreach (var t in transmitters)
             {
-                if (c.DistanceTo(t.Position) <= 14.9f && t.TryGetComp<CompPowerTrader>().PowerOn) return true;
+                if (c.DistanceTo(t.Position) <= TransmitterRadius && t.TryGetComp<CompPowerTrader>().PowerOn) return true;
+            }
+            return false;
+        }
+
+        public static bool RequiresTransmitter(this Pawn pawn)
+        {
+            if (pawn.Faction == Faction.OfPlayer)
+            {
+                return pawn.GetComp<CompDrone>()?.Props.requiresTransmitter ?? false;
             }
             return false;
         }
@@ -31,7 +47,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public static AcceptanceReport CanDraftDrone(Pawn pawn)
         {
-            if (!IsWithinTransmitter(pawn.Position, pawn.Map))
+            if (!pawn.IsWithinTransmitter())
             {
                 return new AcceptanceReport("VQE_OutsideTransmitterRange".Translate());
             }
@@ -64,7 +80,7 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             bool shouldCheck = forbidMode ? __result : !__result;
             if (shouldCheck || pawn == null || pawn.Map == null) return;
-            if (pawn.IsDrone())
+            if (pawn.IsDrone() && pawn.RequiresTransmitter())
             {
                 if (pawn.MentalState is MentalState_SelfDecommission) return;
                 bool reverse = false;
