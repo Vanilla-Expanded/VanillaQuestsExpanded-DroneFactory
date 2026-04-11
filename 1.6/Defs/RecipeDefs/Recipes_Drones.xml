@@ -373,11 +373,20 @@
 				</filter>
 				<count>10</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VQE_DroneCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
 				<li>ComponentIndustrial</li>
+				<li>VQE_DroneCore</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -419,11 +428,20 @@
 				</filter>
 				<count>5</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VQE_DroneCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
 				<li>ComponentIndustrial</li>
+				<li>VQE_DroneCore</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -603,11 +621,20 @@
 				</filter>
 				<count>10</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VQE_DroneCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
 				<li>ComponentIndustrial</li>
+				<li>VQE_DroneCore</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -649,11 +676,20 @@
 				</filter>
 				<count>6</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VQE_DroneCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
 				<li>ComponentIndustrial</li>
+				<li>VQE_DroneCore</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

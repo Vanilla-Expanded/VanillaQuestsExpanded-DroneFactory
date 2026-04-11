@@ -45,6 +45,7 @@
 		<butcherProducts>
 			<Steel>115</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
+			<VQE_DroneCore>1</VQE_DroneCore>
 		</butcherProducts>
 		<comps>
 			<li>

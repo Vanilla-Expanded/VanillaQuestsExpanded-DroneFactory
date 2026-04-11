@@ -91,7 +91,11 @@
 				<alwaysShowProgressBar>true</alwaysShowProgressBar>
 				<processes>
 					<li>VFEFactory_AssembleBattleDrone</li>
-					
+					<li>VFEFactory_AssembleCleanerDrone</li>
+					<li>VFEFactory_AssembleHaulerDrone</li>
+					<li>VFEFactory_AssembleMinerDrone</li>
+					<li>VFEFactory_AssembleAutobroadcasterDrone</li>
+					<li>VFEFactory_AssembleTurretDrone</li>
 				</processes>
 				<hideSettings>true</hideSettings>
 			</li>
