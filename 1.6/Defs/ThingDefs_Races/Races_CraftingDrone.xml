@@ -48,7 +48,7 @@
 		
 	</ThingDef>
 	<PawnKindDef ParentName="VQE_BaseDroneKindNonCombat">
-			<defName>VQE_CraftingDrone</defName>
+		<defName>VQE_CraftingDroneKindDef</defName>
 		<label>crafting drone</label>
 		<labelPlural>crafting drones</labelPlural>
 		<race>VQE_CraftingDrone</race>

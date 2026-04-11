@@ -176,7 +176,56 @@
 		<comps>
 			<li Class="CompProperties_AmbientSound">
 				<sound>VQE_AutomatedMachiningSustainer</sound>
-				
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+	<ThingDef ParentName="VQED_DronesBuildingBase">
+		<defName>VQE_TinkererHoldingPlatform</defName>
+		<label>tinkerer holding platform</label>
+		<description>A specialized docking and recharge platform used for high-value, non-combat drone like the Tinkerer. Its durable construction is designed to secure and protect the drone. The platform can be destroyed to recover its resources, or it can be hacked to override its security protocols and release the Tinkerer, which will be reprogrammed to immediately join your colony.</description>
+		<graphicData>
+			<texPath>Things/Structure/Exotic/TinkererHoldingPlatform/TinkererHoldingPlatform_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<thingClass>VanillaQuestsExpandedDroneFactory.Building_TinkererHoldingPlatform</thingClass>
+		<fillPercent>0.5</fillPercent>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<VQE_DroneCore>1</VQE_DroneCore>
+		</killedLeavings>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<comps>
+			<li Class="CompProperties_Hackable">
+				<defence>3000</defence>
+				<glowIfHacked>false</glowIfHacked>
+				<lockoutDurationHoursRange>1~2</lockoutDurationHoursRange>
+				<notHackedInspectString>Hack to release the tinkerer.</notHackedInspectString>
+				<hackedInspectString>Released</hackedInspectString>
+				<hackedMessage>{HACKER_labelShort} has finished hacking and released the tinkerer.</hackedMessage>
+				<unhackedGraphicData>
+					<texPath>Things/Structure/Exotic/TinkererHoldingPlatform/TinkererHoldingPlatform_On</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,3)</drawSize>
+				</unhackedGraphicData>
+				<hackedGraphicData>
+					<texPath>Things/Structure/Exotic/TinkererHoldingPlatform/TinkererHoldingPlatform_Off</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3,3)</drawSize>
+				</hackedGraphicData>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3.9</glowRadius>
+				<glowColor>(239,133,50)</glowColor>
 			</li>
 		</comps>
 		<tickerType>Normal</tickerType>

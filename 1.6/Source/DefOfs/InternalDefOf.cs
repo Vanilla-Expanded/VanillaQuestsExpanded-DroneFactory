@@ -48,6 +48,7 @@ namespace VanillaQuestsExpandedDroneFactory
         public static PawnKindDef VQE_BattleDrone;
 		public static PawnKindDef VQE_RaiderDrone;
 		public static PawnKindDef VQE_HornetDrone;
+        public static PawnKindDef VQE_CraftingDroneKindDef;
 
         public static RecipeDef VQE_AssembleBattleDrone;
 		public static RecipeDef VQE_AssembleCleanerDrone;
