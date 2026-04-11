@@ -126,7 +126,7 @@
 				</li>
 				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
 					<pawnKinds>
-						<li>VQE_CraftingDrone</li>
+						<li>VQE_CraftingDroneKindDef</li>
 					</pawnKinds>
 					<subNodes>
 						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_DoWork">

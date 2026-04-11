@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleBattleDrone</defName>
+		<label>Assemble battle drone</label>
+		<labelOverride>Assemble battle drone</labelOverride>
+		<description>Automatically assemble a battle drone from steel and components.</description>
+		<priorityInBillList>0</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+			
+		</autoInputSlots>
+		<ticks>20000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>10</countNeeded>
+			</li>
+			<li>
+				<thing>Chemfuel</thing>
+				<countNeeded>7</countNeeded>
+			</li>
+			<li>
+				<thing>Gold</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Plasteel</thing>
+				<count>5</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Smelt</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+		<maxOutputCount>75</maxOutputCount>
+	</PipeSystem.ProcessDef>
+	
+</Defs>
