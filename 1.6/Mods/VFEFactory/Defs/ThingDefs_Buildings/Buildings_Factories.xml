@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<ThingDef ParentName="BuildingBase">
 		<defName>VFEFactory_DroneAutofactory</defName>
 		<label>drone autofactory</label>
@@ -23,7 +22,6 @@
 		<costList>
 			<Steel>440</Steel>
 			<ComponentIndustrial>20</ComponentIndustrial>
-			
 		</costList>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<altitudeLayer>Building</altitudeLayer>
@@ -80,7 +78,7 @@
 				<heatPerSecond>16</heatPerSecond>
 				<heatPushMaxTemperature>120</heatPushMaxTemperature>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 				<notWorkingKey>VFEFactory_FactoryNotWorking</notWorkingKey>
 				<canOverclock>true</canOverclock>
@@ -96,6 +94,13 @@
 					<li>VFEFactory_AssembleMinerDrone</li>
 					<li>VFEFactory_AssembleAutobroadcasterDrone</li>
 					<li>VFEFactory_AssembleTurretDrone</li>
+					<li>VFEFactory_AssembleRaiderDrone</li>
+					<li>VFEFactory_AssembleProtolancerDrone</li>
+					<li>VFEFactory_AssembleFarmingDrone</li>
+					<li>VFEFactory_AssembleFirefighterDrone</li>
+					<li>VFEFactory_AssembleHornetDrone</li>
+					<li>VFEFactory_AssembleStingrayDrone</li>
+					<li>VFEFactory_AssemblePackDrone</li>
 				</processes>
 				<hideSettings>true</hideSettings>
 			</li>
@@ -105,9 +110,7 @@
 					<li>VFEFactory_Heatsink</li>
 				</linkableFacilities>
 			</li>
-			
 		</comps>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
-	
 </Defs>

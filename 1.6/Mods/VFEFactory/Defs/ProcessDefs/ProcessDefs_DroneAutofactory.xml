@@ -12,7 +12,6 @@
 			<li>(-2,0,2)</li>
 			<li>(0,0,4)</li>
 			<li>(2,0,2)</li>
-			
 		</autoInputSlots>
 		<ticks>20000</ticks>
 		<ingredients>
@@ -24,7 +23,6 @@
 				<thing>ComponentIndustrial</thing>
 				<countNeeded>4</countNeeded>
 			</li>
-			
 		</ingredients>
 		<resultToDetect>VQE_BattleDrone</resultToDetect>
 		<results>
@@ -42,7 +40,6 @@
 		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
 		<maxOutputCount>1</maxOutputCount>
 	</PipeSystem.ProcessDef>
-	
 	<PipeSystem.ProcessDef>
 		<defName>VFEFactory_AssembleCleanerDrone</defName>
 		<label>Assemble cleaner drone</label>
@@ -55,7 +52,6 @@
 			<li>(-2,0,2)</li>
 			<li>(0,0,4)</li>
 			<li>(2,0,2)</li>
-			
 		</autoInputSlots>
 		<ticks>15000</ticks>
 		<ingredients>
@@ -67,7 +63,6 @@
 				<thing>ComponentIndustrial</thing>
 				<countNeeded>3</countNeeded>
 			</li>
-			
 		</ingredients>
 		<resultToDetect>VQE_CleanerDrone</resultToDetect>
 		<results>
@@ -85,7 +80,6 @@
 		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
 		<maxOutputCount>1</maxOutputCount>
 	</PipeSystem.ProcessDef>
-	
 	<PipeSystem.ProcessDef>
 		<defName>VFEFactory_AssembleHaulerDrone</defName>
 		<label>Assemble hauler drone</label>
@@ -98,7 +92,6 @@
 			<li>(-2,0,2)</li>
 			<li>(0,0,4)</li>
 			<li>(2,0,2)</li>
-			
 		</autoInputSlots>
 		<ticks>14000</ticks>
 		<ingredients>
@@ -110,7 +103,6 @@
 				<thing>ComponentIndustrial</thing>
 				<countNeeded>3</countNeeded>
 			</li>
-			
 		</ingredients>
 		<resultToDetect>VQE_HaulerDrone</resultToDetect>
 		<results>
@@ -128,7 +120,6 @@
 		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
 		<maxOutputCount>1</maxOutputCount>
 	</PipeSystem.ProcessDef>
-	
 	<PipeSystem.ProcessDef>
 		<defName>VFEFactory_AssembleMinerDrone</defName>
 		<label>Assemble miner drone</label>
@@ -141,7 +132,6 @@
 			<li>(-2,0,2)</li>
 			<li>(0,0,4)</li>
 			<li>(2,0,2)</li>
-			
 		</autoInputSlots>
 		<ticks>15000</ticks>
 		<ingredients>
@@ -153,7 +143,6 @@
 				<thing>ComponentIndustrial</thing>
 				<countNeeded>3</countNeeded>
 			</li>
-			
 		</ingredients>
 		<resultToDetect>VQE_MinerDrone</resultToDetect>
 		<results>
@@ -171,7 +160,6 @@
 		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
 		<maxOutputCount>1</maxOutputCount>
 	</PipeSystem.ProcessDef>
-	
 	<PipeSystem.ProcessDef>
 		<defName>VFEFactory_AssembleAutobroadcasterDrone</defName>
 		<label>Assemble autobroadcaster drone</label>
@@ -184,7 +172,6 @@
 			<li>(-2,0,2)</li>
 			<li>(0,0,4)</li>
 			<li>(2,0,2)</li>
-			
 		</autoInputSlots>
 		<ticks>18000</ticks>
 		<ingredients>
@@ -196,7 +183,6 @@
 				<thing>ComponentIndustrial</thing>
 				<countNeeded>6</countNeeded>
 			</li>
-			
 		</ingredients>
 		<resultToDetect>VQE_AutobroadcasterDrone</resultToDetect>
 		<results>
@@ -214,7 +200,6 @@
 		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
 		<maxOutputCount>1</maxOutputCount>
 	</PipeSystem.ProcessDef>
-	
 	<PipeSystem.ProcessDef>
 		<defName>VFEFactory_AssembleTurretDrone</defName>
 		<label>Assemble turret drone</label>
@@ -227,7 +212,6 @@
 			<li>(-2,0,2)</li>
 			<li>(0,0,4)</li>
 			<li>(2,0,2)</li>
-			
 		</autoInputSlots>
 		<ticks>26000</ticks>
 		<ingredients>
@@ -239,7 +223,6 @@
 				<thing>ComponentIndustrial</thing>
 				<countNeeded>7</countNeeded>
 			</li>
-			
 		</ingredients>
 		<resultToDetect>VQE_TurretDrone</resultToDetect>
 		<results>
@@ -257,5 +240,335 @@
 		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
 		<maxOutputCount>1</maxOutputCount>
 	</PipeSystem.ProcessDef>
-	
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleRaiderDrone</defName>
+		<label>Assemble raider drone</label>
+		<labelOverride>Assemble raider drone</labelOverride>
+		<description>Automatically assemble a raider drone from steel, components and a drone core.</description>
+		<priorityInBillList>6</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>37500</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>280</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>10</countNeeded>
+			</li>
+			<li>
+				<thing>VQE_DroneCore</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_RaiderDrone</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_RaiderDrone</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssembleRaiderDrone</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleProtolancerDrone</defName>
+		<label>Assemble protolancer drone</label>
+		<labelOverride>Assemble protolancer drone</labelOverride>
+		<description>Automatically assemble a protolancer drone from steel, components and a drone core.</description>
+		<priorityInBillList>7</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>30000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>115</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>5</countNeeded>
+			</li>
+			<li>
+				<thing>VQE_DroneCore</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_Protolancer</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_Protolancer</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssembleProtolancer</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleFarmingDrone</defName>
+		<label>Assemble farming drone</label>
+		<labelOverride>Assemble farming drone</labelOverride>
+		<description>Automatically assemble a farming drone from steel and components.</description>
+		<priorityInBillList>8</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>20000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>55</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>4</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_FarmingDrone</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_FarmingDrone</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssembleFarmingDrone</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleFirefighterDrone</defName>
+		<label>Assemble firefighter drone</label>
+		<labelOverride>Assemble firefighter drone</labelOverride>
+		<description>Automatically assemble a firefighter drone from steel and components.</description>
+		<priorityInBillList>9</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>10000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>65</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>2</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_FirefighterDrone</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_FirefighterDrone</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssembleFirefighterDrone</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleHornetDrone</defName>
+		<label>Assemble hornet drone</label>
+		<labelOverride>Assemble hornet drone</labelOverride>
+		<description>Automatically assemble a hornet drone from steel and components.</description>
+		<priorityInBillList>10</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>30000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>120</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>3</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_HornetDrone</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_HornetDrone</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssembleHornetDrone</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssembleStingrayDrone</defName>
+		<label>Assemble stingray drone</label>
+		<labelOverride>Assemble stingray drone</labelOverride>
+		<description>Automatically assemble a stingray drone from steel, components and a drone core.</description>
+		<priorityInBillList>11</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>90000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>320</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>10</countNeeded>
+			</li>
+			<li>
+				<thing>VQE_DroneCore</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_StingrayDrone</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_StingrayDrone</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssembleStingrayDrone</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef>
+		<defName>VFEFactory_AssemblePackDrone</defName>
+		<label>Assemble pack drone</label>
+		<labelOverride>Assemble pack drone</labelOverride>
+		<description>Automatically assemble a pack drone from steel, components and a drone core.</description>
+		<priorityInBillList>12</priorityInBillList>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoGrabFromHoppers>true</autoGrabFromHoppers>
+		<autoInputSlots>
+			<li>(-2,0,2)</li>
+			<li>(0,0,4)</li>
+			<li>(2,0,2)</li>
+		</autoInputSlots>
+		<ticks>35000</ticks>
+		<ingredients>
+			<li>
+				<thing>Steel</thing>
+				<countNeeded>200</countNeeded>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<countNeeded>6</countNeeded>
+			</li>
+			<li>
+				<thing>VQE_DroneCore</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<resultToDetect>VQE_PackDrone</resultToDetect>
+		<results>
+			<li>
+				<thing>VQE_UnfinishedDroneSpawner_PackDrone</thing>
+				<count>1</count>
+			</li>
+		</results>
+		<isFactoryProcess>true</isFactoryProcess>
+		<autoExtract>true</autoExtract>
+		<onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+		<effecterWhenWorking>true</effecterWhenWorking>
+		<effecterDef>VFEFactory_Default</effecterDef>
+		<sustainerWhenWorking>true</sustainerWhenWorking>
+		<sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+		<maxOutputCount>1</maxOutputCount>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedDroneFactory.ProcessDefExtension">
+				<associatedLockableRecipe>VQE_AssemblePackDrone</associatedLockableRecipe>
+			</li>
+		</modExtensions>
+	</PipeSystem.ProcessDef>
 </Defs>
