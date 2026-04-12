@@ -14,11 +14,16 @@ namespace VanillaQuestsExpandedDroneFactory
         public static float transmitterRadius = baseTransmitterRadius;
         public const float baseTransmitterRadius = 14.9f;
 
+        public static float lifespanMultiplier = baseLifespanMultiplier;
+        public const float baseLifespanMultiplier = 1f;
+
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref transmitterRadius, "transmitterRadius", baseTransmitterRadius);           
+            Scribe_Values.Look(ref transmitterRadius, "transmitterRadius", baseTransmitterRadius);
+            Scribe_Values.Look(ref lifespanMultiplier, "lifespanMultiplier", baseLifespanMultiplier);
+
         }
 
         public static void DoWindowContents(Rect inRect)
@@ -35,6 +40,14 @@ namespace VanillaQuestsExpandedDroneFactory
             if (ls.Settings_Button("VQED_Reset".Translate(), new Rect(0f, transmitterRadiusLabel.position.y + 35, 250f, 29f)))
             {
                 transmitterRadius = baseTransmitterRadius;
+            }
+
+            var lifespanMultiplierLabel = ls.LabelPlusButton("VQE_LifespanMultiplier".Translate() + ": x" + lifespanMultiplier, "VQE_LifespanMultiplierDesc".Translate());
+            lifespanMultiplier = (float)Math.Round(ls.Slider(lifespanMultiplier, 1f, 10), 1);
+
+            if (ls.Settings_Button("VQED_Reset".Translate(), new Rect(0f, lifespanMultiplierLabel.position.y + 35, 250f, 29f)))
+            {
+                lifespanMultiplier = baseLifespanMultiplier;
             }
 
             ls.End();
