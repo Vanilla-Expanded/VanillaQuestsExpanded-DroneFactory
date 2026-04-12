@@ -13,7 +13,7 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             get
             {
-                var years = pawn.GetStatValue(InternalDefOf.VQE_LifespanYears) * VanillaQuestsExpandedDroneFactory_Settings.lifespanMultiplier;
+                var years = pawn.GetStatValue(InternalDefOf.VQE_LifespanYears);
                 return years;
             }
         }

@@ -42,5 +42,6 @@
 	<VQE_TransmitterRadiusDesc>The radius around a transmitter in which drones that need it will be able to operate. 15 tiles by default (actually 14.9 due to the way the game works).</VQE_TransmitterRadiusDesc>
 	<VQED_Reset>Reset</VQED_Reset>
 	<VQE_LifespanMultiplier>Drone lifespan multiplier</VQE_LifespanMultiplier>
+	<VQE_LifespanMultiplierModOptions>Drone lifespan multiplier in mod settings: {0}</VQE_LifespanMultiplierModOptions>
 	<VQE_LifespanMultiplierDesc>A multiplier on the lifespan of drones. For example, a value of x2 will double the lifespan of all drones. Bear in mind this will not change the current lifespan of already built drones.</VQE_LifespanMultiplierDesc>
 </LanguageData>
