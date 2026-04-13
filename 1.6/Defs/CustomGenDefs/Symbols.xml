@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>VQED_JunkyardSkidloader</defName>
+		<thing>VQED_JunkyardSkidloader</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQE_CompactedDroneScrap</defName>
+		<thing>VQE_CompactedDroneScrap</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DroneChunk</defName>
+		<thing>VQED_DroneChunk</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQE_ImmobilizedTurret</defName>
+		<thing>VQE_ImmobilizedTurret</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DroneShell</defName>
+		<thing>VQED_DroneShell</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQE_SalvageableDroneWreck</defName>
+		<thing>VQE_SalvageableDroneWreck</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_JunkyardDigger</defName>
+		<thing>VQED_JunkyardDigger</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DefunctAerialDrone</defName>
+		<thing>VQED_DefunctAerialDrone</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DestroyedColossusLeg</defName>
+		<thing>VQED_DestroyedColossusLeg</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DestroyedColossusChassis</defName>
+		<thing>VQED_DestroyedColossusChassis</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DestroyedColossusDifferential</defName>
+		<thing>VQED_DestroyedColossusDifferential</thing>
+	</KCSG.SymbolDef>
+</Defs>

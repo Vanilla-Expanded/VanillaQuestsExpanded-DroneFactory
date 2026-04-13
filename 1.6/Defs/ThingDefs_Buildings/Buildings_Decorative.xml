@@ -75,6 +75,8 @@
 			<mineableYieldWasteable>false</mineableYieldWasteable>
 			<isInert>true</isInert>
 		</building>
+		 <staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
 		<category>Building</category>
 		<mineable>true</mineable>
 		<selectable>true</selectable>
