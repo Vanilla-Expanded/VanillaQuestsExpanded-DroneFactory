@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<QuestScriptDef>
+		<defName>VQE_DroneScrapyard</defName>
+		<root Class="VanillaQuestsExpandedDroneFactory.QuestNode_Root_DroneScrapyard">
+			<sitePartDef>VQE_DroneScrapyard</sitePartDef>
+			<distanceRange>15~30</distanceRange>
+		</root>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->Drone scrapyard</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has sent us the coordinates of a drone scrapyard.\n\nDefending drones:\n[defendingDrones]</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<modExtensions>
+			<li Class="VEF.Storyteller.QuestChainExtension">
+				<questChainDef>VQE_TheDroneFactory</questChainDef>
+				<isRepeatable>true</isRepeatable>
+				<grantAgainOnFailure>true</grantAgainOnFailure>
+				<daysUntilGrantAgainOnFailure>30~30</daysUntilGrantAgainOnFailure>
+				<grantAgainOnSuccess>true</grantAgainOnSuccess>
+				<daysUntilGrantAgainOnSuccess>30~60</daysUntilGrantAgainOnSuccess>
+				<grantAgainOnExpiry>true</grantAgainOnExpiry>
+				<daysUntilGrantAgainOnExpiry>30~60</daysUntilGrantAgainOnExpiry>
+				<conditionMinDaysSinceStart>20~40</conditionMinDaysSinceStart>
+				<delayTicksAfterTriggering>600000~1200000</delayTicksAfterTriggering>
+				<requiredResearch>VQE_Dronetech</requiredResearch>
+			</li>
+		</modExtensions>
+	</QuestScriptDef>
+
+	<SitePartDef>
+		<defName>VQE_DroneScrapyard</defName>
+		<label>drone scrapyard</label>
+		<description>An old drone scrapyard filled with unstable machinery and ruined drones.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>UI/WorldIcons/AncientScrapyard</expandingIconTexture>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>VQE_DroneScrapyard</defName>
+		<linkWithSite>VQE_DroneScrapyard</linkWithSite>
+		<order>450</order>
+		<genStep Class="VanillaQuestsExpandedDroneFactory.GenStep_DroneScrapyard">
+			<structureSetDef>VQE_DroneScrapyard</structureSetDef>
+		</genStep>
+	</GenStepDef>
+
+	<VEF.Storyteller.StructureSetDef>
+		<defName>VQE_DroneScrapyard</defName>
+		<structureLayouts>
+			<li>
+				<pattern>VQE_DroneScrapyardObjectivePrefab_.*</pattern>
+				<offset>(0, 0, 0)</offset>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(0, 0, 1)</offset>
+				<pointsRange>0~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(0, 0, -1)</offset>
+				<pointsRange>0~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(1, 0, 0)</offset>
+				<pointsRange>0~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(-1, 0, 0)</offset>
+				<pointsRange>400~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(1, 0, 1)</offset>
+				<pointsRange>800~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(-1, 0, 1)</offset>
+				<pointsRange>1200~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(-1, 0, -1)</offset>
+				<pointsRange>1600~99999</pointsRange>
+			</li>
+			<li>
+				<pattern>VQE_DroneScrapyardPrefab_.*</pattern>
+				<offset>(1, 0, -1)</offset>
+				<pointsRange>2000~99999</pointsRange>
+			</li>
+		</structureLayouts>
+	</VEF.Storyteller.StructureSetDef>
+</Defs>
