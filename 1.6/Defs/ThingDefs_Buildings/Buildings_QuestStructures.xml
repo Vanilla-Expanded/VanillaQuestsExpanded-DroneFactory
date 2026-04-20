@@ -60,7 +60,6 @@
 					</li>
 				</wickMessages>
 			</li>
-			<li Class="CompProperties_FireBurst" />
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="VQED_DronesBuildingBase">
