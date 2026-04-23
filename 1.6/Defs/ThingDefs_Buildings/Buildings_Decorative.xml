@@ -235,6 +235,10 @@
 			<ChunkSlagSteel>4</ChunkSlagSteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</killedLeavings>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
 		<statBases>
 			<MaxHitPoints>2000</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -245,6 +249,9 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(5,3)</drawSize>
 		</graphicData>
+		<building>
+			<deconstructible>true</deconstructible>
+		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQED_DronesBuildingBase">
 		<defName>VQED_DisabledColossusDrone</defName>
@@ -256,6 +263,10 @@
 			<ChunkSlagSteel>4</ChunkSlagSteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</killedLeavings>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
 		<statBases>
 			<MaxHitPoints>2000</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -266,6 +277,9 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		<building>
+			<deconstructible>true</deconstructible>
+		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQED_DronesBuildingBase">
 		<defName>VQED_DroneResourcePallet</defName>

@@ -4,6 +4,7 @@
         <defName>VQE_RepairDrone</defName>
         <driverClass>VanillaQuestsExpandedDroneFactory.JobDriver_RepairDrone</driverClass>
         <reportString>repairing TargetA.</reportString>
+		
     </JobDef>
 
     <JobDef>

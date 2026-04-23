@@ -28,7 +28,7 @@ namespace VanillaQuestsExpandedDroneFactory
             try
             {
                 PawnGenerationRequest request = new PawnGenerationRequest(Props.hatcherKindDef, Faction.OfPlayerSilentFail, 
-                    PawnGenerationContext.NonPlayer, null, forceGenerateNewPawn: true);
+                    PawnGenerationContext.NonPlayer, null, forceGenerateNewPawn: true, fixedBiologicalAge:0);
                 (parent.ParentHolder as Pawn_CarryTracker)?.TryDropCarriedThing(parent.PositionHeld, ThingPlaceMode.Near, out var _);
 
                 Pawn pawn = PawnGenerator.GeneratePawn(request);

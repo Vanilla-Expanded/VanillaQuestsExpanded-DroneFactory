@@ -4,6 +4,7 @@
 		<defName>VQE_GotoPatrolDest</defName>
 		<driverClass>JobDriver_GotoPatrolDest</driverClass>
 		<reportString>patrolling.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
 		<defName>VQE_DecryptCore</defName>
