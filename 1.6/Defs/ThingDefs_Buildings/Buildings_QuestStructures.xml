@@ -13,7 +13,7 @@
 		<tickerType>Normal</tickerType>
 		<pathCost>50</pathCost>
 		<statBases>
-			<MaxHitPoints>3000</MaxHitPoints>
+			<MaxHitPoints>2000</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Beauty>-20</Beauty>
 		</statBases>
