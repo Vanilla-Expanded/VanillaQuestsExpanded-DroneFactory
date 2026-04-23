@@ -67,6 +67,9 @@
 					</subNodes>
 				</li>
 
+				<!-- Seek allowed area if outside -->
+				<li Class="JobGiver_SeekAllowedArea" />
+
 				<!-- React to close melee threat -->
 				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
 					<pawnKinds>

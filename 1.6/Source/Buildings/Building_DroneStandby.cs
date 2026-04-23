@@ -44,16 +44,19 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
-            yield return new Command_Action
+            if (Map.designationManager.DesignationOn(this, InternalDefOf.VQE_ReactivateDrone_Designation) == null)
             {
-                defaultLabel = "VQE_Reactivate".Translate(),
-                defaultDesc = "VQE_ReactivateDesc".Translate(),
-                icon = ContentFinder<Texture2D>.Get("UI/Gizmos/Reactivate_Gizmo"),
-                action = delegate
+                yield return new Command_Action
                 {
-                    Map.designationManager.AddDesignation(new Designation(this, InternalDefOf.VQE_ReactivateDrone_Designation));
-                }
-            };
+                    defaultLabel = "VQE_Reactivate".Translate(),
+                    defaultDesc = "VQE_ReactivateDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/Gizmos/Reactivate_Gizmo"),
+                    action = delegate
+                    {
+                        Map.designationManager.AddDesignation(new Designation(this, InternalDefOf.VQE_ReactivateDrone_Designation));
+                    }
+                };
+            }
         }
 
         public override void ExposeData()

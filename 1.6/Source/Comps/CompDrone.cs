@@ -197,13 +197,16 @@ namespace VanillaQuestsExpandedDroneFactory
             }
             if (pawn.Faction != Faction.OfPlayer) yield break;
 
-            yield return new Command_Action
+            if (pawn.Map.designationManager.DesignationOn(pawn, InternalDefOf.VQE_ShutdownDrone_Designation) == null)
             {
-                defaultLabel = "VQE_Shutdown".Translate(),
-                defaultDesc = "VQE_ShutdownDesc".Translate(),
-                icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ShutDown_Designator"),
-                action = () => pawn.Map.designationManager.AddDesignation(new Designation(pawn, InternalDefOf.VQE_ShutdownDrone_Designation))
-            };
+                yield return new Command_Action
+                {
+                    defaultLabel = "VQE_Shutdown".Translate(),
+                    defaultDesc = "VQE_ShutdownDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ShutDown_Designator"),
+                    action = () => pawn.Map.designationManager.AddDesignation(new Designation(pawn, InternalDefOf.VQE_ShutdownDrone_Designation))
+                };
+            }
 
             var cmd = new Command_Action
             {
