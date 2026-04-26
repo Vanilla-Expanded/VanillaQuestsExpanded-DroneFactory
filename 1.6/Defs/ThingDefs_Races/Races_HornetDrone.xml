@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="VQE_BaseDrone_RequiresTransmitter">
 		<defName>VQE_HornetDrone</defName>
 		<label>hornet drone</label>
 		<description>An automated military drone for close-range defense and combat support. The drone is capable of piercing an enemy repeatedly with a long, hardened stinger. While it doesn’t carry the same paralytic as wasp drones, it’s capable of piercing heavy armor and dealing significant damage, while its heavy-duty armor plating allows it to withstand a lot of damage.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.</description>
-		
+
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -14,7 +14,6 @@
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
-			<thinkTreeConstant>VQE_BattleDroneConstant</thinkTreeConstant>
 			<baseHealthScale>1.2</baseHealthScale>
 			<baseBodySize>0.8</baseBodySize>
 			<body>VQE_DroneFlying</body>
@@ -67,6 +66,6 @@
 			</li>
 		</lifeStages>
 		<canOpenDoors>true</canOpenDoors>
-		
+
 	</PawnKindDef>
 </Defs>

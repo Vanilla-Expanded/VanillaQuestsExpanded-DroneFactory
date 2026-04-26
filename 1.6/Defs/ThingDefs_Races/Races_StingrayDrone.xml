@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_StingrayDrone</defName>
@@ -16,7 +16,6 @@
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
-			<thinkTreeConstant>VQE_BattleDroneConstant</thinkTreeConstant>
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseBodySize>2</baseBodySize>
 			<body>VQE_DroneFlying</body>

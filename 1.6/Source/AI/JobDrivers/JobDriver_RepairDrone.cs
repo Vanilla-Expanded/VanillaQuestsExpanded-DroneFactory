@@ -10,26 +10,26 @@ namespace VanillaQuestsExpandedDroneFactory
     public class JobDriver_RepairDrone : JobDriver
     {
         private Pawn Drone => (Pawn)job.GetTarget(TargetIndex.A).Thing;
-
         private int ticksToNextRepair;
-
         private int TicksPerHeal => Mathf.RoundToInt(1f / pawn.GetStatValue(StatDefOf.GeneralLaborSpeed) * 120f);
-
         public override bool TryMakePreToilReservations(bool errorOnFailed) => pawn.Reserve(Drone, job, 1, -1, null, errorOnFailed);
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
-            this.FailOnDestroyedNullOrForbidden(TargetIndex.A);
+            this.FailOnDestroyedOrNull(TargetIndex.A);
+            this.FailOnForbidden(TargetIndex.A);
+            this.FailOn(() => Drone.IsAttacking());
+
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
 
-            var repair = Toils_General.WaitWith(TargetIndex.A, int.MaxValue, false, true, true);
+            var repair = Toils_General.WaitWith(TargetIndex.A, int.MaxValue, useProgressBar: false, maintainPosture: true, maintainSleep: true);
             repair.WithEffect(EffecterDefOf.ConstructMetal, TargetIndex.A);
             repair.AddPreInitAction(delegate
             {
                 ticksToNextRepair = TicksPerHeal;
             });
             repair.handlingFacing = true;
-            repair.tickIntervalAction = delegate(int delta)
+            repair.tickIntervalAction = delegate (int delta)
             {
                 ticksToNextRepair -= delta;
                 if (ticksToNextRepair <= 0)
@@ -63,6 +63,13 @@ namespace VanillaQuestsExpandedDroneFactory
                     pawn.skills.Learn(SkillDefOf.Construction, 0.05f * (float)delta);
                 }
             };
+            repair.AddFinishAction(delegate
+            {   
+                if (Drone.jobs?.curJob != null)
+                {
+                    Drone.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                }
+            });
             repair.AddEndCondition(() => CanRepair() ? JobCondition.Ongoing : JobCondition.Succeeded);
             repair.activeSkill = () => SkillDefOf.Construction;
             yield return repair;
