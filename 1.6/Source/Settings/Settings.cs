@@ -17,13 +17,15 @@ namespace VanillaQuestsExpandedDroneFactory
         public static float lifespanMultiplier = baseLifespanMultiplier;
         public const float baseLifespanMultiplier = 1f;
 
+        public static bool consumeLifespanOnRepair = baseConsumeLifespanOnRepair;
+        public const bool baseConsumeLifespanOnRepair = true;
 
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref transmitterRadius, "transmitterRadius", baseTransmitterRadius);
             Scribe_Values.Look(ref lifespanMultiplier, "lifespanMultiplier", baseLifespanMultiplier);
-
+            Scribe_Values.Look(ref consumeLifespanOnRepair, "consumeLifespanOnRepair", baseConsumeLifespanOnRepair);
         }
 
         public static void DoWindowContents(Rect inRect)
@@ -49,6 +51,9 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 lifespanMultiplier = baseLifespanMultiplier;
             }
+
+            ls.Gap(10f);
+            ls.CheckboxLabeled("VQE_ConsumeLifespanOnRepair".Translate(), ref consumeLifespanOnRepair, "VQE_ConsumeLifespanOnRepairDesc".Translate());
 
             ls.End();
         }

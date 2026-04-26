@@ -42,8 +42,11 @@ namespace VanillaQuestsExpandedDroneFactory
                     {
                         float healAmount = Mathf.Min(injury.Severity, 1f);
                         injury.Heal(healAmount);
-                        var lifespan = Drone.needs.TryGetNeed<Need_Lifespan>();
-                        if (lifespan != null) lifespan.CurLevel -= 0.001f * healAmount;
+                        if (VanillaQuestsExpandedDroneFactory_Settings.consumeLifespanOnRepair)
+                        {
+                            var lifespan = Drone.needs.TryGetNeed<Need_Lifespan>();
+                            if (lifespan != null) lifespan.CurLevel -= 0.001f * healAmount;
+                        }
                         if (injury.Severity <= 0f) Drone.health.RemoveHediff(injury);
                     }
                     else
@@ -52,8 +55,11 @@ namespace VanillaQuestsExpandedDroneFactory
                         if (missingPart != null)
                         {
                             Drone.health.RestorePart(missingPart.Part);
-                            var lifespan = Drone.needs.TryGetNeed<Need_Lifespan>();
-                            if (lifespan != null) lifespan.CurLevel -= missingPart.Part.def.GetMaxHealth(Drone) * 0.001f;
+                            if (VanillaQuestsExpandedDroneFactory_Settings.consumeLifespanOnRepair)
+                            {
+                                var lifespan = Drone.needs.TryGetNeed<Need_Lifespan>();
+                                if (lifespan != null) lifespan.CurLevel -= missingPart.Part.def.GetMaxHealth(Drone) * 0.001f;
+                            }
                         }
                     }
                 }
