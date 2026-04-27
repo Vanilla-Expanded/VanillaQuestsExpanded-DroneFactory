@@ -290,6 +290,7 @@
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<relicChance>0</relicChance>
+		<uiIconPath>Things/Item/Equipment/WeaponRanged/DroneIncendiaryLauncher</uiIconPath>
 		<tools>
 			<li>
 				<label>barrel</label>

@@ -12,7 +12,8 @@
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<VQE_LifespanYears>2</VQE_LifespanYears>
-			<MaxFlightTime>30</MaxFlightTime>
+			<MaxFlightTime>1000000</MaxFlightTime>
+			<FlightCooldown>0</FlightCooldown>
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
