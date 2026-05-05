@@ -14,8 +14,8 @@
 			<Beauty>-1</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Structure/Ancient/DisabledDormantDrones/DisabledDormantDrone_BattleDrone</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Structure/Security/DormantDrone_BattleDrone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTrap</thingClass>
@@ -41,8 +41,8 @@
 			<Beauty>-1</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Structure/Ancient/DisabledDormantDrones/DisabledDormantDrone_RaiderDrone</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Structure/Security/DormantDrone_RaiderDrone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			
 		</graphicData>
 		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTrap</thingClass>
@@ -67,8 +67,8 @@
 			<Beauty>-1</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Structure/Ancient/DisabledDormantDrones/DisabledDormantDrone_HornetDrone</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Structure/Security/DormantDrone_HornetDrone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			
 		</graphicData>
 		<thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTrap</thingClass>
