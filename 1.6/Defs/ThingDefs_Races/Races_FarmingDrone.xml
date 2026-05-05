@@ -11,7 +11,7 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 			<VQE_LifespanYears>4</VQE_LifespanYears>
-			<PlantWorkSpeed>0.6</PlantWorkSpeed>
+			<PlantWorkSpeed>1</PlantWorkSpeed>
 			<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
 		</statBases>
 		<race>

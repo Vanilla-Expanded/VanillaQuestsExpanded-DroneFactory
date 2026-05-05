@@ -44,4 +44,6 @@
 	<VQE_LifespanMultiplier>Drone lifespan multiplier</VQE_LifespanMultiplier>
 	<VQE_LifespanMultiplierModOptions>Drone lifespan multiplier in mod settings: {0}</VQE_LifespanMultiplierModOptions>
 	<VQE_LifespanMultiplierDesc>A multiplier on the lifespan of drones. For example, a value of x2 will double the lifespan of all drones. Bear in mind this will not change the current lifespan of already built drones.</VQE_LifespanMultiplierDesc>
+	<VQE_ConsumeLifespanOnRepair>Consume lifespan when repairing drones</VQE_ConsumeLifespanOnRepair>
+	<VQE_ConsumeLifespanOnRepairDesc>When enabled, repairing drones will consume their lifespan. Disable to prevent lifespan drain during repairs.</VQE_ConsumeLifespanOnRepairDesc>
 </LanguageData>

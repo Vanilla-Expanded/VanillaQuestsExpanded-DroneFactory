@@ -6,7 +6,7 @@
 		<description>An automated utility drone designed primarily for heavy hauling and caravan support. Its large frame and high carrying capacity allow it to transport bulk resources in a caravan.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, pack drones don’t require connection to drone transmitters.</description>
 		
 		<statBases>
-			<MoveSpeed>3</MoveSpeed>
+			<MoveSpeed>4.5</MoveSpeed>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Heat>1</ArmorRating_Heat>

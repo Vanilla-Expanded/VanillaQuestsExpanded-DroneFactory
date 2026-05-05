@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="VQE_BaseDrone_NoTransmitterRequirement">
 		<defName>VQE_Protolancer</defName>
@@ -15,7 +15,6 @@
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
-			<thinkTreeConstant>VQE_BattleDroneConstant</thinkTreeConstant>
 			<baseHealthScale>0.7</baseHealthScale>
 			<baseBodySize>1</baseBodySize>
 			<body>VQE_DroneWithTreads</body>

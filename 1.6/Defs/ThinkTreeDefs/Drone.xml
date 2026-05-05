@@ -67,9 +67,6 @@
 					</subNodes>
 				</li>
 
-				<!-- Seek allowed area if outside -->
-				<li Class="JobGiver_SeekAllowedArea" />
-
 				<!-- React to close melee threat -->
 				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
 					<pawnKinds>
@@ -88,6 +85,7 @@
 
 				<!-- Do a queued job -->
 				<li Class="ThinkNode_QueuedJob" />
+
 				<!-- Wait if drafted -->
 				<li Class="ThinkNode_ConditionalOfPlayerFaction">
 					<subNodes>
@@ -100,9 +98,33 @@
 						</li>
 					</subNodes>
 				</li>
+
 				<li Class="ThinkNode_Subtree">
 					<treeDef>LordDuty</treeDef>
 				</li>
+
+				<li Class="ThinkNode_ConditionalSentryDroneMode">
+					<mode>Patrol</mode>
+					<subNodes>
+						<li Class="VanillaQuestsExpandedDroneFactory.JobGiver_SentryPatrol" />
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalSentryDroneMode">
+					<mode>Attack</mode>
+					<subNodes>
+						<li Class="JobGiver_AIFightEnemies">
+							<targetAcquireRadius>65</targetAcquireRadius>
+							<targetKeepRadius>72</targetKeepRadius>
+							<needLOSToAcquireNonPawnTargets>true</needLOSToAcquireNonPawnTargets>
+						</li>
+						<li Class="JobGiver_AITrashColonyClose" />
+						<li Class="JobGiver_AIGotoNearestHostile" />
+					</subNodes>
+				</li>
+
+				<!-- Seek allowed area if outside -->
+				<li Class="JobGiver_SeekAllowedArea" />
+
 				<li Class="VanillaQuestsExpandedDroneFactory.ThinkNode_ConditionalPawnKindList">
 					<pawnKinds>
 						<li>VQE_CleanerDrone</li>
@@ -151,6 +173,7 @@
 
 							<workgivers>
 								<li>Mine</li>
+								<li>Drill</li>
 							</workgivers>
 						</li>
 					</subNodes>
