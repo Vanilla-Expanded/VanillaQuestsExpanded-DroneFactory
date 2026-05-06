@@ -44,4 +44,42 @@
 		<defName>VQED_DestroyedColossusDifferential</defName>
 		<thing>VQED_DestroyedColossusDifferential</thing>
 	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DisabledAutotank</defName>
+		<thing>VQED_DisabledAutotank</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DroneResourcePallet</defName>
+		<thing>VQED_DroneResourcePallet</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DormantBattleDrone_Active</defName>
+		<thing>VQED_DormantBattleDrone_Active</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQE_DroneStorageTerminal</defName>
+		<thing>VQE_DroneStorageTerminal</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DormantHornetDrone_Active</defName>
+		<thing>VQED_DormantHornetDrone_Active</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DormantRaiderDrone_Active</defName>
+		<thing>VQED_DormantRaiderDrone_Active</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DisabledColossusDrone</defName>
+		<thing>VQED_DisabledColossusDrone</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DisabledAerialDrone</defName>
+		<thing>VQED_DisabledAerialDrone</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQE_LongRangeDroneTransmitter</defName>
+		<thing>VQE_LongRangeDroneTransmitter</thing>
+	</KCSG.SymbolDef>
 </Defs>
