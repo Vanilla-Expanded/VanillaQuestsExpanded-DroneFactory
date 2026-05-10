@@ -84,10 +84,18 @@ namespace VanillaQuestsExpandedDroneFactory
             tickCounter = tickCounter + delta;
         }
 
-        public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
+        /*public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
         {
             base.DynamicDrawPhaseAt(phase, drawLoc, flip);
 
+            var vector = this.DrawPos + Altitudes.AltIncVect;
+            vector.y += 5;
+            GraphicsCache.graphicUnfinishedDrone.DrawFromDef(vector, Rot4.North, null);
+        }*/
+
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
+        {
+            base.DrawAt(drawLoc, flip);
             var vector = this.DrawPos + Altitudes.AltIncVect;
             vector.y += 5;
             GraphicsCache.graphicUnfinishedDrone.DrawFromDef(vector, Rot4.North, null);
