@@ -74,7 +74,7 @@ namespace VanillaQuestsExpandedDroneFactory
             if (tickCounter > currentTimer)
             {
                 tickCounter = 0;
-                Pawn p = PawnGenerator.GeneratePawn(currentPawn, Faction.OfAncientsHostile);
+                Pawn p = PawnGenerator.GeneratePawn(currentPawn, this.Faction);
                 GenSpawn.Spawn(p, this.InteractionCell, this.Map);
                 WeightedDrones droneChosen = array.RandomElementByWeight(x => x.weight);
                 currentPawn = droneChosen.pawn;
