@@ -24,7 +24,6 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void QuestPartTick()
         {
             base.QuestPartTick();
-
             if (Find.TickManager.TicksGame % 60 == 0 && Map != null && !TransmitterActiveOnMap())
             {
                 Find.SignalManager.SendSignal(new Signal(outSignalComplete));
@@ -55,8 +54,7 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 for (int i = 0; i < count; i++)
                 {
-                    if (!CellFinder.TryFindRandomSpawnCellForPawnNear(entryCell, playerMap, out var cell, 5))
-                        continue;
+                    var cell = CellFinder.RandomClosewalkCellNear(entryCell, playerMap, 3);
                     var p = PawnGenerator.GeneratePawn(kind, faction);
                     GenSpawn.Spawn(p, cell, playerMap);
                     pawns.Add(p);

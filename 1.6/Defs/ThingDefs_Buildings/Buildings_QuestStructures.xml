@@ -140,6 +140,7 @@
 				<glowRadius>2.9</glowRadius>
 				<glowColor>(239,133,50)</glowColor>
 			</li>
+			<li Class="VEF.Buildings.CompProperties_BouncingArrow" />
 		</comps>
 		<tickerType>Normal</tickerType>
 	</ThingDef>

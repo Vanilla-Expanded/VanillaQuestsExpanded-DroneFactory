@@ -81,5 +81,6 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static MentalStateDef VQE_Indexing;
 		public static MentalStateDef VQE_Reboot;
 		public static PawnKindDef VQE_ShufflerDrone;
-    }
+		public static QuestScriptDef VQE_DroneFactory;
+		  }
 }

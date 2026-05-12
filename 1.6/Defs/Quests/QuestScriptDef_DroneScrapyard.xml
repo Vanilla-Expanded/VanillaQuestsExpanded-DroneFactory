@@ -39,6 +39,7 @@
 		<description>An old drone scrapyard filled with unstable machinery and ruined drones.</description>
 		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
 		<expandingIconTexture>UI/WorldIcons/AncientScrapyard</expandingIconTexture>
+		<gravShipsCanLandOn>true</gravShipsCanLandOn>
 	</SitePartDef>
 
 	<GenStepDef>

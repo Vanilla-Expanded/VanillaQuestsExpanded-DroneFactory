@@ -35,7 +35,8 @@
         <label>drone stockpile</label>
         <description>A fortified drone stockpile broadcasting a long-range control signal to hostile drones.</description>
         <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
-        <expandingIconTexture>UI/WorldIcons/AncientScrapyard</expandingIconTexture>
+        <expandingIconTexture>UI/WorldIcons/AncientDroneStockpile</expandingIconTexture>
+        <gravShipsCanLandOn>true</gravShipsCanLandOn>
     </SitePartDef>
 
     <GenStepDef>

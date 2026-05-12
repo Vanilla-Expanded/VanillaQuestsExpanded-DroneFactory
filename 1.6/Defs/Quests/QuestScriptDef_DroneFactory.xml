@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <QuestScriptDef>
+        <defName>VQE_DroneFactory</defName>
+        <root Class="VanillaQuestsExpandedDroneFactory.QuestNode_Root_DroneFactory">
+            <sitePartDef>VQE_DroneFactory</sitePartDef>
+            <distanceRange>15~30</distanceRange>
+        </root>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Drone factory</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], asks you to destroy a nearby pirate drone factory.\n\nDefenders:\n[ListOfEnemies]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <modExtensions>
+            <li Class="VEF.Storyteller.QuestChainExtension">
+                <questChainDef>VQE_TheDroneFactory</questChainDef>
+                <conditionSucceedQuests>
+                    <li>VQE_DroneStockpile</li>
+                </conditionSucceedQuests>
+                <ticksSinceSucceed>600000~1440000</ticksSinceSucceed>
+                <isRepeatable>false</isRepeatable>
+            </li>
+        </modExtensions>
+    </QuestScriptDef>
+
+    <SitePartDef>
+        <defName>VQE_DroneFactory</defName>
+        <label>drone factory</label>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <description>A heavily fortified pirate drone factory.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/WorldIcons/DroneFactory</expandingIconTexture>
+        <gravShipsCanLandOn>true</gravShipsCanLandOn>
+        <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+        <showFactionInInspectString>true</showFactionInInspectString>
+        <requiresFaction>true</requiresFaction>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>VQE_DroneFactory</defName>
+        <linkWithSite>VQE_DroneFactory</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedDroneFactory.GenStep_DroneFactory">
+            <structureSetDef>VQE_DroneFactory</structureSetDef>
+        </genStep>
+    </GenStepDef>
+
+    <VEF.Storyteller.StructureSetDef>
+        <defName>VQE_DroneFactory</defName>
+        <structureLayouts>
+            <li>
+                <pattern>VQE_DroneFactory_TopLeft_.*</pattern>
+                <offset>(-1, 0, 1)</offset>
+            </li>
+            <li>
+                <pattern>VQE_DroneFactory_TopRight_.*</pattern>
+                <offset>(1, 0, 1)</offset>
+            </li>
+            <li>
+                <pattern>VQE_DroneFactory_BottomLeft_.*</pattern>
+                <offset>(-1, 0, -1)</offset>
+            </li>
+            <li>
+                <pattern>VQE_DroneFactory_BottomRight_.*</pattern>
+                <offset>(1, 0, -1)</offset>
+            </li>
+        </structureLayouts>
+    </VEF.Storyteller.StructureSetDef>
+</Defs>
