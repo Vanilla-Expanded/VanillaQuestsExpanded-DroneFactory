@@ -55,7 +55,7 @@
         <structureLayouts>
             <li>
                 <pattern>VQE_DroneFactory_TopLeft_.*</pattern>
-                <offset>(-1, 0, 1)</offset>
+                <offset>(0, 0, 1)</offset>
             </li>
             <li>
                 <pattern>VQE_DroneFactory_TopRight_.*</pattern>
@@ -63,11 +63,11 @@
             </li>
             <li>
                 <pattern>VQE_DroneFactory_BottomLeft_.*</pattern>
-                <offset>(-1, 0, -1)</offset>
+                <offset>(0, 0, 0)</offset>
             </li>
             <li>
                 <pattern>VQE_DroneFactory_BottomRight_.*</pattern>
-                <offset>(1, 0, -1)</offset>
+                <offset>(1, 0, 0)</offset>
             </li>
         </structureLayouts>
     </VEF.Storyteller.StructureSetDef>
