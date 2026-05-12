@@ -82,4 +82,39 @@
 		<defName>VQE_LongRangeDroneTransmitter</defName>
 		<thing>VQE_LongRangeDroneTransmitter</thing>
 	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_FactoryMachinery</defName>
+		<thing>VQED_FactoryMachinery</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_LongConveyorBelt</defName>
+		<thing>VQED_LongConveyorBelt</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>VQE_AutomatedDroneAssembler</defName>
+		<thing>VQE_AutomatedDroneAssembler</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>VQED_FactoryRoboarm</defName>
+		<thing>VQED_FactoryRoboarm</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_ConveyorBelt</defName>
+		<thing>VQED_ConveyorBelt</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>VQED_UnfinishedDronePallet</defName>
+		<thing>VQED_UnfinishedDronePallet</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQE_TinkererHoldingPlatform</defName>
+		<thing>VQE_TinkererHoldingPlatform</thing>
+	</KCSG.SymbolDef>
 </Defs>
+
