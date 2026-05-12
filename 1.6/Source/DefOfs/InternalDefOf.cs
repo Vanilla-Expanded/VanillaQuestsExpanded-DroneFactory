@@ -74,6 +74,7 @@ namespace VanillaQuestsExpandedDroneFactory
         public static ThingDef VQED_DormantHornetDrone;
         public static ThingDef VQE_DroneCore;
         public static ThingDef VQE_CraftingDrone;
+        public static ThingDef VQE_LongRangeDroneTransmitter;
 
         public static EffecterDef VQE_SalvageableDroneWreckPulse;
 

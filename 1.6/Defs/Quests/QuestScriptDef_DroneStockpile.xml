@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <QuestScriptDef>
+        <defName>VQE_DroneStockpile</defName>
+        <root Class="VanillaQuestsExpandedDroneFactory.QuestNode_Root_DroneStockpile">
+            <sitePartDef>VQE_DroneStockpile</sitePartDef>
+            <distanceRange>5~10</distanceRange>
+        </root>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Drone stockpile</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->Todo.\n\nList of enemies:\n[ListOfEnemies]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <modExtensions>
+            <li Class="VEF.Storyteller.QuestChainExtension">
+                <questChainDef>VQE_TheDroneFactory</questChainDef>
+                <conditionSucceedQuests>
+                    <li>VQE_DroneScrapyard</li>
+                </conditionSucceedQuests>
+                <ticksSinceSucceed>600000~1200000</ticksSinceSucceed>
+                <isRepeatable>false</isRepeatable>
+                <grantAgainOnFailure>true</grantAgainOnFailure>
+                <daysUntilGrantAgainOnFailure>3~3</daysUntilGrantAgainOnFailure>
+            </li>
+        </modExtensions>
+    </QuestScriptDef>
+
+    <SitePartDef>
+        <defName>VQE_DroneStockpile</defName>
+        <label>drone stockpile</label>
+        <description>A fortified drone stockpile broadcasting a long-range control signal to hostile drones.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/WorldIcons/AncientScrapyard</expandingIconTexture>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>VQE_DroneStockpile</defName>
+        <linkWithSite>VQE_DroneStockpile</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedDroneFactory.GenStep_DroneStockpile">
+            <structureSetDef>VQE_DroneStockpile</structureSetDef>
+        </genStep>
+    </GenStepDef>
+
+    <VEF.Storyteller.StructureSetDef>
+        <defName>VQE_DroneStockpile</defName>
+        <structureLayouts>
+            <li>
+                <pattern>VQE_DroneStockpile_Left_.*</pattern>
+                <offset>(-1, 0, 0)</offset>
+            </li>
+            <li>
+                <pattern>VQE_DroneStockpile_Middle_.*</pattern>
+                <offset>(0, 0, 0)</offset>
+            </li>
+            <li>
+                <pattern>VQE_DroneStockpile_Right_.*</pattern>
+                <offset>(1, 0, 0)</offset>
+            </li>
+        </structureLayouts>
+    </VEF.Storyteller.StructureSetDef>
+</Defs>

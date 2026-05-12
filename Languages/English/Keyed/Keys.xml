@@ -46,4 +46,6 @@
 	<VQE_LifespanMultiplierDesc>A multiplier on the lifespan of drones. For example, a value of x2 will double the lifespan of all drones. Bear in mind this will not change the current lifespan of already built drones.</VQE_LifespanMultiplierDesc>
 	<VQE_ConsumeLifespanOnRepair>Consume lifespan when repairing drones</VQE_ConsumeLifespanOnRepair>
 	<VQE_ConsumeLifespanOnRepairDesc>When enabled, repairing drones will consume their lifespan. Disable to prevent lifespan drain during repairs.</VQE_ConsumeLifespanOnRepairDesc>
+	<VQE_DroneStockpileRaid>Raid: Ancient drones</VQE_DroneStockpileRaid>
+	<VQE_DroneStockpileRaidDesc>Combat drones from the nearby drone stockpile have arrived nearby.\n\nThey are attacking immediately.\n\nDestroy the drone stockpile to stop the drones from attacking you.</VQE_DroneStockpileRaidDesc>
 </LanguageData>
