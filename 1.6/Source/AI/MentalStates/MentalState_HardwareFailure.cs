@@ -9,7 +9,8 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void PostStart(string reason)
         {
             base.PostStart(reason);
-            Messages.Message("VQE_DroneMalfunction".Translate(pawn.Named("DRONE"), def.label) + "VQE_DroneMalfunction_Death".Translate(), pawn, MessageTypeDefOf.NegativeEvent);
+            if (pawn.Faction == Faction.OfPlayer)
+                Messages.Message("VQE_DroneMalfunction".Translate(pawn.Named("DRONE"), def.label) + "VQE_DroneMalfunction_Death".Translate(), pawn, MessageTypeDefOf.NegativeEvent);
         }
         public override void PostEnd()
         {
