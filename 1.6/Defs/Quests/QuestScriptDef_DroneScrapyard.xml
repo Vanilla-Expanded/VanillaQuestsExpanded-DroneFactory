@@ -13,7 +13,7 @@
 		</questNameRules>
 		<questDescriptionRules>
 			<rulesStrings>
-				<li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has sent us the coordinates of a drone scrapyard.\n\nDefending drones:\n[defendingDrones]</li>
+				<li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has sent the coordinates of a den of discarded military drones. Once built for war, these machines now gather among heaps of scrap, struggling to fulfill directives that no longer serve any purpose. Some drag themselves forward aimlessly, while others are observed to emit distorted whines or engage in crude, half-functional cooperation.\n\n[asker_faction_name] plans to chart the site, and needs the hostile drones deactivated. They will reward us for making sure the area is clear of the unpredictable threats.\n\nAt the center of the scrapyard lies a fragmented chunk of a military command drone, which can be scavenged for vital intelligence on proprietary drone prototypes. This data can be used by the colony to manufacture drone types once thought lost to time.\n\nDefending drones:\n[defendingDrones]</li>
 			</rulesStrings>
 		</questDescriptionRules>
 		<modExtensions>

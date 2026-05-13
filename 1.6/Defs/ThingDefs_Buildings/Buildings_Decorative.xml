@@ -167,7 +167,7 @@
 	<ThingDef ParentName="VQED_DronesBuildingBase">
 		<defName>VQED_DisabledAutotank</defName>
 		<label>disabled autotank</label>
-		<description>The hulk of a medium-sized, autonomous armored tank. Heavy service panels have been crudely removed, leaving gaping holes where complex targeting and drive systems once sat. Though completely gutted and disabled, its sheer armored bulk and combat profile still look menacingly.</description>
+		<description>The hulk of a medium-sized, autonomous armored tank. Heavy service panels have been crudely removed, leaving gaping holes where complex targeting and drive systems once sat. Though completely gutted and disabled, its sheer armored bulk and combat profile still look menacing.</description>
 		<size>(2,3)</size>
 		<fillPercent>0.5</fillPercent>
 		<rotatable>true</rotatable>
