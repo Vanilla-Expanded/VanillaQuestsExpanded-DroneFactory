@@ -11,7 +11,7 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         protected override void RunInt()
         {
-            if (!PrepareQuest(out var playerMap, out var points, out var tile, out var slate))
+            if (!PrepareQuest(out var map, out var points, out var tile, out var slate))
                 return;
 
             var site = GenerateSite(points, tile, Faction.OfAncientsHostile, slate,
@@ -30,7 +30,6 @@ namespace VanillaQuestsExpandedDroneFactory
                 inSignalEnable = siteMapGeneratedSignal,
                 defendingDrones = defendingDrones,
                 outSignalComplete = outSignalComplete,
-                playerMap = playerMap,
             };
             QuestGen.quest.AddPart(questPart_Stockpile);
 

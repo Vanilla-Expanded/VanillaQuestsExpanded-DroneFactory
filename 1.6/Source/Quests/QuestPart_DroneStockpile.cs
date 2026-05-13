@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using RimWorld.Planet;
 using VEF.Storyteller;
 using Verse;
 using Verse.AI.Group;
@@ -11,7 +12,6 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public List<PawnKindDef> defendingDrones = new List<PawnKindDef>();
         public string outSignalComplete;
-        public Map playerMap;
         public IntRange raidIntervalTicksRange = new IntRange(5 * GenDate.TicksPerDay, 7 * GenDate.TicksPerDay);
         private int ticksUntilNextRaid;
 
@@ -31,19 +31,21 @@ namespace VanillaQuestsExpandedDroneFactory
                 return;
             }
 
-            if (playerMap == null) return;
-
             ticksUntilNextRaid--;
             if (ticksUntilNextRaid <= 0)
             {
-                FireRaid();
+                var site = mapParent as Site;
+                var sitePart = site.parts.FirstOrDefault(x => x.def == InternalDefOf.VQE_DroneStockpile);
+                var comp = sitePart.conditionCauser.TryGetComp<CompCauseGameCondition_LongRangeTransmitter>();
+                var playerMap = Find.Maps.Where(x => x.IsPlayerHome && comp.InAoE(x.Tile)).RandomElementWithFallback();
+                if (playerMap == null) return;
+                FireRaid(playerMap);
                 ticksUntilNextRaid = raidIntervalTicksRange.RandomInRange;
             }
         }
 
-        private void FireRaid()
+        private void FireRaid(Map playerMap)
         {
-            if (playerMap == null) return;
             var faction = Faction.OfAncientsHostile;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out var entryCell, playerMap, CellFinder.EdgeRoadChance_Hostile))
                 return;

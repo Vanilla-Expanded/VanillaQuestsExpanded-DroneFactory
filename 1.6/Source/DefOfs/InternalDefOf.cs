@@ -9,15 +9,12 @@ namespace VanillaQuestsExpandedDroneFactory
 		{
 			DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
 		}
-
 		public static HediffDef VQE_Broadcaster_WorkMode;
         public static HediffDef VQE_Broadcaster_Relax;
         public static HediffDef VQE_Broadcaster_Recruitment;
-
 		public static SoundDef VQE_AutobroadcasterSustainer_Work;
         public static SoundDef VQE_AutobroadcasterSustainer_Relax;
         public static SoundDef VQE_AutobroadcasterSustainer_Recruitment;
-
         public static JobDef VQE_GotoPatrolDest;
 		public static NeedDef VQE_Lifespan;
 		public static BodyPartDef VQE_DroneCoreBodyPart;
@@ -28,12 +25,10 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static JobDef VQE_StandOutOfTransmitterRange;
 		public static JobDef VQE_CarryDroneToTransmitter;
 		public static JobDef VQE_DecryptCore;
-
         [DefAlias("VQE_ShutdownDrone")]
 		public static DesignationDef VQE_ShutdownDrone_Designation;
 		[DefAlias("VQE_ReactivateDrone")]
 		public static DesignationDef VQE_ReactivateDrone_Designation;
-
 		[DefAlias("VQE_SensorLag")]
 		public static HediffDef VQE_SensorLag_Hediff;
 		[DefAlias("VQE_Overclock")]
@@ -44,19 +39,12 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static PawnTableDef VQE_Drones;
 		public static StatDef VQE_LifespanYears;
 		public static StatDef VQE_LifespanDrainSpeed;
-
 		public static PawnKindDef VQE_TurretDrone;
         public static PawnKindDef VQE_BattleDrone;
 		public static PawnKindDef VQE_RaiderDrone;
 		public static PawnKindDef VQE_HornetDrone;
-        public static PawnKindDef VQE_CraftingDroneKindDef;
-
-        public static RecipeDef VQE_AssembleBattleDrone;
-		public static RecipeDef VQE_AssembleCleanerDrone;
-		public static RecipeDef VQE_AssembleHaulerDrone;
-		public static RecipeDef VQE_AssembleMinerDrone;
-		public static RecipeDef VQE_AssembleAutobroadcasterDrone;
-		public static RecipeDef VQE_AssembleTurretDrone;
+		public static PawnKindDef VQE_CraftingDroneKindDef;
+		public static GameConditionDef VQE_DroneStockpileTransmitter;
 		public static RecipeDef VQE_AssembleRaiderDrone;
 		public static RecipeDef VQE_AssembleProtolancer;
 		public static RecipeDef VQE_AssembleFarmingDrone;
@@ -64,7 +52,6 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static RecipeDef VQE_AssembleHornetDrone;
 		public static RecipeDef VQE_AssembleStingrayDrone;
         public static RecipeDef VQE_AssemblePackDrone;
-
         public static ThingDef VQE_CompactedDroneScrap;
 		public static ThingDef VQED_DormantBattleDrone_Active;
 		public static ThingDef VQED_DormantRaiderDrone_Active;
@@ -75,12 +62,11 @@ namespace VanillaQuestsExpandedDroneFactory
         public static ThingDef VQE_DroneCore;
         public static ThingDef VQE_CraftingDrone;
         public static ThingDef VQE_LongRangeDroneTransmitter;
-
         public static EffecterDef VQE_SalvageableDroneWreckPulse;
-
-		public static MentalStateDef VQE_Indexing;
-		public static MentalStateDef VQE_Reboot;
+        public static FleckDef BlastEMP;
+  		public static MentalStateDef VQE_Indexing;
 		public static PawnKindDef VQE_ShufflerDrone;
 		public static QuestScriptDef VQE_DroneFactory;
-		  }
+		public static SitePartDef VQE_DroneStockpile;
+	}
 }

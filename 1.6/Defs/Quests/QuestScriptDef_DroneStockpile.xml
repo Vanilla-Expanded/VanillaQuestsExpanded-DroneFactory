@@ -2,6 +2,7 @@
 <Defs>
     <QuestScriptDef>
         <defName>VQE_DroneStockpile</defName>
+        <autoAccept>true</autoAccept>
         <root Class="VanillaQuestsExpandedDroneFactory.QuestNode_Root_DroneStockpile">
             <sitePartDef>VQE_DroneStockpile</sitePartDef>
             <distanceRange>5~10</distanceRange>
@@ -33,11 +34,25 @@
     <SitePartDef>
         <defName>VQE_DroneStockpile</defName>
         <label>drone stockpile</label>
-        <description>A fortified drone stockpile broadcasting a long-range control signal to hostile drones.</description>
+        <description>todo.</description>
+        <workerClass>SitePartWorker_ConditionCauser</workerClass>
+        <conditionCauserDef>VQE_LongRangeDroneTransmitter</conditionCauserDef>
         <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
         <expandingIconTexture>UI/WorldIcons/AncientDroneStockpile</expandingIconTexture>
         <gravShipsCanLandOn>true</gravShipsCanLandOn>
     </SitePartDef>
+
+    <GameConditionDef>
+        <defName>VQE_DroneStockpileTransmitter</defName>
+        <label>drone transmitter active</label>
+        <description>todo.</description>
+        <startMessage>todo.</startMessage>
+        <endMessage>todo.</endMessage>
+        <jumpToSourceKey>VQE_JumpToDroneTransmitter</jumpToSourceKey>
+        <natural>false</natural>
+        <canBePermanent>true</canBePermanent>
+        <allowUnderground>False</allowUnderground>
+    </GameConditionDef>
 
     <GenStepDef>
         <defName>VQE_DroneStockpile</defName>

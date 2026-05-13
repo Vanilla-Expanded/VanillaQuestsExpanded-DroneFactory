@@ -99,6 +99,7 @@
 		<defName>VQE_LongRangeDroneTransmitter</defName>
 		<label>long range drone transmitter</label>
 		<description>A bulky, multi-band antenna array designed to broadcast a drone control signal over an exceptional range. The unit is currently operating, providing operational bandwidth to all nearby drones. It can be temporarily hacked to overload its internal safeguards, rendering it inert and allowing access to its valuable core.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Structure/Exotic/HighPowerDroneTransmitter/HighPowerDroneTransmitter_On</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -118,6 +119,12 @@
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<comps>
+			<li Class="CompProperties_CausesGameCondition">
+				<compClass>VanillaQuestsExpandedDroneFactory.CompCauseGameCondition_LongRangeTransmitter</compClass>
+				<conditionDef>VQE_DroneStockpileTransmitter</conditionDef>
+				<worldRange>15</worldRange>
+				<preventConditionStacking>true</preventConditionStacking>
+			</li>
 			<li Class="CompProperties_Hackable">
 				<defence>5000</defence>
 				<glowIfHacked>false</glowIfHacked>
