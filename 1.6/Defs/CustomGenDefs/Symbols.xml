@@ -91,13 +91,11 @@
 		<thing>VQED_LongConveyorBelt</thing>
 		<rotation>West</rotation>
 	</KCSG.SymbolDef>
-	
 	<KCSG.SymbolDef>
 		<defName>VQE_AutomatedDroneAssembler</defName>
 		<thing>VQE_AutomatedDroneAssembler</thing>
 		<rotation>South</rotation>
 	</KCSG.SymbolDef>
-	
 	<KCSG.SymbolDef>
 		<defName>VQED_FactoryRoboarm</defName>
 		<thing>VQED_FactoryRoboarm</thing>
@@ -107,7 +105,6 @@
 		<thing>VQED_ConveyorBelt</thing>
 		<rotation>South</rotation>
 	</KCSG.SymbolDef>
-	
 	<KCSG.SymbolDef>
 		<defName>VQED_UnfinishedDronePallet</defName>
 		<thing>VQED_UnfinishedDronePallet</thing>
@@ -115,6 +112,18 @@
 	<KCSG.SymbolDef>
 		<defName>VQE_TinkererHoldingPlatform</defName>
 		<thing>VQE_TinkererHoldingPlatform</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DormantBattleDrone</defName>
+		<thing>VQED_DormantBattleDrone</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DormantHornetDrone</defName>
+		<thing>VQED_DormantHornetDrone</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VQED_DormantRaiderDrone</defName>
+		<thing>VQED_DormantRaiderDrone</thing>
 	</KCSG.SymbolDef>
 </Defs>
 

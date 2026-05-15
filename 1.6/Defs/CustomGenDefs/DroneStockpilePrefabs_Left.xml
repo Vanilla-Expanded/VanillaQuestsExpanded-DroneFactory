@@ -12,14 +12,14 @@
 				<li>.,.,Wall_Steel,.,.,.,.,VQED_DroneChunk,.,VQED_DroneShell,VQED_DroneShell,VQED_DroneResourcePallet,.,VQED_DroneShell,.,Wall_Steel,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,VQED_DroneShell,.,Wall_Steel,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone_Active,.,.,.,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone,.,VQED_DormantHornetDrone,.,VQED_DormantHornetDrone,.,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone_Active,.,VQED_DroneShell,.,VQED_DroneShell,.,.,.,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone,.,VQED_DormantHornetDrone_Active,.,VQED_DroneShell,.,VQED_DroneShell,.,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,.,.,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,.,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,VQED_DroneShell,.,.,.,VQED_DisabledColossusDrone,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,VQED_DroneShell,VQED_DroneShell,VQED_DroneShell,.,.,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,VQED_DroneShell,VQED_DroneShell,VQED_DroneShell,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -27,18 +27,18 @@
 				<li>.,.,Wall_Steel,.,.,.,.,VQED_DroneResourcePallet,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,.,.,Wall_Steel,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,VQED_DroneShell,VQED_DroneShell,.,.,Wall_Steel,.,AncientLongCrate,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,Wall_Steel,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,VQED_DroneResourcePallet,.,Wall_Steel,.,AncientLongCrate,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,VQED_DroneShell,VQED_DormantBattleDrone,.,.,.,Wall_Steel,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,VQED_DroneShell,VQED_DroneShell,VQED_DroneShell,.,.,Wall_Steel,.,AncientLongCrate,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,Wall_Steel,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,VQED_DroneResourcePallet,.,Wall_Steel,.,AncientLongCrate,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,VQED_DroneShell,Wall_Steel,.,AncientBarrel,AncientLongCrate,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,Wall_Steel,.,.,AncientBarrel,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.,Wall_Steel,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.,Wall_Steel,.,StandingLamp,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,VQED_DroneShell,Wall_Steel,.,AncientBarrel,AncientLongCrate,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,Wall_Steel,.,.,AncientBarrel,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,.,Wall_Steel,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,.,Wall_Steel,.,StandingLamp,.,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,AncientLongCrate,.,Wall_Steel,.,.,.,.</li>
-				<li>.,.,Wall_Steel,.,.,.,.,.,.,VQE_DroneStorageTerminal,.,.,.,AncientLongCrate,AncientBarrel,Wall_Steel,.,.,.,.</li>
+				<li>.,.,Wall_Steel,.,.,.,.,.,.,VQE_DroneStorageTerminal_South,.,.,.,AncientLongCrate,AncientBarrel,Wall_Steel,.,.,.,.</li>
 				<li>.,.,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,AncientTankTrap,.,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,AncientTankTrap,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -188,20 +188,20 @@
 				<li>.,.,.,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,VQED_DroneResourcePallet,.,.,.,StandingLamp,Wall_Steel,VQED_DroneResourcePallet,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,.,VQED_DroneShell,.,.,VQE_DroneStorageTerminal,Wall_Steel,.,VQED_DroneShell,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,.,VQED_DroneShell,.,.,VQE_DroneStorageTerminal_West,Wall_Steel,.,VQED_DroneShell,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,VQED_DroneResourcePallet,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DroneShell,.,Wall_Steel,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,VQED_DormantHornetDrone_Active,VQED_DroneShell,.,.,Wall_Steel,VQED_DroneShell,VQED_DroneShell,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone,.,VQED_DormantHornetDrone,VQED_DormantHornetDrone,VQED_DroneShell,.,Wall_Steel,.,.,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone,.,VQED_DormantHornetDrone,VQED_DroneShell,.,.,Wall_Steel,VQED_DroneShell,VQED_DroneShell,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,VQED_DroneChunk,.,.,VQED_DroneShell,VQED_DroneShell,.,.,Wall_Steel,.,.,.,.,VQED_DroneShell,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Door_Steel,.,.,.,VQED_DroneShell,VQED_DroneShell,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,VQED_DroneShell,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DormantRaiderDrone,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DroneShell,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DroneShell,VQED_DroneShell,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,.,VQED_DormantRaiderDrone,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,StandingLamp,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DroneShell,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,StandingLamp,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,AncientLongCrate,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,AncientBarrel,AncientLongCrate,.,.</li>
 				<li>.,.,.,.,.,AncientTankTrap,.,.,.,.,.,.,.,.,Wall_Steel,.,AncientLongCrate,.,.,.</li>
@@ -352,26 +352,26 @@
 				<li>.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone,.,.,VQED_DormantRaiderDrone,.,.,VQED_DormantRaiderDrone,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone,.,.,VQED_DormantRaiderDrone,.,.</li>
 				<li>.,.,.,.,AncientTankTrap,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,VQED_DroneShell,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,VQED_DroneShell,.,VQED_DormantRaiderDrone,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,VQED_DroneShell,.,.,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,.,.,VQED_DormantRaiderDrone_Active,.,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,.,.,VQED_DormantRaiderDrone,.,.,VQED_DormantRaiderDrone,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,.,VQED_DroneResourcePallet,.,AncientBarrel,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,VQED_DroneShell,.,.,VQED_DroneShell,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DroneShell,VQED_DroneShell,.,.,.,.,.,VQE_DroneStorageTerminal,.,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DroneShell,VQED_DroneShell,.,.,.,.,.,VQE_DroneStorageTerminal_North,.,.</li>
 				<li>.,.,.,.,AncientTankTrap,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantHornetDrone_Active,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,.,VQED_DormantHornetDrone_Active,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,.,VQED_DormantHornetDrone_Active,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,.,VQED_DormantBattleDrone_Active,.,VQED_DormantHornetDrone_Active,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,.,VQED_DroneShell,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantHornetDrone_Active,.</li>
-				<li>.,.,.,.,.,.,.,Wall_Steel,StandingLamp,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantHornetDrone_Active,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone,.,VQED_DormantHornetDrone,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DroneShell,.,VQED_DormantHornetDrone,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,.,VQED_DormantHornetDrone,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DroneShell,.,VQED_DormantBattleDrone,.,VQED_DormantHornetDrone,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DroneShell,.,VQED_DroneShell,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,.,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone_Active,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DormantHornetDrone,.</li>
+				<li>.,.,.,.,.,.,.,Wall_Steel,StandingLamp,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone,.,VQED_DormantBattleDrone_Active,.,VQED_DormantHornetDrone_Active,.</li>
 				<li>.,.,.,.,AncientTankTrap,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,.,AncientLongCrate,.,AncientLongCrate,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
@@ -524,9 +524,9 @@
 				<li>.,.,.,Wall_Steel,.,.,.,.,VQED_DisabledColossusDrone,.,.,.,.,.,VQED_DroneResourcePallet,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DroneShell,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DroneShell,VQED_DroneShell,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DroneChunk,.,.,.,VQED_DroneResourcePallet,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,.,VQED_DroneChunk,.,.,.,VQED_DroneResourcePallet,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,VQED_DroneShell,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,VQED_DroneShell,VQED_DroneShell,.,.,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone_Active,.,VQED_DroneShell,VQED_DroneShell,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
@@ -534,14 +534,14 @@
 				<li>.,.,.,Wall_Steel,.,.,AncientLongCrate,.,AncientLongCrate,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DroneResourcePallet,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,AncientLongCrate,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,VQED_DroneResourcePallet,.,VQED_DroneShell,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,VQED_DroneShell,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,VQED_DormantBattleDrone,VQED_DroneShell,VQED_DormantBattleDrone,.,.,VQED_DroneShell,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,VQED_DormantBattleDrone,VQED_DroneShell,VQED_DormantBattleDrone,.,VQED_DroneResourcePallet,.,VQED_DroneShell,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DroneShell,.,.,.,.,.</li>
 				<li>.,AncientTankTrap,.,Wall_Steel,.,.,.,.,.,StandingLamp,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,.,.,.,.</li>
-				<li>.,.,.,.,.,.,.,.,Door_Steel,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,VQED_DormantHornetDrone,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone,.,.,.,.,.</li>
+				<li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone,VQED_DormantHornetDrone,VQED_DormantHornetDrone,.,.,.,.,.</li>
+				<li>.,.,.,.,.,.,.,.,Door_Steel,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone,VQED_DormantHornetDrone,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>.,.,.,.,.,.,.,.,AncientTankTrap,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -688,28 +688,28 @@
 				<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
-				<li>.,.,.,.,VQED_DisabledAutotank,.,.,VQED_DisabledAutotank,.,.,VQED_DisabledAutotank,.,Wall_Steel,.,.,.,.,.,.,.</li>
+				<li>.,.,.,.,VQED_DisabledAutotank_South,.,.,VQED_DisabledAutotank_South,.,.,VQED_DisabledAutotank_South,.,Wall_Steel,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,AncientBarrel,.,AncientBarrel,AncientBarrel,.,.</li>
 				<li>.,AncientTankTrap,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,AncientBarrel,AncientBarrel,.,.,.</li>
 				<li>.,.,.,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,VQED_DroneChunk,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,.,VQE_DroneStorageTerminal,.,VQED_DroneShell,.,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,VQED_DormantHornetDrone_Active,.,.,VQE_DroneStorageTerminal_South,.,VQED_DroneShell,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,VQED_DroneShell,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,VQED_DroneShell,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,VQED_DroneResourcePallet,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,.,.,VQED_DroneShell,.,VQED_DroneShell,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,VQED_DroneShell,VQED_DroneShell,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,VQED_DroneResourcePallet,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,AncientTankTrap,.,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DroneShell,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DroneShell,VQED_DormantBattleDrone_Active,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.,.,.,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone_Active,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone_Active,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,VQED_DroneShell,.,.,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone_Active,VQED_DormantBattleDrone,VQED_DormantBattleDrone_Active,VQED_DroneShell,VQED_DormantBattleDrone,.,.,.,.,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DroneShell,VQED_DormantBattleDrone,VQED_DroneShell,VQED_DroneShell,VQED_DormantBattleDrone,.,.,.,VQED_DormantRaiderDrone,.,VQED_DormantRaiderDrone,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,.,.,.,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,VQED_DormantBattleDrone,.,.,.,VQED_DormantRaiderDrone_Active,.,VQED_DormantRaiderDrone,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,StandingLamp,.,.,.,.,.</li>
 				<li>.,AncientTankTrap,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>

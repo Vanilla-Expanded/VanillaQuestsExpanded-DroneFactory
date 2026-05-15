@@ -34,9 +34,9 @@
 				<li>Door_Steel,.,.,.,.,.,.,.,.,Wall_Steel,.,VQED_DroneResourcePallet,.,VQED_DroneShell,VQED_DroneResourcePallet,.,VQED_DroneShell,.,.,Door_Steel</li>
 				<li>Wall_Steel,.,.,.,.,VQED_DisabledColossusDrone,.,.,.,Wall_Steel,.,.,.,.,.,.,VQED_DroneShell,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,.,Battery_West,.,.,.,.,.,.,.,.,.,VQED_DisabledAutotank,.,.,.,.,.,Battery_West,Wall_Steel</li>
+				<li>Wall_Steel,.,Battery_West,.,.,.,.,.,.,.,.,.,VQED_DisabledAutotank_West,.,.,.,.,.,Battery_West,Wall_Steel</li>
 				<li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
-				<li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,VQED_DroneShell,.,VQED_DisabledAutotank,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
+				<li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,VQED_DroneShell,.,VQED_DisabledAutotank_West,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>.,.,Wall_Steel,.,Wall_Steel,Wall_Steel,AncientDisplayBank_East,.,.,.,VQED_DroneShell,.,.,.,.,Wall_Steel,Wall_Steel,.,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DroneShell,.,.,.,.,VQED_DroneShell,Wall_Steel,Wall_Steel,.,Wall_Steel,.</li>
 				<li>.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.</li>
@@ -194,13 +194,13 @@
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,AncientDisplayBank_East,.,.,.,.,VQED_DisabledAerialDrone,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DisabledAutotank,.,.,.,StandingLamp,Wall_Steel</li>
+				<li>Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DisabledAutotank_West,.,.,.,StandingLamp,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,Table1x2c_Steel_South,.,.,.,.,VQED_DefunctAerialDrone,.,.,.,.,.,.,.,VQED_DisabledAutotank,.,.,VQED_DroneResourcePallet,.,Wall_Steel</li>
+				<li>Wall_Steel,Table1x2c_Steel_South,.,.,.,.,VQED_DefunctAerialDrone,.,.,.,.,.,.,.,VQED_DisabledAutotank_West,.,.,VQED_DroneResourcePallet,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Door_Steel,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DisabledAutotank,.,.,.,.,Door_Steel</li>
+				<li>Door_Steel,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DisabledAutotank_West,.,.,.,.,Door_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,VQED_DisabledAerialDrone,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,Battery_West,.,.,.,.,.,.,.,.,.,.,.,.,AncientDisplayBank_South,.,.,Battery_West,Wall_Steel</li>
@@ -358,13 +358,13 @@
 				<li>Wall_Steel,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DisabledAutotank,.,.,VQED_DisabledAutotank,.,.,.,Wall_Steel</li>
+				<li>Wall_Steel,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,VQED_DisabledAutotank_West,.,.,VQED_DisabledAutotank_West,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,StandingLamp,.,.,VQE_LongRangeDroneTransmitter,.,.,.,.,.,.,.,.,.,.,.,.,.,AncientDisplayBank_West,Wall_Steel</li>
-				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DisabledAutotank,.,.,.,Wall_Steel</li>
+				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VQED_DisabledAutotank_West,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,AncientDisplayBank_East,.,.,.,.,.,.,.,.,.,.,VQED_DisabledAutotank,.,.,VQED_DisabledAutotank,.,.,.,Wall_Steel</li>
+				<li>Wall_Steel,AncientDisplayBank_East,.,.,.,.,.,.,.,.,.,.,VQED_DisabledAutotank_West,.,.,VQED_DisabledAutotank_West,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,Table1x2c_Steel_East,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,VQED_DisabledAutotank,.,.,AncientDisplayBank_West,Wall_Steel</li>
+				<li>Wall_Steel,Table1x2c_Steel_East,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,VQED_DisabledAutotank_West,.,.,AncientDisplayBank_West,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,AncientSystemRack_North,AncientSystemRack_North,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,Table1x2c_Steel_East,.,.,.,.,.,.,.,.,.,VQED_DroneResourcePallet,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
@@ -540,7 +540,7 @@
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Door_Steel,.,.,.,.,.,.,VQED_DroneShell,.,.,.,.,.,.,.,.,.,.,.,Door_Steel</li>
 				<li>Wall_Steel,.,.,.,.,VQED_DroneShell,.,.,.,.,VQE_LongRangeDroneTransmitter,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,StandingLamp,.,.,VQED_DisabledAutotank,.,.,VQED_DisabledAutotank,.,.,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel</li>
+				<li>Wall_Steel,StandingLamp,.,.,VQED_DisabledAutotank_South,.,.,VQED_DisabledAutotank_South,.,.,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,VQED_DroneShell,.,Battery_South,Wall_Steel</li>
 				<li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,Wall_Steel</li>
@@ -698,7 +698,7 @@
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,VQED_DroneShell,VQED_DroneShell,.,.,.,VQED_DroneShell,.,.,.,VQED_DroneShell,.,.,.,Table1x2c_Steel_North,Wall_Steel</li>
 				<li>Wall_Steel,AncientSystemRack_South,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
-				<li>Wall_Steel,.,.,.,.,VQED_DisabledAutotank,.,.,.,VQED_DisabledAutotank,.,.,.,VQED_DisabledAutotank,.,VQED_DroneShell,.,.,.,Wall_Steel</li>
+				<li>Wall_Steel,.,.,.,.,VQED_DisabledAutotank_East,.,.,.,VQED_DisabledAutotank_East,.,.,.,VQED_DisabledAutotank_East,.,VQED_DroneShell,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
 				<li>Wall_Steel,VQED_DroneResourcePallet,.,VQED_DroneResourcePallet,.,Wall_Steel,.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQED_DroneResourcePallet,.,Wall_Steel</li>
 				<li>Wall_Steel,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,Wall_Steel,.,VQED_DroneShell,VQED_DroneShell,.,.,Wall_Steel</li>
