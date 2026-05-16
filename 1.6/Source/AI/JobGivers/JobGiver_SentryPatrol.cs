@@ -27,7 +27,16 @@ namespace VanillaQuestsExpandedDroneFactory
                 }
             }
             IntVec3 nextPatrolDest = comp.GetNextPatrolDest();
+            
             if (!nextPatrolDest.IsValid)
+            {
+                return null;
+            }
+            if (!nextPatrolDest.InAllowedArea(pawn))
+            {
+                return null;
+            }
+            if (pawn.RequiresTransmitter() && !Utils.IsWithinTransmitter(nextPatrolDest, pawn.Map))
             {
                 return null;
             }
@@ -35,6 +44,7 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 return null;
             }
+
             return JobMaker.MakeJob(InternalDefOf.VQE_GotoPatrolDest, nextPatrolDest);
         }
     }
