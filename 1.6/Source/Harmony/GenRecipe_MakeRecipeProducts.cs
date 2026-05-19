@@ -25,21 +25,27 @@ namespace VanillaQuestsExpandedDroneFactory
                 Corpse corpse = ingredients[0] as Corpse;
 
                 CompDrone compDrone = corpse.InnerPawn.TryGetComp<CompDrone>();
+
+                List<ThingDefCountClass> possibleOutputs= new List<ThingDefCountClass>();
                 if (compDrone != null && compDrone.isPlayerDrone) {
-
-                    foreach (ThingDefCountClass item in corpse.InnerPawn.def.costList)
+                    possibleOutputs = corpse.InnerPawn.def.costList;                  
+                }
+                else
+                {
+                    possibleOutputs = corpse.InnerPawn.def.butcherProducts;                    
+                }
+                foreach (ThingDefCountClass item in possibleOutputs)
+                {
+                    Thing thing = ThingMaker.MakeThing(item.thingDef, item.stuff);
+                    thing.stackCount = item.count;
+                    if (!GenPlace.TryPlaceThing(thing, worker.Position, worker.Map, ThingPlaceMode.Near))
                     {
-                        Thing thing = ThingMaker.MakeThing(item.thingDef, item.stuff);
-                        thing.stackCount = item.count;
-                        if (!GenPlace.TryPlaceThing(thing, worker.Position, worker.Map, ThingPlaceMode.Near))
-                        {
-                            Log.Error(worker?.ToString() + " could not drop recipe product " + thing?.ToString() + " near " + worker.Position.ToString());
-                        }
-
+                        Log.Error(worker?.ToString() + " could not drop recipe product " + thing?.ToString() + " near " + worker.Position.ToString());
                     }
+
                 }
 
-                
+
 
 
             }
