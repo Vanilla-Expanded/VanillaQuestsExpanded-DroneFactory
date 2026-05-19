@@ -20,6 +20,7 @@ namespace VanillaQuestsExpandedDroneFactory
         public CompProperties_Drone Props => (CompProperties_Drone)props;
         public bool autoRepair = true;
         public bool shouldKill;
+        public bool isPlayerDrone = false;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -44,6 +45,8 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             base.PostExposeData();
             Scribe_Values.Look(ref autoRepair, "autoRepair", true);
+            Scribe_Values.Look(ref isPlayerDrone, "isPlayerDrone", false);
+
         }
 
         public override bool WantHoldWeapon(Pawn pawn)

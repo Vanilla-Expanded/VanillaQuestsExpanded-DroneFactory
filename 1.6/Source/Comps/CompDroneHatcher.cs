@@ -34,6 +34,13 @@ namespace VanillaQuestsExpandedDroneFactory
                 Pawn pawn = PawnGenerator.GeneratePawn(request);
                 PawnUtility.TrySpawnHatchedOrBornPawn(pawn, parent);
 
+                CompDrone compDrone = pawn.TryGetComp<CompDrone>();
+                if (compDrone != null)
+                {
+                    compDrone.isPlayerDrone = true;
+
+                }
+
             }
             finally
             {

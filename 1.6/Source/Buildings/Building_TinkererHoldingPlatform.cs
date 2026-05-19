@@ -26,7 +26,12 @@ namespace VanillaQuestsExpandedDroneFactory
 
 
             GenSpawn.Spawn(p, this.InteractionCell, this.Map);
+            CompDrone compDrone = p.TryGetComp<CompDrone>();
+            if (compDrone != null)
+            {
+                compDrone.isPlayerDrone = true;
 
+            }
 
         }
     }

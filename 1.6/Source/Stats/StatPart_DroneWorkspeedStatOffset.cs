@@ -25,7 +25,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
         private bool TryGetOffset(StatRequest req, out float offset)
         {
-            if (ModsConfig.BiotechActive && ModsConfig.IdeologyActive && req.HasThing && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.MechanoidLabor_Enhanced) != null)
+            if (ModsConfig.BiotechActive && ModsConfig.IdeologyActive && req.HasThing && req.Thing.Faction == Faction.OfPlayerSilentFail&&Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.MechanoidLabor_Enhanced) != null)
             {
                 Pawn pawn = req.Thing as Pawn;
                 if (pawn != null && StaticCollections.pawnCapacityLabels.ContainsKey(pawn.def))
