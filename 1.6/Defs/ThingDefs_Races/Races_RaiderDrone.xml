@@ -16,7 +16,7 @@
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
 			<baseHealthScale>2</baseHealthScale>
-			<baseBodySize>1</baseBodySize>
+			<baseBodySize>1.5</baseBodySize>
 			<body>VQE_DroneWithTreads</body>
 			<hasCorpse>true</hasCorpse>
 			<lifeStageAges>
@@ -41,10 +41,13 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<butcherProducts>
+		<costList>
 			<Steel>280</Steel>
 			<ComponentIndustrial>10</ComponentIndustrial>
 			<VQE_DroneCore>1</VQE_DroneCore>
+		</costList>
+		<butcherProducts>
+			<Steel>20</Steel>		
 		</butcherProducts>
 		<comps>
 			<li>

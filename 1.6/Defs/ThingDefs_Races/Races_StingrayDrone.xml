@@ -43,10 +43,13 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<butcherProducts>
+		<costList>
 			<Steel>320</Steel>
 			<ComponentIndustrial>10</ComponentIndustrial>
 			<VQE_DroneCore>1</VQE_DroneCore>
+		</costList>
+		<butcherProducts>
+			<Steel>15</Steel>		
 		</butcherProducts>
 		<comps>
 			<li>

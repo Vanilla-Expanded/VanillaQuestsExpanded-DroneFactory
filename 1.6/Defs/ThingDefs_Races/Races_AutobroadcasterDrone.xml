@@ -47,9 +47,12 @@
 			</li>
 		
 		</comps>
-		<butcherProducts>
+		<costList>
 			<Steel>55</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<butcherProducts>
+			<Steel>10</Steel>		
 		</butcherProducts>
 		
 	</ThingDef>

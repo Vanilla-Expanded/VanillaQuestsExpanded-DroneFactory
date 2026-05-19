@@ -15,6 +15,7 @@ namespace VanillaQuestsExpandedDroneFactory
 				{
 					__result = false;
 				}
+				
 			}
 		}
 	}

@@ -52,6 +52,7 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static RecipeDef VQE_AssembleHornetDrone;
 		public static RecipeDef VQE_AssembleStingrayDrone;
         public static RecipeDef VQE_AssemblePackDrone;
+		public static RecipeDef VQE_DisassembleDrone;
         public static ThingDef VQE_CompactedDroneScrap;
 		public static ThingDef VQED_DormantBattleDrone_Active;
 		public static ThingDef VQED_DormantRaiderDrone_Active;
@@ -68,5 +69,8 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static PawnKindDef VQE_ShufflerDrone;
 		public static QuestScriptDef VQE_DroneFactory;
 		public static SitePartDef VQE_DroneStockpile;
-	}
+        [MayRequire("Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Biotech")]
+        public static PreceptDef MechanoidLabor_Enhanced;
+
+    }
 }

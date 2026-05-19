@@ -43,9 +43,13 @@
 			</li>
 		</tools>
 		<butcherProducts>
+			<Steel>10</Steel>		
+		</butcherProducts>
+		<costList>
 			<Steel>65</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
-		</butcherProducts>
+		</costList>
+		
 		
 	</ThingDef>
 	<PawnKindDef ParentName="VQE_BaseDroneKindNonCombat">

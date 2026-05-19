@@ -43,9 +43,12 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<butcherProducts>
+		<costList>
 			<Steel>55</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<butcherProducts>
+			<Steel>10</Steel>		
 		</butcherProducts>
 		
 	</ThingDef>

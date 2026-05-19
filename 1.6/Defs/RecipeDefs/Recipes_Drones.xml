@@ -26,9 +26,7 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-		<specialProducts>
-			<li>Butchery</li>
-		</specialProducts>
+		
 		<fixedIngredientFilter>
 			<categories>
 				<li>VQE_CorpsesDrone</li>

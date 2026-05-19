@@ -49,4 +49,5 @@
 	<VQE_DroneStockpileRaid>Raid: Ancient drones</VQE_DroneStockpileRaid>
 	<VQE_DroneStockpileRaidDesc>Combat drones from the nearby drone stockpile have arrived nearby.\n\nThey are attacking immediately.\n\nDestroy the drone stockpile to stop the drones from attacking you.</VQE_DroneStockpileRaidDesc>
 	<VQE_JumpToDroneTransmitter>Click to jump to the drone transmitter</VQE_JumpToDroneTransmitter>
+	<VQE_DroneWorkspeedStatOffset>Drone work speed offset</VQE_DroneWorkspeedStatOffset>
 </LanguageData>

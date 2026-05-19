@@ -4,7 +4,6 @@
 		<defName>VQE_CraftingDrone</defName>
 		<label>crafting drone</label>
 		<description>An automated drone specialized in crafting. It periodically undergoes a special indexing operation, after which it produces a drone core that can be decoded to permanently unlock new drone schematics.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, crafting drones don’t require connection to drone transmitters.</description>
-		
 		<statBases>
 			<MoveSpeed>3.6</MoveSpeed>
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
@@ -13,7 +12,8 @@
 			<VQE_LifespanYears>10</VQE_LifespanYears>
 		</statBases>
 		<race>
-			
+			<nameGenerator>VQE_CraftingDroneNamer</nameGenerator>
+			<nameOnTameChance>1</nameOnTameChance>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
 			<baseHealthScale>1.2</baseHealthScale>
 			<baseBodySize>1.2</baseBodySize>
@@ -41,11 +41,13 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<butcherProducts>
+		<costList>
 			<Steel>100</Steel>
 			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<butcherProducts>
+			<Steel>25</Steel>
 		</butcherProducts>
-		
 	</ThingDef>
 	<PawnKindDef ParentName="VQE_BaseDroneKindNonCombat">
 		<defName>VQE_CraftingDroneKindDef</defName>
@@ -63,6 +65,5 @@
 			</li>
 		</lifeStages>
 		<canOpenDoors>true</canOpenDoors>
-		
 	</PawnKindDef>
 </Defs>
