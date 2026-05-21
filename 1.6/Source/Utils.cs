@@ -1,12 +1,45 @@
 using Verse;
 using RimWorld;
 using System.Linq;
+using System.Collections.Generic;
+
 namespace VanillaQuestsExpandedDroneFactory
 {
     [HotSwappable]
     public static class Utils
     {
         public static float TransmitterRadius => VanillaQuestsExpandedDroneFactory_Settings.transmitterRadius;
+
+        public static List<IntVec3> GetTransmitterCells(Map map, IntVec3? ghostPos = null)
+        {
+            var cells = new HashSet<IntVec3>();
+            var transmitters = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
+            foreach (var t in transmitters)
+            {
+                var comp = t.TryGetComp<CompPowerTrader>();
+                if (comp.PowerOn)
+                {
+                    foreach (var cell in GenRadial.RadialCellsAround(t.Position, TransmitterRadius, true))
+                    {
+                        if (cell.InBounds(map))
+                        {
+                            cells.Add(cell);
+                        }
+                    }
+                }
+            }
+            if (ghostPos.HasValue)
+            {
+                foreach (var cell in GenRadial.RadialCellsAround(ghostPos.Value, TransmitterRadius, true))
+                {
+                    if (cell.InBounds(map))
+                    {
+                        cells.Add(cell);
+                    }
+                }
+            }
+            return cells.ToList();
+        }
 
         public static bool IsWithinTransmitter(this Pawn drone)
         {

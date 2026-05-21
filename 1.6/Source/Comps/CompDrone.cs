@@ -107,23 +107,7 @@ namespace VanillaQuestsExpandedDroneFactory
             var drone = (Pawn)parent;
             if (drone.Drafted && Utils.RequiresTransmitter(drone))
             {
-                var transmitters = drone.Map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
-                var cells = new HashSet<IntVec3>();
-                foreach (var t in transmitters)
-                {
-                    var comp = t.TryGetComp<CompPowerTrader>();
-                    if (comp != null && comp.PowerOn)
-                    {
-                        foreach (var cell in GenRadial.RadialCellsAround(t.Position, Utils.TransmitterRadius, true))
-                        {
-                            if (cell.InBounds(drone.Map))
-                            {
-                                cells.Add(cell);
-                            }
-                        }
-                    }
-                }
-                GenDraw.DrawFieldEdges(cells.ToList());
+                GenDraw.DrawFieldEdges(Utils.GetTransmitterCells(drone.Map));
             }
         }
 

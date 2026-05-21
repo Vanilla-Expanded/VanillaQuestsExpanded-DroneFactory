@@ -16,7 +16,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
             var site = GenerateSite(points, tile, Faction.OfAncientsHostile, slate,
                 out var siteMapGeneratedSignal, out var siteMapRemovedSignal,
-                failWhenMapRemoved: true, timeoutTicks: 0);
+                failWhenMapRemoved: false, timeoutTicks: 0);
 
             if (site == null) return;
 

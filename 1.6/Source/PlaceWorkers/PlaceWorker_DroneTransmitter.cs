@@ -8,18 +8,7 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
         {
-            if (thing is null)
-            {
-                GenDraw.DrawRadiusRing(center, Utils.TransmitterRadius);
-            }
-            else
-            {
-                var comp = thing.TryGetComp<CompPowerTrader>();
-                if (comp != null && comp.PowerOn)
-                {
-                    GenDraw.DrawRadiusRing(center, Utils.TransmitterRadius);
-                }
-            }
+            GenDraw.DrawFieldEdges(Utils.GetTransmitterCells(Find.CurrentMap, center));
         }
     }
 }

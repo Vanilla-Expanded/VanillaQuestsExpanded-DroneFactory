@@ -5,6 +5,7 @@
         <root Class="VanillaQuestsExpandedDroneFactory.QuestNode_Root_DroneFactory">
             <sitePartDef>VQE_DroneFactory</sitePartDef>
             <distanceRange>15~30</distanceRange>
+			<keepSiteWhenQuestActive>True</keepSiteWhenQuestActive>
         </root>
         <questNameRules>
             <rulesStrings>

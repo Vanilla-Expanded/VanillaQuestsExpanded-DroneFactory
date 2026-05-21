@@ -16,7 +16,7 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 var askerFaction = Find.FactionManager.AllFactions.Where(x => x.def.humanlikeFaction && x.Hidden is false && x.HostileTo(Faction.OfPlayer) is false && x.leader != null).RandomElement();
                 if (askerFaction is null) return;
-                var site = GenerateSite(points, tile, Faction.OfAncientsHostile, slate, out var siteMapGeneratedSignal, out var siteMapRemovedSignal, true, 15 * GenDate.TicksPerDay);
+                var site = GenerateSite(points, tile, Faction.OfAncientsHostile, slate, out var siteMapGeneratedSignal, out var siteMapRemovedSignal, failWhenMapRemoved: false, 15 * GenDate.TicksPerDay);
                 if (site != null)
                 {
                     var defendingDrones = new List<PawnKindDef>();
