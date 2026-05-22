@@ -29,7 +29,7 @@ namespace VanillaQuestsExpandedDroneFactory
         public static void AddDronePawns(List<Pawn> pawns, IncidentParms parms)
         {
             if (pawns is null || parms.faction is null) return;
-            if (parms.faction.def != FactionDefOf.Pirate && parms.faction.def.replacesFaction != FactionDefOf.Pirate)
+            if (!parms.faction.IsPirateOrEnemy())
             {
                 return;
             }

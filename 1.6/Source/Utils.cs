@@ -10,6 +10,23 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public static float TransmitterRadius => VanillaQuestsExpandedDroneFactory_Settings.transmitterRadius;
 
+        public static bool IsPirateOrEnemy(this Faction faction)
+        {
+            if (IsPirateFaction(faction.def)) return true;
+            bool anyPirates = Find.FactionManager.AllFactions.Any(f => IsPirateFaction(f.def));
+            if (!anyPirates)
+            {
+                if (faction.def.defName.ToLower().Contains("pirate")) return true;
+                return faction == Find.FactionManager.AllFactions.FirstOrDefault(f => f.HostileTo(Faction.OfPlayer) && f.def.humanlikeFaction && f.Hidden is false);
+            }
+            return false;
+        }
+
+        private static bool IsPirateFaction(FactionDef def)
+        {
+            return def == FactionDefOf.Pirate || def.replacesFaction == FactionDefOf.Pirate;
+        }
+
         public static List<IntVec3> GetTransmitterCells(Map map, IntVec3? ghostPos = null)
         {
             var cells = new HashSet<IntVec3>();

@@ -16,7 +16,7 @@ namespace VanillaQuestsExpandedDroneFactory
                 return;
 
             var pirateFaction = Find.FactionManager.AllFactions
-                .Where(f => f.def == FactionDefOf.Pirate || f.def.replacesFaction == FactionDefOf.Pirate)
+                .Where(f => f.IsPirateOrEnemy())
                 .RandomElementWithFallback();
             if (pirateFaction == null) return;
 
