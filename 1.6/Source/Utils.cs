@@ -16,7 +16,11 @@ namespace VanillaQuestsExpandedDroneFactory
             bool anyPirates = Find.FactionManager.AllFactions.Any(f => IsPirateFaction(f.def));
             if (!anyPirates)
             {
-                if (faction.def.defName.ToLower().Contains("pirate")) return true;
+                var otherPirateFaction = Find.FactionManager.AllFactions.FirstOrDefault(f => f.HostileTo(Faction.OfPlayer) && f.def.humanlikeFaction && f.Hidden is false && f.def.defName.ToLower().Contains("pirate"));
+                if (otherPirateFaction != null)
+                {
+                    return faction == otherPirateFaction;
+                }
                 return faction == Find.FactionManager.AllFactions.FirstOrDefault(f => f.HostileTo(Faction.OfPlayer) && f.def.humanlikeFaction && f.Hidden is false);
             }
             return false;
