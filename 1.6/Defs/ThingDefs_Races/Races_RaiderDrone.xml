@@ -15,8 +15,8 @@
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
-			<baseHealthScale>2</baseHealthScale>
-			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>1.25</baseHealthScale>
+			<baseBodySize>1.25</baseBodySize>
 			<body>VQE_DroneWithTreads</body>
 			<hasCorpse>true</hasCorpse>
 			<lifeStageAges>
@@ -60,7 +60,7 @@
 		<label>raider drone</label>
 		<labelPlural>raider drones</labelPlural>
 		<race>VQE_RaiderDrone</race>
-		<combatPower>100</combatPower>
+		<combatPower>140</combatPower>
 		<canOpenAnyDoor>true</canOpenAnyDoor>
 		<lifeStages>
 			<li>

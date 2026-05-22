@@ -159,8 +159,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<AccuracyTouch>0.77</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyTouch>0.68</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
 			<AccuracyLong>0.24</AccuracyLong>
 			<RangedWeapon_Cooldown>5.8</RangedWeapon_Cooldown>
@@ -173,9 +173,9 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<defaultProjectile>VQE_ImmobilizedTurret_Bullet</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>36.9</range>
+				<range>29.9</range>
 				<ticksBetweenBurstShots>22</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>1</burstShotCount>
 				<soundCast>GunShotA</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

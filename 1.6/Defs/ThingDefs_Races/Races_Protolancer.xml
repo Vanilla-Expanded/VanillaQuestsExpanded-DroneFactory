@@ -60,7 +60,7 @@
 		<label>protolancer</label>
 		<labelPlural>protolancers</labelPlural>
 		<race>VQE_Protolancer</race>
-		<combatPower>100</combatPower>
+		<combatPower>140</combatPower>
 		<canOpenAnyDoor>true</canOpenAnyDoor>
 		<lifeStages>
 			<li>

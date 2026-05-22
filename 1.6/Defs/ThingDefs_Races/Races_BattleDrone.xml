@@ -15,8 +15,8 @@
 		</statBases>
 		<race>
 			<thinkTreeMain>VQE_Drone</thinkTreeMain>
-			<baseHealthScale>1</baseHealthScale>
-			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1.15</baseHealthScale>
+			<baseBodySize>0.8</baseBodySize>
 			<body>VQE_DroneWithSingleWheel</body>
 			<hasCorpse>true</hasCorpse>
 			<lifeStageAges>
