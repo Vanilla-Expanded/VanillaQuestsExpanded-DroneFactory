@@ -69,12 +69,7 @@ namespace VanillaQuestsExpandedDroneFactory
         }
         public static bool IsWithinTransmitter(IntVec3 c, Map map)
         {
-            var transmitters = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
-            foreach (var t in transmitters)
-            {
-                if (c.DistanceTo(t.Position) <= TransmitterRadius && t.TryGetComp<CompPowerTrader>().PowerOn) return true;
-            }
-            return false;
+            return Building_DroneTransmitter.IsWithinTransmitter(c, map.uniqueID);
         }
 
         public static bool RequiresTransmitter(this Pawn pawn)
@@ -134,22 +129,12 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             bool shouldCheck = forbidMode ? __result : !__result;
             if (shouldCheck || pawn == null || pawn.Map == null) return;
-            if (pawn.IsDrone() && pawn.RequiresTransmitter())
-            {
-                if (pawn.MentalState is MentalState_SelfDecommission) return;
-                bool reverse = false;
-                if (pawn.MentalStateDef != null)
-                {
-                    var ext = pawn.MentalStateDef.GetModExtension<DroneMentalStateExtension>();
-                    reverse = ext?.reverseNetworkRestriction ?? false;
-                }
-                bool withinRange = IsWithinTransmitter(pos, pawn.Map);
-                bool restricted = reverse ? withinRange : !withinRange;
-                if (restricted)
-                {
-                    __result = forbidMode;
-                }
-            }
+            if (pawn.Faction != Faction.OfPlayer) return;
+            if (!CompDrone.SpawnedDrones.TryGetValue(pawn, out var comp) || !comp.Props.requiresTransmitter) return;
+            if (pawn.MentalState is MentalState_SelfDecommission) return;
+            bool reverse = pawn.MentalStateDef?.GetModExtension<DroneMentalStateExtension>()?.reverseNetworkRestriction ?? false;
+            bool withinRange = IsWithinTransmitter(pos, pawn.Map);
+            if (reverse ? withinRange : !withinRange) __result = forbidMode;
         }
     }
 }

@@ -17,6 +17,7 @@ namespace VanillaQuestsExpandedDroneFactory
     [HotSwappable]
     public class CompDrone : ThingComp
     {
+        public static readonly Dictionary<Pawn, CompDrone> SpawnedDrones = new();
         public CompProperties_Drone Props => (CompProperties_Drone)props;
         public bool autoRepair = true;
         public bool shouldKill;
@@ -26,6 +27,7 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             base.PostSpawnSetup(respawningAfterLoad);
             var p = (Pawn)parent;
+            SpawnedDrones[p] = this;
             if (p.playerSettings == null) p.playerSettings = new Pawn_PlayerSettings(p);
             if (p.drafter == null) p.drafter = new Pawn_DraftController(p);
         }
@@ -39,6 +41,12 @@ namespace VanillaQuestsExpandedDroneFactory
                 pawn.Kill(null);
                 shouldKill = false;
             }
+        }
+
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
+        {
+            base.PostDeSpawn(map, mode);
+            SpawnedDrones.Remove((Pawn)parent);
         }
 
         public override void PostExposeData()
