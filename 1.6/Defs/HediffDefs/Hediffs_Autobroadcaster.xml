@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<HediffDef>
 		<defName>VQE_Broadcaster_WorkMode</defName>
 		<label>work mode</label>
@@ -9,7 +8,6 @@
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
-			
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="VEF.AnimalBehaviours.HediffCompProperties_GiveHediffsInRangeExpanded">
 				<range>9.9</range>
@@ -45,13 +43,10 @@
 			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>.1</WorkSpeedGlobal>
-					
 				</statOffsets>
-				
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>VQE_Broadcaster_Relax</defName>
 		<label>relax mode</label>
@@ -60,7 +55,6 @@
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
-			
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="VEF.AnimalBehaviours.HediffCompProperties_GiveHediffsInRangeExpanded">
 				<range>9.9</range>
@@ -99,7 +93,6 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>VQE_Broadcaster_Recruitment</defName>
 		<label>recruitment mode</label>
@@ -108,7 +101,6 @@
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
-			
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="VEF.AnimalBehaviours.HediffCompProperties_GiveHediffsInRangeExpanded">
 				<range>9.9</range>
@@ -151,5 +143,55 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	<HediffDef>
+		<defName>VQE_Broadcaster_Conversion</defName>
+		<label>conversion mode</label>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<description>Autobroadcaster is playing ideological rhetoric aimed at prisoners with the purpose of converting their beliefs.</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_GiveHediffsInRangeExpanded">
+				<range>9.9</range>
+				<mote>VQE_Ability_Mote</mote>
+				<hideMoteWhenNotDrafted>false</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetPrisonersOfColony>true</onlyTargetPrisonersOfColony>
+				</targetingParameters>
+				<hediff>VQE_Broadcaster_Conversion_Buff</hediff>
+				<needLOS>true</needLOS>
+				<onlyItsFaction>false</onlyItsFaction>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef>
+		<defName>VQE_Broadcaster_Conversion_Buff</defName>
+		<label>conversion mode</label>
+		<description>Autobroadcaster is playing ideological rhetoric aimed at prisoners with the purpose of converting their beliefs.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_ReducePrisonerCertainty">
+				<certaintyPerTick>0.00003333</certaintyPerTick>
+				<checkingInterval>2500</checkingInterval>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				
+				
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

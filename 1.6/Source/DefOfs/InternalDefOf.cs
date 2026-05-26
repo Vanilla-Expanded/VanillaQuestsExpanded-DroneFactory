@@ -12,9 +12,11 @@ namespace VanillaQuestsExpandedDroneFactory
 		public static HediffDef VQE_Broadcaster_WorkMode;
         public static HediffDef VQE_Broadcaster_Relax;
         public static HediffDef VQE_Broadcaster_Recruitment;
-		public static SoundDef VQE_AutobroadcasterSustainer_Work;
+        public static HediffDef VQE_Broadcaster_Conversion;
+        public static SoundDef VQE_AutobroadcasterSustainer_Work;
         public static SoundDef VQE_AutobroadcasterSustainer_Relax;
         public static SoundDef VQE_AutobroadcasterSustainer_Recruitment;
+        public static SoundDef VQE_AutobroadcasterSustainer_Conversion;
         public static JobDef VQE_GotoPatrolDest;
 		public static NeedDef VQE_Lifespan;
 		public static BodyPartDef VQE_DroneCoreBodyPart;

@@ -13,7 +13,8 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         Work,
         Relax,
-        Recruitment
+        Recruitment,
+        Conversion
     };
 
     public class CompAutobroadcaster : ThingComp
@@ -21,6 +22,7 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public BroadcasterMode curBroadcasterMode;
         private Sustainer sustainer;
+        public List<BroadcasterMode> availableModes =new List<BroadcasterMode>();
 
         public CompProperties_Autobroadcaster Props
         {
@@ -36,14 +38,27 @@ namespace VanillaQuestsExpandedDroneFactory
            
         }
 
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            availableModes = Enum.GetValues(typeof(BroadcasterMode)).Cast<BroadcasterMode>().ToList();
+            if (!ModsConfig.IdeologyActive)
+            {
+                availableModes.Remove(BroadcasterMode.Conversion);
+            }
+        }
+
         public void RemoveHediffs(Pawn pawn)
         {
             Hediff workHediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VQE_Broadcaster_WorkMode);
             Hediff relaxHediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VQE_Broadcaster_Relax);
             Hediff recruitmentHediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VQE_Broadcaster_Recruitment);
+            Hediff conversionHediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VQE_Broadcaster_Conversion);
             if (workHediff != null) { pawn.health.RemoveHediff(workHediff); }
             if (relaxHediff != null) { pawn.health.RemoveHediff(relaxHediff); }
             if (recruitmentHediff != null) { pawn.health.RemoveHediff(recruitmentHediff); }
+            if (conversionHediff != null) { pawn.health.RemoveHediff(conversionHediff); }
+
         }
 
         public void InitializeSustainer(SoundDef sound)
@@ -84,7 +99,9 @@ namespace VanillaQuestsExpandedDroneFactory
                 case BroadcasterMode.Relax:
                     return InternalDefOf.VQE_AutobroadcasterSustainer_Relax;               
                 case BroadcasterMode.Recruitment:
-                    return InternalDefOf.VQE_AutobroadcasterSustainer_Recruitment;                 
+                    return InternalDefOf.VQE_AutobroadcasterSustainer_Recruitment;
+                case BroadcasterMode.Conversion:
+                    return InternalDefOf.VQE_AutobroadcasterSustainer_Conversion;
             }
             return null;
         }
@@ -104,7 +121,7 @@ namespace VanillaQuestsExpandedDroneFactory
                     action = () =>
                     {
                         var floatList = new List<FloatMenuOption>();
-                        foreach (var broadcasterMode in Enum.GetValues(typeof(BroadcasterMode)).Cast<BroadcasterMode>())
+                        foreach (var broadcasterMode in availableModes)
                         {
                             if (broadcasterMode != curBroadcasterMode)
                             {
@@ -127,6 +144,10 @@ namespace VanillaQuestsExpandedDroneFactory
                                         case BroadcasterMode.Recruitment:
                                             pawn.health.AddHediff(InternalDefOf.VQE_Broadcaster_Recruitment);
                                             InitializeSustainer(InternalDefOf.VQE_AutobroadcasterSustainer_Recruitment);
+                                            break;
+                                        case BroadcasterMode.Conversion:
+                                            pawn.health.AddHediff(InternalDefOf.VQE_Broadcaster_Conversion);
+                                            InitializeSustainer(InternalDefOf.VQE_AutobroadcasterSustainer_Conversion);
                                             break;
                                     }
                                     
