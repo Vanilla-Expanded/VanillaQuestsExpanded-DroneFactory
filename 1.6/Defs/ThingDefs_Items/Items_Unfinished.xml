@@ -42,10 +42,13 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_BattleDrone</defName>
-		<label>deployed battle drone</label>
+		<label>battle drone</label>
 		<graphicData>
 			<texPath>Things/Drones/BattleDrone/BattleDrone_east</texPath>
 		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_BattleDrone</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_BattleDrone</hatcherKindDef>
@@ -54,10 +57,13 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_CleanerDrone</defName>
-		<label>deployed cleaner drone</label>
+		<label>cleaner drone</label>
 		<graphicData>
 			<texPath>Things/Drones/CleanerDrone/CleanerDrone_east</texPath>
 		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_CleanerDrone</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_CleanerDrone</hatcherKindDef>
@@ -66,7 +72,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_HaulerDrone</defName>
-		<label>deployed hauler drone</label>
+		<label>hauler drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_HaulerDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/HaulerDrone/HaulerDrone_east</texPath>
 		</graphicData>
@@ -78,7 +87,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_MinerDrone</defName>
-		<label>deployed miner drone</label>
+		<label>miner drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_MinerDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/MinerDrone/MinerDrone_east</texPath>
 		</graphicData>
@@ -90,7 +102,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_AutobroadcasterDrone</defName>
-		<label>deployed autobroadcaster drone</label>
+		<label>autobroadcaster drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_AutobroadcasterDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/PropagandaDrone/PropagandaDrone_east</texPath>
 		</graphicData>
@@ -102,7 +117,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_TurretDrone</defName>
-		<label>deployed turret drone</label>
+		<label>turret drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_TurretDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/TurretDrone/TurretDrone_east</texPath>
 		</graphicData>
@@ -114,7 +132,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_RaiderDrone</defName>
-		<label>deployed raider drone</label>
+		<label>raider drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_RaiderDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/RaiderDrone/RaiderDrone_east</texPath>
 		</graphicData>
@@ -126,7 +147,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_Protolancer</defName>
-		<label>deployed protolancer drone</label>
+		<label>protolancer drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_Protolancer</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/Protolancer/Protolancer_east</texPath>
 		</graphicData>
@@ -138,7 +162,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_FarmingDrone</defName>
-		<label>deployed farming drone</label>
+		<label>farming drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_FarmingDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/FarmingDrone/FarmingDrone_east</texPath>
 		</graphicData>
@@ -150,7 +177,10 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_FirefighterDrone</defName>
-		<label>deployed firefighter drone</label>
+		<label>firefighter drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_FirefighterDrone</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Drones/FirefighterDrone/FirefighterDrone_east</texPath>
 		</graphicData>
@@ -165,7 +195,10 @@
 		<graphicData>
 			<texPath>Things/Drones/Hornet/Hornet_east</texPath>
 		</graphicData>
-		<label>deployed hornet drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_HornetDrone</ThingDef>
+		</descriptionHyperlinks>
+		<label>hornet drone</label>
 		<comps>
 			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_HornetDrone</hatcherKindDef>
@@ -177,7 +210,10 @@
 		<graphicData>
 			<texPath>Things/Drones/StingrayDrone/Stingray_east</texPath>
 		</graphicData>
-		<label>deployed stingray drone</label>
+		<label>stingray drone</label>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_StingrayDrone</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_StingrayDrone</hatcherKindDef>
@@ -186,10 +222,13 @@
 	</ThingDef>
 	<ThingDef ParentName="VQE_UnfinishedDroneSpawnerBase">
 		<defName>VQE_UnfinishedDroneSpawner_PackDrone</defName>
-		<label>deployed pack drone</label>
+		<label>pack drone</label>
 		<graphicData>
 			<texPath>Things/Drones/PackDrone/PackDrone_east</texPath>
 		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>VQE_PackDrone</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="VanillaQuestsExpandedDroneFactory.CompProperties_DroneHatcher">
 				<hatcherKindDef>VQE_PackDrone</hatcherKindDef>
