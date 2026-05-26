@@ -25,11 +25,14 @@
 					<soundCall>VQE_Drone_Medium_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<deathAction Class="VanillaQuestsExpandedDroneFactory.DeathActionProperties_DroneDivide">
+			<deathAction Class="VEF.AnimalBehaviours.DeathActionProperties_DivideAndCreateFilth">
 				<dividePawnKindOptions>
 					<li>VQE_DriverDrone</li>
 					<li>VQE_CrawlerDrone</li>
 				</dividePawnKindOptions>
+				<filthCreated>Filth_MachineBits</filthCreated>
+				<filthCountRange>3~5</filthCountRange>
+				<sound>VQE_Drone_Medium_Wounded</sound>
 			</deathAction>
 		</race>
 		<tools>
