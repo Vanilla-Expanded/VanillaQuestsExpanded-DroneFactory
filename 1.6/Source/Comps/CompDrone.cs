@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using Verse.AI;
 using RimWorld;
@@ -35,11 +33,16 @@ namespace VanillaQuestsExpandedDroneFactory
         public override void CompTick()
         {
             base.CompTick();
+            var pawn = (Pawn)parent;
             if (shouldKill)
             {
-                var pawn = parent as Pawn;
                 pawn.Kill(null);
                 shouldKill = false;
+                return;
+            }
+            if (pawn.IsHashIntervalTick(60) && Props.requiresTransmitter && pawn.CurJobDef == InternalDefOf.VQE_StandOutOfTransmitterRange && Utils.IsWithinTransmitter(pawn.Position, pawn.Map))
+            {
+                pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
             }
         }
 
@@ -92,16 +95,16 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             var map = transmitter.Map;
             var result = transmitter.Position;
-            var minDistance = float.MaxValue;
+            var minDistanceSq = float.MaxValue;
 
             foreach (var cell in GenRadial.RadialCellsAround(transmitter.Position, Utils.TransmitterRadius, true))
             {
                 if (cell.InBounds(map) && cell.Walkable(map))
                 {
-                    var distance = cell.DistanceTo(dronePos);
-                    if (distance < minDistance)
+                    var distanceSq = cell.DistanceToSquared(dronePos);
+                    if (distanceSq < minDistanceSq)
                     {
-                        minDistance = distance;
+                        minDistanceSq = distanceSq;
                         result = cell;
                     }
                 }

@@ -9,7 +9,7 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public static void Prefix()
         {
-            Building_DroneTransmitter.CoveredCells.Clear();
+            Utils.ClearTransmitterCache();
             CompDrone.SpawnedDrones.Clear();
         }
     }

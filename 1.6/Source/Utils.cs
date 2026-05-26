@@ -10,6 +10,71 @@ namespace VanillaQuestsExpandedDroneFactory
     {
         public static float TransmitterRadius => VanillaQuestsExpandedDroneFactory_Settings.transmitterRadius;
 
+        private static readonly Dictionary<int, HashSet<Building_DroneTransmitter>> transmitterCache = new Dictionary<int, HashSet<Building_DroneTransmitter>>();
+        private static int lastMapId = -1;
+        private static HashSet<Building_DroneTransmitter> lastMapTransmitters;
+
+        public static void RegisterTransmitter(Building_DroneTransmitter transmitter, Map map)
+        {
+            if (!transmitterCache.TryGetValue(map.uniqueID, out var set))
+            {
+                set = new HashSet<Building_DroneTransmitter>();
+                transmitterCache[map.uniqueID] = set;
+            }
+            set.Add(transmitter);
+            lastMapId = -1;
+            lastMapTransmitters = null;
+        }
+
+        public static void UnregisterTransmitter(Building_DroneTransmitter transmitter, Map map)
+        {
+            if (transmitterCache.TryGetValue(map.uniqueID, out var set))
+            {
+                set.Remove(transmitter);
+            }
+            lastMapId = -1;
+            lastMapTransmitters = null;
+        }
+
+        public static void ClearTransmitterCache()
+        {
+            transmitterCache.Clear();
+            lastMapId = -1;
+            lastMapTransmitters = null;
+        }
+
+        public static bool IsWithinTransmitter(IntVec3 c, Map map)
+        {
+            int mapId = map.uniqueID;
+
+            HashSet<Building_DroneTransmitter> set;
+            if (mapId == lastMapId)
+            {
+                set = lastMapTransmitters;
+            }
+            else
+            {
+                transmitterCache.TryGetValue(mapId, out set);
+                lastMapId = mapId;
+                lastMapTransmitters = set;
+            }
+            if (set != null)
+            {
+                foreach (var t in set)
+                {
+                    var comp = t.TryGetComp<CompPowerTrader>();
+                    if (comp == null || comp.PowerOn)
+                    {
+                        if (t.coveredCells.Contains(c))
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
         public static bool IsPirateOrEnemy(this Faction faction)
         {
             if (IsPirateFaction(faction.def)) return true;
@@ -34,18 +99,14 @@ namespace VanillaQuestsExpandedDroneFactory
         public static List<IntVec3> GetTransmitterCells(Map map, IntVec3? ghostPos = null)
         {
             var cells = new HashSet<IntVec3>();
-            var transmitters = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VQE_DroneTransmitter);
-            foreach (var t in transmitters)
+            if (transmitterCache.TryGetValue(map.uniqueID, out var set))
             {
-                var comp = t.TryGetComp<CompPowerTrader>();
-                if (comp.PowerOn)
+                foreach (var t in set)
                 {
-                    foreach (var cell in GenRadial.RadialCellsAround(t.Position, TransmitterRadius, true))
+                    var comp = t.TryGetComp<CompPowerTrader>();
+                    if (comp == null || comp.PowerOn)
                     {
-                        if (cell.InBounds(map))
-                        {
-                            cells.Add(cell);
-                        }
+                        cells.UnionWith(t.coveredCells);
                     }
                 }
             }
@@ -53,10 +114,7 @@ namespace VanillaQuestsExpandedDroneFactory
             {
                 foreach (var cell in GenRadial.RadialCellsAround(ghostPos.Value, TransmitterRadius, true))
                 {
-                    if (cell.InBounds(map))
-                    {
-                        cells.Add(cell);
-                    }
+                    if (cell.InBounds(map)) cells.Add(cell);
                 }
             }
             return cells.ToList();
@@ -66,10 +124,6 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             if (drone.RequiresTransmitter()) return IsWithinTransmitter(drone.Position, drone.Map);
             return true;
-        }
-        public static bool IsWithinTransmitter(IntVec3 c, Map map)
-        {
-            return Building_DroneTransmitter.IsWithinTransmitter(c, map.uniqueID);
         }
 
         public static bool RequiresTransmitter(this Pawn pawn)

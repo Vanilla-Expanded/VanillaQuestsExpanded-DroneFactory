@@ -4,6 +4,7 @@
         <defName>VQE_DroneTransmitter</defName>
         <label>drone transmitter</label>
         <description>A small antenna mast that establishes a local drone network, enabling nearby drones to operate within its transmission radius.</description>
+        <thingClass>VanillaQuestsExpandedDroneFactory.Building_DroneTransmitter</thingClass>
         <graphicData>
             <texPath>Things/Structure/Misc/DroneBandwidthNode</texPath>
             <graphicClass>Graphic_Single</graphicClass>
