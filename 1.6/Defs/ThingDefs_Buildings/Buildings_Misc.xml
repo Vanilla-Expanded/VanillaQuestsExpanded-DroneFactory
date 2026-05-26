@@ -3,7 +3,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>VQE_DroneTransmitter</defName>
         <label>drone transmitter</label>
-        <description>A small antenna mast that establishes a local drone network, enabling nearby drones to operate within its transmission radius. Must be placed outdoors.</description>
+        <description>A small antenna mast that establishes a local drone network, enabling nearby drones to operate within its transmission radius.</description>
         <graphicData>
             <texPath>Things/Structure/Misc/DroneBandwidthNode</texPath>
             <graphicClass>Graphic_Single</graphicClass>
