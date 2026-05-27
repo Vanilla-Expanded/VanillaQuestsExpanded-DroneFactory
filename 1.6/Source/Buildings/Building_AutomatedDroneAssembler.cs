@@ -14,7 +14,7 @@ namespace VanillaQuestsExpandedDroneFactory
     {
 
         private Effecter effecter;
-        public WeightedDrones[] array = new WeightedDrones[3];
+        public WeightedDrones[] array = new WeightedDrones[2];
         public PawnKindDef currentPawn;
         public int currentTimer = -1;
         public int tickCounter = -1;
@@ -41,20 +41,14 @@ namespace VanillaQuestsExpandedDroneFactory
                 ticks = 2700
             };
             array[0] = drone;
-            drone = new WeightedDrones
-            {
-                pawn = InternalDefOf.VQE_RaiderDrone,
-                weight = 1.6f,
-                ticks = 4800
-            };
-            array[1] = drone;
+           
             drone = new WeightedDrones
             {
                 pawn = InternalDefOf.VQE_HornetDrone,
                 weight = 2f,
                 ticks = 4450
             };
-            array[2] = drone;
+            array[1] = drone;
             if (!respawningAfterLoad)
             {
                 WeightedDrones droneChosen = array.RandomElementByWeight(x => x.weight);
@@ -84,14 +78,7 @@ namespace VanillaQuestsExpandedDroneFactory
             tickCounter = tickCounter + delta;
         }
 
-        /*public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
-        {
-            base.DynamicDrawPhaseAt(phase, drawLoc, flip);
-
-            var vector = this.DrawPos + Altitudes.AltIncVect;
-            vector.y += 5;
-            GraphicsCache.graphicUnfinishedDrone.DrawFromDef(vector, Rot4.North, null);
-        }*/
+        
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
