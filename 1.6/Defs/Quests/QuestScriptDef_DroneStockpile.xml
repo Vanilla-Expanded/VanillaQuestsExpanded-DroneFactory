@@ -34,7 +34,7 @@
     <SitePartDef>
         <defName>VQE_DroneStockpile</defName>
         <label>drone transmitter</label>
-        <description>todo.</description>
+        <description>Long range drone transmitter is active in this area.</description>
         <workerClass>SitePartWorker_ConditionCauser</workerClass>
         <conditionCauserDef>VQE_LongRangeDroneTransmitter</conditionCauserDef>
         <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
@@ -45,9 +45,9 @@
     <GameConditionDef>
         <defName>VQE_DroneStockpileTransmitter</defName>
         <label>drone transmitter active</label>
-        <description>todo.</description>
-        <startMessage>todo.</startMessage>
-        <endMessage>todo.</endMessage>
+        <description>Long range drone transmitter is active, which allows ancient drones to raid nearby locations.</description>
+        <startMessage>Long range drone transmitter allows ancient drones to form raiding groups across the world.</startMessage>
+        <endMessage>Long range drone transmitter is no longer active.</endMessage>
         <jumpToSourceKey>VQE_JumpToDroneTransmitter</jumpToSourceKey>
         <natural>false</natural>
         <canBePermanent>true</canBePermanent>
