@@ -26,7 +26,7 @@ namespace VanillaQuestsExpandedDroneFactory
             if (site == null) return;
 
             var askerFaction = Find.FactionManager.AllFactions
-                .Where(f => f != Faction.OfPlayer && !f.HostileTo(Faction.OfPlayer) && f.def.humanlikeFaction && f.leader != null)
+                .Where(f => f != Faction.OfPlayer && f.IsPirateOrEnemy() is false && f.def.humanlikeFaction && f.leader != null)
                 .RandomElementWithFallback();
             if (askerFaction is null) return;
 
