@@ -9,6 +9,8 @@ namespace VanillaQuestsExpandedDroneFactory
     [HotSwappable]
     public class QuestNode_Root_DroneStockpile : QuestNode_Site
     {
+        private const float MaxQuestPoints = 5000f;
+
         protected override void RunInt()
         {
             if (!PrepareQuest(out var map, out var points, out var tile, out var slate))
@@ -41,7 +43,8 @@ namespace VanillaQuestsExpandedDroneFactory
             var defending = new List<PawnKindDef>();
             var available = new List<PawnKindDef> { InternalDefOf.VQE_BattleDrone, InternalDefOf.VQE_RaiderDrone };
             float spent = 0f;
-            while (spent < points)
+            float targetPoints = points > MaxQuestPoints ? MaxQuestPoints : points;
+            while (spent < targetPoints)
             {
                 var kind = available.RandomElement();
                 spent += kind.combatPower;

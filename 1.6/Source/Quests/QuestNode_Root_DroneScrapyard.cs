@@ -10,6 +10,8 @@ namespace VanillaQuestsExpandedDroneFactory
     [HotSwappable]
     public class QuestNode_Root_DroneScrapyard : QuestNode_Site
     {
+        private const float MaxQuestPoints = 5000f;
+
         protected override void RunInt()
         {
             if (PrepareQuest(out var map, out var points, out var tile, out var slate))
@@ -48,7 +50,8 @@ namespace VanillaQuestsExpandedDroneFactory
         {
             var availableDrones = new List<PawnKindDef> { InternalDefOf.VQE_ShufflerDrone, InternalDefOf.VQE_BattleDrone, InternalDefOf.VQE_RaiderDrone };
             float spentPoints = 0;
-            while (spentPoints < points)
+            float targetPoints = points > MaxQuestPoints ? MaxQuestPoints : points;
+            while (spentPoints < targetPoints)
             {
                 var kind = availableDrones.RandomElement();
                 spentPoints += kind.combatPower;
