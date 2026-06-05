@@ -47,6 +47,7 @@
         <researchPrerequisites>
             <li>VQE_Dronetech</li>
         </researchPrerequisites>
+		<rotatable>false</rotatable>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
