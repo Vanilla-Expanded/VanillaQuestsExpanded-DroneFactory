@@ -14,6 +14,9 @@ namespace VanillaQuestsExpandedDroneFactory
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
+            if (pawn.IsDrone()) {
+                return null;
+            }
             if (t is Pawn drone && drone.IsDrone())
             {
                 if (drone.health.hediffSet.GetMissingPartsCommonAncestors().Any() || drone.health.hediffSet.hediffs.Any(h => h is Hediff_Injury))
