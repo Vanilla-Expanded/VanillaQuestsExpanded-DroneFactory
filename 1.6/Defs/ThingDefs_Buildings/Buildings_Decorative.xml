@@ -74,6 +74,8 @@
 			<mineableDropChance>1</mineableDropChance>
 			<mineableYieldWasteable>false</mineableYieldWasteable>
 			<isInert>true</isInert>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
 		</building>
 		 <staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
